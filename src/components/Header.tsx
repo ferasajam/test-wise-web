@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -20,8 +21,9 @@ const Header = () => {
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="text-2xl font-bold text-primary">
-            Wir testen für Sie
+          <Link to="/" className="flex items-center space-x-3">
+            <img src={logo} alt="QualityFirst Logo" className="h-10 w-10" />
+            <span className="text-2xl font-bold text-primary">QualityFirst</span>
           </Link>
 
           {/* Desktop Navigation */}

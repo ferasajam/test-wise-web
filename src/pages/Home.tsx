@@ -13,7 +13,7 @@ import {
   BookOpen
 } from "lucide-react";
 import { Link } from "react-router-dom";
-import heroImage from "@/assets/hero-image.jpg";
+import testingHero from "@/assets/testing-hero.jpg";
 
 const Home = () => {
   const features = [
@@ -64,6 +64,11 @@ const Home = () => {
       icon: <BookOpen className="h-8 w-8 text-primary" />,
       title: "Beratung & Schulung",
       description: "Expertenwissen und Schulungen für Ihr Team"
+    },
+    {
+      icon: <CheckCircle className="h-8 w-8 text-primary" />,
+      title: "JUnit Tests",
+      description: "Professionelle Unit-Tests für Java-Anwendungen mit JUnit Framework"
     }
   ];
 
@@ -91,7 +96,7 @@ const Home = () => {
             </div>
             <div className="relative">
               <img 
-                src={heroImage} 
+                src={testingHero} 
                 alt="Software Testing Hero" 
                 className="rounded-lg shadow-blue w-full"
               />
@@ -182,7 +187,7 @@ const Home = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+              className="border-white text-white hover:bg-white hover:text-primary"
             >
               <Link to="/services">Leistungen entdecken</Link>
             </Button>
