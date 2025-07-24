@@ -22,7 +22,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="QualityFirst Logo" className="h-10 w-10" />
+            <img src={logo} alt="QualityFirst Logo" className="h-15 w-20" />
             <span className="text-2xl font-bold text-primary">QualityFirst</span>
           </Link>
 

@@ -193,7 +193,7 @@ const About = () => {
                 </p>
                 <div className="text-center">
                   <p className="font-semibold">Das Team von</p>
-                  <p className="text-primary font-bold">Wir testen für Sie</p>
+                  <p className="text-primary font-bold">QualityFirst</p>
                 </div>
               </CardContent>
             </Card>

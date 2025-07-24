@@ -64,11 +64,6 @@ const Home = () => {
       icon: <BookOpen className="h-8 w-8 text-primary" />,
       title: "Beratung & Schulung",
       description: "Expertenwissen und Schulungen für Ihr Team"
-    },
-    {
-      icon: <CheckCircle className="h-8 w-8 text-primary" />,
-      title: "JUnit Tests",
-      description: "Professionelle Unit-Tests für Java-Anwendungen mit JUnit Framework"
     }
   ];
 
