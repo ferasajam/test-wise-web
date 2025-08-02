@@ -256,7 +256,7 @@ const Services = () => {
                 <Button 
                   size="lg" 
                   variant="outline"
-                  className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary"
+                  className="bg-background text-primary hover:bg-background/90"
                 >
                   <Link to="/about">Mehr über uns erfahren</Link>
                 </Button>

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import emailjs from "emailjs-com";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -27,21 +28,41 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Hier würde normalerweise die Formular-Übermittlung stattfinden
-    toast({
-      title: "Nachricht gesendet!",
-      description: "Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-    });
 
-    // Formular zurücksetzen
-    setFormData({
-      name: "",
-      email: "",
-      company: "",
-      phone: "",
-      projectType: "",
-      message: ""
+    // EmailJS Integration
+    emailjs.send(
+      "service_ctpuc3t", // <-- Ersetze mit deinem Service ID
+      "template_2ggxhgi", // <-- Ersetze mit deinem Template ID
+      {
+        name: formData.name,
+        email: formData.email,
+        company: formData.company,
+        phone: formData.phone,
+        projectType: formData.projectType,
+        message: formData.message
+      },
+      "4H9jvO3X2gzA483bC" // <-- Ersetze mit deinem Public Key
+    )
+    .then(() => {
+      toast({
+        title: "Nachricht gesendet!",
+        description: "Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
+      });
+      setFormData({
+        name: "",
+        email: "",
+        company: "",
+        phone: "",
+        projectType: "",
+        message: ""
+      });
+    })
+    .catch(() => {
+      toast({
+        title: "Fehler beim Senden",
+        description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.",
+        variant: "destructive"
+      });
     });
   };
 
@@ -189,7 +210,7 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" size="lg" className="w-full">
+                  <Button id="btn" type="submit" size="lg" className="w-full">
                     Nachricht senden
                   </Button>
 
