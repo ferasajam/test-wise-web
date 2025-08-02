@@ -83,7 +83,7 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: "Telefon",
-      content: "+49 (0) 123 456789",
+      content: "+49 (0) 151 67543709",
       description: "Mo-Fr 9:00-18:00 Uhr"
     },
     {
@@ -181,7 +181,7 @@ const Contact = () => {
                         name="phone"
                         value={formData.phone}
                         onChange={handleInputChange}
-                        placeholder="+49 (0) 123 456789"
+                        placeholder="+49 (0) 151 67543709"
                       />
                     </div>
                   </div>
@@ -280,7 +280,7 @@ const Contact = () => {
                   className="bg-background text-primary hover:bg-background/90"
                 >
                   <Phone className="h-4 w-4 mr-2" />
-                  +49 (0) 123 456789
+                  +49 (0) 151 67543709
                 </Button>
               </CardContent>
             </Card>
