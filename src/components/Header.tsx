@@ -44,7 +44,7 @@ const Header = () => {
           </nav>
 
           <Button className="hidden md:block">
-            Kostenloses Erstgespräch
+            <Link to="/contact">Kostenloses Erstgespräch</Link>
           </Button>
 
           {/* Mobile Menu Button */}
@@ -74,7 +74,7 @@ const Header = () => {
               </Link>
             ))}
             <Button className="mt-4 w-full">
-              Kostenloses Erstgespräch
+             <Link to="/contact">Kostenloses Erstgespräch</Link>
             </Button>
           </nav>
         )}
