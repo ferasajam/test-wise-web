@@ -76,7 +76,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 Wir testen für Sie. Alle Rechte vorbehalten.
+            © 2024 QualityFirst. Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-6 text-sm mt-4 md:mt-0">
             <Link to="/impressum" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
