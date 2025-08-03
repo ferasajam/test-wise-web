@@ -24,7 +24,7 @@ const Legal = () => {
             <h2 className="text-xl font-semibold mb-3">Kontakt</h2>
             <p>
               Telefon: +49 (0) 151 67543709<br />
-              E-Mail: info@wir-testen.de
+              E-Mail: info@quality-1st.de
             </p>
           </div>
 
@@ -115,7 +115,7 @@ const Legal = () => {
               Musterstraße 123<br />
               12345 Musterstadt<br />
               Telefon: +49 (0) 151 67543709<br />
-              E-Mail: info@wir-testen.de
+              E-Mail: info@quality-1st.de
             </p>
           </div>
 

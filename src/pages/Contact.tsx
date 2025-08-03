@@ -77,7 +77,7 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6" />,
       title: "E-Mail",
-      content: "info@wir-testen.de",
+      content: "info@quality-1st.de",
       description: "Schreiben Sie uns jederzeit"
     },
     {
