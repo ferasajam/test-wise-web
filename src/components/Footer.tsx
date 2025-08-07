@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import {  Linkedin, Mail, Phone } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,26 +8,20 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold mb-4">Wir testen für Sie</h3>
+            <h3 className="text-xl font-bold mb-4">Quality1st</h3>
             <p className="text-primary-foreground/80 mb-4">
               Ihr Partner für professionelle Softwaretests. Zuverlässig, 
               individuell und effizient - damit Ihre Software perfekt funktioniert.
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/quality1stde-de" 
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin size={20} />
               </a>
-              <a 
-                href="https://github.com" 
-                className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
-                aria-label="GitHub"
-              >
-                <Github size={20} />
-              </a>
+              
             </div>
           </div>
 
@@ -76,7 +70,7 @@ const Footer = () => {
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-primary-foreground/60 text-sm">
-            © 2024 QualityFirst. Alle Rechte vorbehalten.
+            © 2025 Quality1st Alle Rechte vorbehalten.
           </p>
           <div className="flex space-x-6 text-sm mt-4 md:mt-0">
             <Link to="/impressum" className="text-primary-foreground/60 hover:text-primary-foreground transition-colors">
