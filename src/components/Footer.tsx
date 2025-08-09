@@ -11,7 +11,7 @@ const Footer = () => {
             <h3 className="text-xl font-bold mb-4">Quality1st</h3>
             <p className="text-primary-foreground/80 mb-4">
               Ihr Partner für professionelle Softwaretests. Zuverlässig, 
-              individuell und effizient - damit Ihre Software perfekt funktioniert.
+              individuell und effizient.
             </p>
             <div className="flex space-x-4">
               <a 
