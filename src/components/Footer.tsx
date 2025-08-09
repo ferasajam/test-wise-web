@@ -15,9 +15,11 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               <a 
-                href="https://www.linkedin.com/company/quality1stde-de" 
+                href="https://www.linkedin.com/company/quality1stde" 
                 className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                 aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Linkedin size={20} />
               </a>

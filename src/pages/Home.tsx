@@ -142,15 +142,17 @@ const Home = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="mb-4">
-                    {service.icon}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
-                </CardContent>
-              </Card>
+              <Link to="/services" key={index} className="block group">
+                <Card className="hover:shadow-lg transition-shadow group-hover:ring-2 group-hover:ring-primary cursor-pointer">
+                  <CardContent className="p-6">
+                    <div className="mb-4">
+                      {service.icon}
+                    </div>
+                    <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
+                    <p className="text-muted-foreground">{service.description}</p>
+                  </CardContent>
+                </Card>
+              </Link>
             ))}
           </div>
 

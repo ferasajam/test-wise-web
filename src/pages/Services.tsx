@@ -26,7 +26,7 @@ const Services = () => {
         "Regression Testing",
         "User Acceptance Tests"
       ],
-      tools: ["Testfall-Management", "Bug-Tracking", "Screen Recording"],
+      tools: ["Testfall-Management", "Bug-Tracking", "Screen Recording","TestRail", "Confluence", "Jira"],
       benefits: "Erkennung komplexer Fehler, die automatisierte Tests übersehen könnten"
     },
     {
@@ -38,9 +38,10 @@ const Services = () => {
         "API Testing", 
         "Integration Tests",
         "Continuous Testing",
-        "Cross-Browser Testing"
+        "Cross-Browser Testing",
+        "Mobile Testing"
       ],
-      tools: ["Selenium", "Playwright", "Postman", "Cypress", "Jest"],
+      tools: ["Selenium", "Playwright", "Postman", "Cypress", "Espresso", "XCUITest","Appium"],
       benefits: "Schnelle Ausführung, wiederholbare Tests, frühzeitige Fehlererkennung"
     },
     {
@@ -223,8 +224,8 @@ const Services = () => {
 
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {[
-                  "Selenium", "Playwright", "Postman", "JMeter", "k6", "Cypress",
-                  "OWASP ZAP", "Burp Suite", "Jest", "LoadRunner", "Gatling", "TestRail"
+                  "Selenium", "Playwright", "Postman", "JMeter", "Confluence", "Cypress",
+                  "OWASP ZAP", "Burp Suite", "Appium", "LoadRunner", "Jira", "TestRail"
                 ].map((tool, index) => (
                   <Badge key={index} variant="outline" className="p-3 text-center justify-center">
                     {tool}
