@@ -1,3 +1,4 @@
+import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -69,31 +70,37 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-primary/10 to-primary-light py-20 lg:py-32">
+      {/* Hero Section (Simplified) */}
+      <section className="relative bg-white dark:bg-background py-20 lg:py-32 border-b border-muted">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
+            <div className="space-y-10">
+              <h1
+                className="text-5xl lg:text-7xl font-extrabold leading-tight mb-4 text-primary animate-fadein"
+                style={{ letterSpacing: '0.01em', lineHeight: '1.1' }}
+              >
                 Wir testen für Sie
               </h1>
-              <p className="text-xl lg:text-2xl text-muted-foreground">
-                Zuverlässige Softwaretests – individuell, sicher und effizient
+              <p
+                className="text-2xl lg:text-3xl font-semibold mb-6 text-muted-foreground animate-fadein-slow"
+                style={{ letterSpacing: '0.01em', lineHeight: '1.3' }}
+              >
+                Zuverlässige Qualitätssicherung – individuell, sicher und effizient
               </p>
               <div className="space-y-4">
-                <Button size="lg" className="bg-tech-gradient shadow-blue hover:shadow-lg transition-all">
+                <Button size="lg" className="bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
                   <Link to="/contact">Jetzt kostenloses Erstgespräch buchen</Link>
                 </Button>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-base text-muted-foreground animate-fadein-slow">
                   Unverbindliche Beratung · Schnelle Antwort · Individuelle Lösungen
                 </p>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative animate-fadein-slow">
               <img 
                 src={testingHero} 
                 alt="Software Testing Hero" 
-                className="rounded-lg shadow-blue w-full"
+                className="rounded-lg shadow w-full"
               />
             </div>
           </div>
@@ -114,13 +121,27 @@ const Home = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex justify-center mb-4 text-primary">
-                    {feature.icon}
+              <Card
+                key={index}
+                tabIndex={0}
+                className="group relative overflow-hidden bg-white dark:bg-background border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.03] hover:ring-2 hover:ring-primary focus:shadow-xl focus:scale-[1.03] focus:ring-2 focus:ring-primary text-center cursor-pointer outline-none"
+                style={{ minHeight: 180 }}
+              >
+                <span className="absolute -top-8 -right-8 w-24 h-24 bg-gradient-to-br from-primary/30 via-blue-400/20 to-purple-400/10 rounded-full blur-2xl opacity-60 pointer-events-none transition-all duration-300 group-hover:scale-110 group-focus:scale-110" />
+                <CardContent className="p-6 flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center">
+                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-gradient-to-br from-primary via-blue-500 to-purple-500 text-white shadow-lg group-hover:scale-110 group-focus:scale-110 transition-transform duration-300 animate-fadein">
+                      {React.cloneElement(feature.icon, {
+                        className: 'h-6 w-6 transition-colors duration-300 text-primary/80 group-hover:text-white group-focus:text-white',
+                      })}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-                  <p className="text-muted-foreground">{feature.description}</p>
+                  <h3 className="text-lg font-bold mb-2 text-primary group-hover:text-blue-600 group-focus:text-blue-600 transition-colors duration-200">
+                    {feature.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-2">
+                    {feature.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
@@ -143,13 +164,25 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {services.map((service, index) => (
               <Link to="/services" key={index} className="block group">
-                <Card className="hover:shadow-lg transition-shadow group-hover:ring-2 group-hover:ring-primary cursor-pointer">
-                  <CardContent className="p-6">
-                    <div className="mb-4">
-                      {service.icon}
+                <Card
+                  className="relative overflow-hidden bg-white dark:bg-background border-0 shadow-md group-hover:shadow-xl transition-all duration-300 group-hover:scale-[1.03] group-hover:ring-2 group-hover:ring-primary cursor-pointer"
+                  style={{ minHeight: 260 }}
+                >
+                  <span className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-primary/30 via-blue-400/20 to-purple-400/10 rounded-full blur-2xl opacity-60 pointer-events-none transition-all duration-300 group-hover:scale-110" />
+                  <CardContent className="p-8 flex flex-col items-center text-center">
+                    <div className="mb-4 flex items-center justify-center">
+                      <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary via-blue-500 to-purple-500 text-white shadow-lg group-hover:scale-110 transition-transform duration-300 animate-fadein">
+                        {React.cloneElement(service.icon, {
+                          className: 'h-8 w-8 transition-colors duration-300 text-primary/80 group-hover:text-white',
+                        })}
+                      </span>
                     </div>
-                    <h3 className="text-xl font-semibold mb-3">{service.title}</h3>
-                    <p className="text-muted-foreground">{service.description}</p>
+                    <h3 className="text-2xl font-bold mb-2 text-primary group-hover:text-blue-600 transition-colors duration-200">
+                      {service.title}
+                    </h3>
+                    <p className="text-base text-muted-foreground mb-2">
+                      {service.description}
+                    </p>
                   </CardContent>
                 </Card>
               </Link>

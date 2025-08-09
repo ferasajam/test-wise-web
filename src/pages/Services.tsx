@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -128,10 +129,20 @@ const Services = () => {
         <section className="mb-20">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             {services.map((service, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card
+                key={index}
+                tabIndex={0}
+                className="relative overflow-hidden bg-white dark:bg-background border-0 shadow-md hover:shadow-xl focus:shadow-xl transition-all duration-300 hover:scale-[1.03] focus:scale-[1.03] hover:ring-2 focus:ring-2 hover:ring-primary focus:ring-primary cursor-pointer group"
+                style={{ minHeight: 260 }}
+              >
+                <span className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-primary/30 via-blue-400/20 to-purple-400/10 rounded-full blur-2xl opacity-60 pointer-events-none transition-all duration-300 group-hover:scale-110 group-focus:scale-110" />
                 <CardHeader>
                   <div className="flex items-center space-x-4 mb-4">
-                    {service.icon}
+                    <span className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary via-blue-500 to-purple-500 text-white shadow-lg group-hover:scale-110 group-focus:scale-110 transition-transform duration-300 animate-fadein">
+                      {React.cloneElement(service.icon, {
+                        className: 'h-10 w-10 transition-colors duration-300 text-primary/80 group-hover:text-white group-focus:text-white',
+                      })}
+                    </span>
                     <CardTitle className="text-2xl">{service.title}</CardTitle>
                   </div>
                   <p className="text-muted-foreground">{service.description}</p>
@@ -159,7 +170,11 @@ const Services = () => {
                     </h4>
                     <div className="flex flex-wrap gap-2">
                       {service.tools.map((tool, idx) => (
-                        <Badge key={idx} variant="secondary">
+                        <Badge
+                          key={idx}
+                          variant="secondary"
+                          className="transition-all duration-200 group-hover:bg-primary group-hover:text-primary-foreground group-hover:border-primary group-focus:bg-primary group-focus:text-primary-foreground group-focus:border-primary"
+                        >
                           {tool}
                         </Badge>
                       ))}

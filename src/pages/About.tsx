@@ -1,3 +1,4 @@
+import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -34,28 +35,28 @@ const About = () => {
     }
   ];
 
-  const teamStats = [
-    {
-      number: "10+",
-      label: "Jahre Erfahrung",
-      icon: <Award className="h-6 w-6" />
-    },
-    {
-      number: "500+",
-      label: "Erfolgreiche Projekte",
-      icon: <CheckCircle className="h-6 w-6" />
-    },
-    {
-      number: "50+",
-      label: "Zufriedene Kunden",
-      icon: <Users className="h-6 w-6" />
-    },
-    {
-      number: "99%",
-      label: "Kundenzufriedenheit",
-      icon: <Star className="h-6 w-6" />
-    }
-  ];
+  // const teamStats = [
+  //   {
+  //     number: "10+",
+  //     label: "Jahre Erfahrung",
+  //     icon: <Award className="h-6 w-6" />
+  //   },
+  //   {
+  //     number: "500+",
+  //     label: "Erfolgreiche Projekte",
+  //     icon: <CheckCircle className="h-6 w-6" />
+  //   },
+  //   {
+  //     number: "50+",
+  //     label: "Zufriedene Kunden",
+  //     icon: <Users className="h-6 w-6" />
+  //   },
+  //   {
+  //     number: "99%",
+  //     label: "Kundenzufriedenheit",
+  //     icon: <Star className="h-6 w-6" />
+  //   }
+  // ];
 
   return (
     <div className="min-h-screen py-20">
@@ -75,41 +76,23 @@ const About = () => {
         <section className="mb-20">
           <Card className="bg-primary-light border-none">
             <CardContent className="p-8 lg:p-12">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-                <div>
-                  <h2 className="text-3xl font-bold mb-6 text-primary">
-                    Unsere Mission
-                  </h2>
-                  <p className="text-lg text-muted-foreground mb-6">
-                    Wir glauben, dass qualitativ hochwertige Software das Fundament 
-                    für erfolgreiche Unternehmen ist. Unser Ziel ist es, durch 
-                    professionelle und umfassende Softwaretests sicherzustellen, 
-                    dass Ihre Anwendungen fehlerfrei funktionieren und Ihre Nutzer 
-                    begeistern.
-                  </p>
-                  <p className="text-lg text-muted-foreground">
-                    Mit modernsten Testmethoden, individuellen Lösungsansätzen und 
-                    jahrelanger Erfahrung sind wir Ihr zuverlässiger Partner für 
-                    alle Aspekte der Qualitätssicherung.
-                  </p>
-                </div>
-                <div className="grid grid-cols-2 gap-4">
-                  {teamStats.map((stat, index) => (
-                    <Card key={index} className="text-center">
-                      <CardContent className="p-6">
-                        <div className="flex justify-center mb-2 text-primary">
-                          {stat.icon}
-                        </div>
-                        <div className="text-2xl font-bold text-primary mb-1">
-                          {stat.number}
-                        </div>
-                        <div className="text-sm text-muted-foreground">
-                          {stat.label}
-                        </div>
-                      </CardContent>
-                    </Card>
-                  ))}
-                </div>
+              <div className="flex flex-col items-center justify-center min-h-[300px]">
+                <h2 className="text-3xl font-bold mb-6 text-primary text-center">
+                  Unsere Mission
+                </h2>
+                <p
+                  className="text-2xl md:text-3xl font-semibold mb-6 bg-gradient-to-r from-primary via-blue-500 to-purple-500 bg-clip-text text-transparent animate-fadein text-center"
+                  style={{
+                    letterSpacing: '0.01em',
+                    lineHeight: '1.3',
+                    transition: 'color 0.3s',
+                  }}
+                >
+                  Wir glauben, dass qualitativ hochwertige Software das Fundament für erfolgreiche Unternehmen ist. Unser Ziel ist es, durch professionelle und umfassende Softwaretests sicherzustellen, dass Ihre Anwendungen fehlerfrei funktionieren und Ihre Nutzer begeistern.
+                </p>
+                <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
+                  Mit modernsten Testmethoden, individuellen Lösungsansätzen und jahrelanger Erfahrung sind wir Ihr zuverlässiger Partner für alle Aspekte der Qualitätssicherung.
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -128,13 +111,27 @@ const About = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <Card key={index} className="text-center hover:shadow-lg transition-shadow">
-                <CardContent className="p-6">
-                  <div className="flex justify-center mb-4">
-                    {value.icon}
+              <Card
+                key={index}
+                tabIndex={0}
+                className="group relative overflow-hidden bg-white dark:bg-background border-0 shadow-md hover:shadow-xl transition-all duration-300 hover:scale-[1.03] hover:ring-2 hover:ring-primary focus:shadow-xl focus:scale-[1.03] focus:ring-2 focus:ring-primary text-center cursor-pointer outline-none"
+                style={{ minHeight: 220 }}
+              >
+                <span className="absolute -top-8 -right-8 w-32 h-32 bg-gradient-to-br from-primary/30 via-blue-400/20 to-purple-400/10 rounded-full blur-2xl opacity-60 pointer-events-none transition-all duration-300 group-hover:scale-110 group-focus:scale-110" />
+                <CardContent className="p-8 flex flex-col items-center text-center">
+                  <div className="mb-4 flex items-center justify-center">
+                    <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-br from-primary via-blue-500 to-purple-500 text-white shadow-lg group-hover:scale-110 group-focus:scale-110 transition-transform duration-300 animate-fadein">
+                      {React.cloneElement(value.icon, {
+                        className: 'h-8 w-8 transition-colors duration-300 text-primary/80 group-hover:text-white group-focus:text-white',
+                      })}
+                    </span>
                   </div>
-                  <h3 className="text-xl font-semibold mb-3">{value.title}</h3>
-                  <p className="text-muted-foreground">{value.description}</p>
+                  <h3 className="text-xl font-bold mb-2 text-primary group-hover:text-blue-600 group-focus:text-blue-600 transition-colors duration-200">
+                    {value.title}
+                  </h3>
+                  <p className="text-base text-muted-foreground mb-2">
+                    {value.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}
