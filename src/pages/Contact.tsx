@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -26,9 +27,20 @@ const Contact = () => {
     message: ""
   });
 
+  const [captchaValue, setCaptchaValue] = useState<string | null>(null);
+  const [success, setSuccess] = useState(false);
+  const [sending, setSending] = useState(false);
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
+    if (!captchaValue) {
+      toast({
+        title: "Bitte bestätigen Sie das reCAPTCHA.",
+        variant: "destructive"
+      });
+      return;
+    }
+    setSending(true);
     // EmailJS Integration
     emailjs.send(
       "service_ctpuc3t", // <-- Ersetze mit deinem Service ID
@@ -44,10 +56,7 @@ const Contact = () => {
       "4H9jvO3X2gzA483bC" // <-- Ersetze mit deinem Public Key
     )
     .then(() => {
-      toast({
-        title: "Nachricht gesendet!",
-        description: "Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.",
-      });
+      setSuccess(true);
       setFormData({
         name: "",
         email: "",
@@ -56,6 +65,7 @@ const Contact = () => {
         projectType: "",
         message: ""
       });
+      setCaptchaValue(null);
     })
     .catch(() => {
       toast({
@@ -63,7 +73,8 @@ const Contact = () => {
         description: "Bitte versuchen Sie es später erneut oder kontaktieren Sie uns direkt.",
         variant: "destructive"
       });
-    });
+    })
+    .finally(() => setSending(false));
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -108,6 +119,7 @@ const Contact = () => {
     "Erfahrenes Team mit nachgewiesener Expertise"
   ];
 
+
   return (
     <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
@@ -136,6 +148,12 @@ const Contact = () => {
                 </p>
               </CardHeader>
               <CardContent>
+                {success && (
+                  <div className="mb-6 p-4 rounded bg-green-100 text-green-800 border border-green-300 text-center">
+                    <strong>Nachricht erfolgreich gesendet!</strong><br />
+                    Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.
+                  </div>
+                )}
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
@@ -210,8 +228,16 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button id="btn" type="submit" size="lg" className="w-full">
-                    Nachricht senden
+                  <div className="flex justify-center">
+                    <ReCAPTCHA
+                      sitekey="6LdEFp8rAAAAAA7AwP0ODoX7GWg3Mm2NJOVVfuA_"
+                      onChange={setCaptchaValue}
+                      theme="light"
+                    />
+                  </div>
+
+                  <Button id="btn" type="submit" size="lg" className="w-full" disabled={sending}>
+                    {sending ? "Senden..." : "Nachricht senden"}
                   </Button>
 
                   <p className="text-sm text-muted-foreground text-center">
