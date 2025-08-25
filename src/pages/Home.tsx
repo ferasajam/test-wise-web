@@ -1,4 +1,51 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+// CookieConsentBanner as section with multiple options
+const CookieConsentBanner = () => {
+  const [open, setOpen] = useState(false);
+
+  useEffect(() => {
+    const consent = localStorage.getItem("cookieConsent");
+    if (!consent) setOpen(true);
+  }, []);
+
+  const choose = (choice: "all" | "necessary" | "none") => {
+    localStorage.setItem("cookieConsent", choice);
+    setOpen(false);
+  };
+
+  if (!open) return null;
+  return (
+    <section aria-label="Cookie-Banner" className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t border-muted">
+      <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
+        <p className="text-sm text-muted-foreground">
+          Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können auswählen, welche Cookies Sie zulassen möchten.
+        </p>
+        <div className="flex items-center gap-2">
+          <Button
+            variant="secondary"
+            className="bg-muted text-primary hover:bg-muted/80"
+            onClick={() => choose("none")}
+          >
+            Alle ablehnen
+          </Button>
+          <Button
+            variant="outline"
+            className="bg-muted text-primary hover:bg-muted/80"
+            onClick={() => choose("necessary")}
+          >
+            Nur notwendige Cookies
+          </Button>
+          <Button
+            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            onClick={() => choose("all")}
+          >
+            Alle akzeptieren
+          </Button>
+        </div>
+      </div>
+    </section>
+  );
+};
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -70,6 +117,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+  <CookieConsentBanner />
       {/* Hero Section (Simplified) */}
       <section className="relative bg-white dark:bg-background py-20 lg:py-32 border-b border-muted">
         <div className="container mx-auto px-4">
