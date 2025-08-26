@@ -15,28 +15,27 @@ const CookieConsentBanner = () => {
 
   if (!open) return null;
   return (
-    <section aria-label="Cookie-Banner" className="fixed bottom-0 left-0 right-0 z-50 bg-background border-t border-muted">
-      <div className="container mx-auto px-4 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-        <p className="text-sm text-muted-foreground">
+    <section aria-label="Cookie-Banner" className="fixed bottom-0 left-0 right-0 z-50 bg-background/95 backdrop-blur border-t border-muted pb-[env(safe-area-inset-bottom)]">
+      <div className="container mx-auto px-4 py-3 flex flex-wrap items-center justify-between gap-2">
+        <p className="text-sm text-muted-foreground flex-1 min-w-[240px]">
           Wir verwenden Cookies, um Ihr Erlebnis zu verbessern. Sie können auswählen, welche Cookies Sie zulassen möchten.
         </p>
-        <div className="flex items-center gap-2">
+        <div className="flex flex-wrap items-center gap-2">
           <Button
             variant="secondary"
-            className="bg-muted text-primary hover:bg-muted/80"
+            className="bg-muted text-primary hover:bg-muted/80 whitespace-nowrap px-3 py-2 text-sm"
             onClick={() => choose("none")}
           >
             Alle ablehnen
           </Button>
           <Button
-            variant="outline"
-            className="bg-muted text-primary hover:bg-muted/80"
+            className="bg-muted text-primary hover:bg-muted/80 whitespace-nowrap px-3 py-2 text-sm"
             onClick={() => choose("necessary")}
           >
             Nur notwendige Cookies
           </Button>
           <Button
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
+            className="bg-primary text-primary-foreground hover:bg-primary/90 whitespace-nowrap px-3 py-2 text-sm"
             onClick={() => choose("all")}
           >
             Alle akzeptieren
