@@ -237,7 +237,10 @@ const Home = () => {
           </div>
 
           <div className="text-center">
-            <Button variant="outline" size="lg">
+            <Button
+              size="lg"
+              className="bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all"
+            >
               <Link to="/services">Alle Leistungen ansehen</Link>
             </Button>
           </div>
