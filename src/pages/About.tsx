@@ -207,13 +207,17 @@ const About = () => {
               <p className="text-xl mb-6 opacity-90">
                 Überzeugen Sie sich selbst von unserer Expertise und Leidenschaft
               </p>
-              <Button 
-                size="lg" 
-                variant="secondary"
-                className="bg-background text-primary hover:bg-background/90"
-              >
-                <Link to="/contact">Kostenloses Kennenlern-Gespräch vereinbaren</Link>
-              </Button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <Button 
+                  size="lg" 
+                  variant="secondary"
+                  className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
+                >
+                  <Link to="/contact" className="block px-4">
+                    Kostenloses Kennenlern-Gespräch vereinbaren
+                  </Link>
+                </Button>
+              </div>
             </CardContent>
           </Card>
         </section>
