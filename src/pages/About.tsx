@@ -214,7 +214,7 @@ const About = () => {
                   className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
                 >
                   <Link to="/contact" className="block px-4">
-                    Kostenloses Kennenlern-Gespräch vereinbaren
+                    Kostenloses Gespräch vereinbaren
                   </Link>
                 </Button>
               </div>
