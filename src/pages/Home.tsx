@@ -67,22 +67,22 @@ const Home = () => {
     {
       icon: <Shield className="h-6 w-6" />,
       title: "Sicherheit",
-      description: "Penetrationstests nach OWASP Top 10 Standards"
+      description: "Höchste Systemsicherheit durch frühzeitige Erkennung kritischer Schwachstellen"
     },
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Automatisierung", 
-      description: "Moderne Tools wie Selenium, Playwright und Postman"
+      description: "Zeiteinsparung und Effizienzsteigerung durch automatisierte Testabläufe"
     },
     {
       icon: <Target className="h-6 w-6" />,
       title: "Präzision",
-      description: "Manuelle Tests für maximale Genauigkeit"
+      description: "Detaillierte Prüfungen für höchste Testgenauigkeit"
     },
     {
       icon: <Gauge className="h-6 w-6" />,
       title: "Performance",
-      description: "Last- und Performancetests mit JMeter und k6"
+      description: "Hohe Stabilität und Geschwindigkeit auch unter Spitzenlast"
     }
   ];
 
