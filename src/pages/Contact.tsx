@@ -15,7 +15,16 @@ import {
   MessageCircle,
   CheckCircle
 } from "lucide-react";
-
+// Hinweis für Cypress: Das Nachrichtenfeld ist ein <textarea>, kein <input>.
+// In Tests daher: cy.get('textarea[name="message"]')
+export const contactTestSelectors = {
+  name: 'input[name="name"]',
+  email: 'input[name="email"]',
+  company: 'input[name="company"]',
+  phone: 'input[name="phone"]',
+  projectType: 'input[name="projectType"]',
+  message: 'textarea[name="message"]',
+};
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
