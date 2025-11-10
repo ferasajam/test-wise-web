@@ -23,7 +23,7 @@ const Legal = () => {
           <section>
             <h2 className="text-xl font-semibold mb-3">Kontakt</h2>
             <p>
-              Telefon: +49 (0) 151 67543709<br />
+              Telefon: +49 (0) 170 5975430<br />
               E-Mail: info@quality-1st.de
             </p>
           </section>
@@ -115,7 +115,7 @@ const Legal = () => {
               Feras Ajam<br />
               Corrensstr. 88<br />
               48149 Münster<br />
-              Telefon: +49 (0) 151 67543709<br />
+              Telefon: +49 (0) 170 5975430<br />
               E-Mail: info@quality-1st.de
             </p>
           </section>
