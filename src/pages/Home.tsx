@@ -88,6 +88,21 @@ const Home = () => {
 
   const services = [
     {
+      icon: <Settings className="h-8 w-8 text-primary" />,
+      title: "Webseiten-Erstellung",
+      description: "Moderne, performante Webseiten für Ihr Business"
+    },
+    {
+      icon: <Settings className="h-8 w-8 text-primary" />,
+      title: "Android & iOS Apps",
+      description: "Mobile Apps für alle Plattformen – benutzerfreundlich und sicher"
+    },
+    {
+      icon: <Zap className="h-8 w-8 text-primary" />,
+      title: "KI-Agenten & Automatisierung",
+      description: "Individuelle KI-Lösungen und Automatisierung für Ihr Unternehmen"
+    },
+    {
       icon: <Bug className="h-8 w-8 text-primary" />,
       title: "Manuelle Tests",
       description: "Gründliche manuelle Testverfahren für optimale Qualitätssicherung"
@@ -126,13 +141,13 @@ const Home = () => {
                 className="text-5xl lg:text-7xl font-extrabold leading-tight mb-4 text-primary animate-fadein"
                 style={{ letterSpacing: '0.01em', lineHeight: '1.1' }}
               >
-                Wir testen für Sie
+                Digitale Lösungen & Qualitätssicherung
               </h1>
               <p
                 className="text-2xl lg:text-3xl font-semibold mb-6 text-muted-foreground animate-fadein-slow"
                 style={{ letterSpacing: '0.01em', lineHeight: '1.3' }}
               >
-                Zuverlässige Qualitätssicherung – individuell, sicher und effizient
+                Webseiten, Apps, KI-Agenten & professionelle Softwaretests – individuell, sicher und effizient
               </p>
               <div className="space-y-4">
                 <Button size="lg" className="bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">

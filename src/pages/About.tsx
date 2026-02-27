@@ -16,22 +16,22 @@ const About = () => {
     {
       icon: <Heart className="h-8 w-8 text-primary" />,
       title: "Leidenschaft",
-      description: "Wir brennen für Qualität und perfekte Software"
+      description: "Unsere Passion ist es, innovative digitale Lösungen zu schaffen – von modernen Webseiten bis zu smarten KI-Agenten."
     },
     {
       icon: <Target className="h-8 w-8 text-primary" />,
-      title: "Präzision",
-      description: "Jeder Test wird mit höchster Sorgfalt durchgeführt"
+      title: "Präzision & Qualität",
+      description: "Klare Standards, saubere Umsetzung und verlässliche Ergebnisse – von der Konzeption bis zum stabilen Betrieb."
     },
     {
       icon: <Award className="h-8 w-8 text-primary" />,
-      title: "Expertise",
-      description: "Jahrelange Erfahrung in allen Bereichen des Softwaretestings"
+      title: "Technologie-Expertise",
+      description: "Fundierte Erfahrung in Web, Mobile, KI und Testing – kombiniert mit pragmatischem Engineering und Best Practices."
     },
     {
       icon: <Users className="h-8 w-8 text-primary" />,
-      title: "Teamarbeit",
-      description: "Enge Zusammenarbeit mit unseren Kunden für optimale Ergebnisse"
+      title: "Partnerschaft",
+      description: "Wir arbeiten transparent und agil- eng mit Ihnen abgestimmt, damit Lösungen wirklich zu Ihrem Bedarf passen."
     }
   ];
 
@@ -67,8 +67,7 @@ const About = () => {
             Über uns
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ein erfahrenes Team mit Leidenschaft für Qualität und dem Anspruch, 
-            jeden Auftrag mit größter Sorgfalt und Präzision zu bearbeiten.
+            Wir sind ein erfahrenes Team für Qualitätssicherung, Webentwicklung, App-Entwicklung und KI-Lösungen. Unsere Leidenschaft: Digitale Innovation und nachhaltige Qualität für Ihr Unternehmen.
           </p>
         </div>
 
@@ -88,10 +87,10 @@ const About = () => {
                     transition: 'color 0.3s',
                   }}
                 >
-                  Wir glauben, dass qualitativ hochwertige Software das Fundament für erfolgreiche Unternehmen ist. Unser Ziel ist es, durch professionelle und umfassende Softwaretests sicherzustellen, dass Ihre Anwendungen fehlerfrei funktionieren und Ihre Nutzer begeistern.
+                  Wir glauben, dass digitale Innovation und Qualität die Basis für nachhaltigen Unternehmenserfolg sind. Unser Ziel: Webseiten, Apps, KI-Agenten und Softwaretests, die begeistern – und Ihr Business spürbar voranbringen.
                 </p>
                 <p className="text-lg text-muted-foreground text-center max-w-2xl mx-auto">
-                  Mit modernsten Testmethoden, individuellen Lösungsansätzen und jahrelanger Erfahrung sind wir Ihr zuverlässiger Partner für alle Aspekte der Qualitätssicherung.
+                  Mit modernen Technologien, individuellen Lösungen und viel Erfahrung begleiten wir Sie von der Idee bis zum erfolgreichen Produkt – und darüber hinaus.
                 </p>
               </div>
             </CardContent>
@@ -149,10 +148,9 @@ const About = () => {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-1">Individuelle Beratung</h3>
+                    <h3 className="font-semibold mb-1">Ganzheitliche Beratung</h3>
                     <p className="text-muted-foreground">
-                      Jedes Projekt ist einzigartig. Wir entwickeln maßgeschneiderte 
-                      Teststrategien für Ihre spezifischen Anforderungen.
+                      Wir begleiten Sie von der Idee bis zum fertigen Produkt – ob Webseite, App, KI-Agent oder Teststrategie.
                     </p>
                   </div>
                 </div>
@@ -161,18 +159,16 @@ const About = () => {
                   <div>
                     <h3 className="font-semibold mb-1">Transparente Kommunikation</h3>
                     <p className="text-muted-foreground">
-                      Sie werden über jeden Schritt informiert und erhalten 
-                      verständliche, ausführliche Testberichte.
+                      Sie erhalten verständliche Beratung, regelmäßige Updates und nachvollziehbare Ergebnisse.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="h-6 w-6 text-primary mt-0.5 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold mb-1">Kontinuierliche Weiterbildung</h3>
+                    <h3 className="font-semibold mb-1">Technologische Weiterentwicklung</h3>
                     <p className="text-muted-foreground">
-                      Wir bleiben stets auf dem neuesten Stand der Technik und 
-                      Best Practices im Softwaretesting.
+                      Wir setzen auf moderne Technologien und bilden uns stetig weiter – für innovative, zukunftssichere Lösungen.
                     </p>
                   </div>
                 </div>
@@ -202,10 +198,10 @@ const About = () => {
           <Card className="bg-primary text-primary-foreground">
             <CardContent className="p-8">
               <h2 className="text-3xl font-bold mb-4">
-                Lernen Sie uns kennen
+                Lernen Sie unser Team & unsere Services kennen
               </h2>
               <p className="text-xl mb-6 opacity-90">
-                Überzeugen Sie sich selbst von unserer Expertise und Leidenschaft
+                Überzeugen Sie sich von unserer Expertise in Webentwicklung, App-Entwicklung, KI-Agenten und Qualitätssicherung!
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Button 

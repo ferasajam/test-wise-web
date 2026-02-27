@@ -138,7 +138,7 @@ const Contact = () => {
             Kontakt
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Bereit für professionelle Softwaretests? Lassen Sie uns über Ihr Projekt sprechen.
+            Sie möchten eine Webseite, App, einen KI-Agenten oder professionelle Tests umsetzen? Schreiben Sie uns – wir beraten Sie individuell und unverbindlich!
           </p>
         </div>
 

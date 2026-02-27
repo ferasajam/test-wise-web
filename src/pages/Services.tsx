@@ -17,6 +17,51 @@ import { Link } from "react-router-dom";
 const Services = () => {
   const services = [
     {
+      icon: <Settings className="h-12 w-12 text-primary" />,
+      title: "Webseiten-Erstellung",
+      description: "Moderne, performante und individuelle Webseiten für Ihr Business – von der Konzeption bis zum Launch.",
+      features: [
+        "Responsive Webdesign",
+        "SEO-Optimierung",
+        "Content-Management-Systeme (CMS)",
+        "E-Commerce-Lösungen",
+        "Wartung & Support",
+        "Testing & Qualitätssicherung"
+      ],
+      tools: ["React", "Angular", "Next.js", "Vite", "WordPress", "TailwindCSS", "Vercel"],
+      benefits: "Starke Online-Präsenz, schnelle Ladezeiten, individuelle Lösungen"
+    },
+    {
+      icon: <Settings className="h-12 w-12 text-primary" />,
+      title: "Android & iOS Apps",
+      description: "Entwicklung von mobilen Apps für Android und iOS – benutzerfreundlich, performant und sicher.",
+      features: [
+        "Native & Cross-Platform Entwicklung",
+        "App Store & Play Store Launch",
+        "UI/UX Design",
+        "API-Integration",
+        "Wartung & Updates",
+        "Testing & Qualitätssicherung"
+      ],
+      tools: ["React Native", "Flutter", "Swift", "Kotlin", "Expo"],
+      benefits: "Erreichen Sie Ihre Kunden auf allen mobilen Endgeräten"
+    },
+    {
+      icon: <Zap className="h-12 w-12 text-primary" />,
+      title: "KI-Agenten & Automatisierung",
+      description: "Individuelle KI-Lösungen und Automatisierung für Ihr Unternehmen – von Chatbots bis zu intelligenten Workflows.",
+      features: [
+        "Chatbots & virtuelle Assistenten",
+        "Prozessautomatisierung",
+        "Datenanalyse & Prognosen",
+        "Integration von KI-APIs",
+        "Custom AI-Modelle",
+        "Testing & Qualitätssicherung"
+      ],
+      tools: ["OpenAI", "LangChain", "Python", "Node.js", "Azure AI", "Dialogflow","n8n"],
+      benefits: "Effizienzsteigerung, 24/7 Service, innovative Kundenerlebnisse"
+    },
+    {
       icon: <Bug className="h-12 w-12 text-primary" />,
       title: "Manuelle Tests",
       description: "Gründliche manuelle Testverfahren durch erfahrene Tester für maximale Qualitätssicherung.",
@@ -118,10 +163,10 @@ const Services = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h1 className="text-4xl lg:text-5xl font-bold mb-6">
-            Unsere Leistungen
+            Unsere Leistungen & digitalen Services
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Umfassende Testdienstleistungen für alle Phasen Ihres Softwareentwicklungsprozesses
+            Umfassende Testdienstleistungen, Webentwicklung, App-Entwicklung und KI-Lösungen für Ihr Unternehmen
           </p>
         </div>
 
@@ -197,30 +242,43 @@ const Services = () => {
         <section className="mb-20">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-              Unser Vorgehen
+              Unser Weg zu Ihrem digitalen Erfolg
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Ein strukturierter Prozess für optimale Ergebnisse
+              Von der ersten Idee bis zum erfolgreichen Produkt: So entstehen Webseiten, Apps, KI-Agenten und Testlösungen, die begeistern.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {processSteps.map((step, index) => (
-              <Card key={index} className="text-center relative">
-                <CardContent className="p-6">
-                  <div className="text-4xl font-bold text-primary mb-4">
-                    {step.step}
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">{step.title}</h3>
-                  <p className="text-muted-foreground text-sm">{step.description}</p>
-                </CardContent>
-                {index < processSteps.length - 1 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <div className="w-8 h-0.5 bg-primary"></div>
-                  </div>
-                )}
-              </Card>
-            ))}
+            {/* Neue Prozessschritte für digitale Services */}
+            <Card className="text-center relative">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-4">01</div>
+                <h3 className="text-xl font-semibold mb-3">Beratung & Ideenfindung</h3>
+                <p className="text-muted-foreground text-sm">Wir analysieren Ihre Ziele und entwickeln gemeinsam innovative digitale Lösungen.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center relative">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-4">02</div>
+                <h3 className="text-xl font-semibold mb-3">Konzeption & Design</h3>
+                <p className="text-muted-foreground text-sm">Individuelle Konzepte, modernes UI/UX-Design und technische Planung für Ihr Projekt.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center relative">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-4">03</div>
+                <h3 className="text-xl font-semibold mb-3">Entwicklung & Umsetzung</h3>
+                <p className="text-muted-foreground text-sm">Agile Entwicklung von Webseiten, Apps, KI-Agenten oder Testlösungen – transparent und effizient.</p>
+              </CardContent>
+            </Card>
+            <Card className="text-center relative">
+              <CardContent className="p-6">
+                <div className="text-4xl font-bold text-primary mb-4">04</div>
+                <h3 className="text-xl font-semibold mb-3">Qualitätssicherung & Launch</h3>
+                <p className="text-muted-foreground text-sm">Umfassende Tests, Optimierung und erfolgreicher Go-Live – für nachhaltigen digitalen Erfolg.</p>
+              </CardContent>
+            </Card>
           </div>
         </section>
 
@@ -239,8 +297,8 @@ const Services = () => {
 
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
                 {[
-                  "Selenium", "Playwright", "Postman", "JMeter", "Confluence", "Cypress",
-                  "OWASP ZAP", "Burp Suite", "Appium", "LoadRunner", "Jira", "TestRail"
+                  "n8n", "React", "Angular", "Next.js", "capacitor", "node.js",
+                  "python", "Postman", "JMeter", "Playwright", "Cypress", "OWASP ZAP"
                 ].map((tool, index) => (
                   <Badge key={index} variant="outline" className="p-3 text-center justify-center">
                     {tool}
@@ -256,10 +314,10 @@ const Services = () => {
           <Card className="bg-primary text-primary-foreground">
             <CardContent className="p-8">
               <h2 className="text-3xl font-bold mb-4">
-                Bereit für professionelle Tests?
+                Bereit für digitale Innovation & Qualität?
               </h2>
               <p className="text-xl mb-6 opacity-90">
-                Lassen Sie uns gemeinsam die perfekte Teststrategie für Ihr Projekt entwickeln
+                Lassen Sie uns gemeinsam Ihre Webseite, App, KI-Agenten oder Teststrategie entwickeln!
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
