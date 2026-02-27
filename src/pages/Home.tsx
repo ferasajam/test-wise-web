@@ -133,27 +133,27 @@ const Home = () => {
     <div className="min-h-screen">
   <CookieConsentBanner />
       {/* Hero Section (Simplified) */}
-      <section className="relative bg-white dark:bg-background py-20 lg:py-32 border-b border-muted">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-10">
+      <section className="relative bg-white dark:bg-background py-12 sm:py-16 md:py-20 lg:py-32 border-b border-muted">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="space-y-8 sm:space-y-10">
               <h1
-                className="text-5xl lg:text-7xl font-extrabold leading-tight mb-4 text-primary animate-fadein"
-                style={{ letterSpacing: '0.01em', lineHeight: '1.1' }}
+                className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-extrabold leading-tight mb-4 text-primary animate-fadein"
+                style={{ letterSpacing: '0.01em', lineHeight: '1.15' }}
               >
                 Digitale Lösungen & Qualitätssicherung
               </h1>
               <p
-                className="text-2xl lg:text-3xl font-semibold mb-6 text-muted-foreground animate-fadein-slow"
+                className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6 text-muted-foreground animate-fadein-slow"
                 style={{ letterSpacing: '0.01em', lineHeight: '1.3' }}
               >
                 Webseiten, Apps, KI-Agenten & professionelle Softwaretests – individuell, sicher und effizient
               </p>
-              <div className="space-y-4">
-                <Button size="lg" className="bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
+              <div className="space-y-2 sm:space-y-4">
+                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
                   <Link to="/contact">Jetzt kostenloses Erstgespräch buchen</Link>
                 </Button>
-                <p className="text-base text-muted-foreground animate-fadein-slow">
+                <p className="text-sm sm:text-base text-muted-foreground animate-fadein-slow">
                   Unverbindliche Beratung · Schnelle Antwort · Individuelle Lösungen
                 </p>
               </div>
@@ -162,7 +162,7 @@ const Home = () => {
               <img 
                 src={testingHero} 
                 alt="Software Testing Hero" 
-                className="rounded-lg shadow w-full"
+                className="rounded-lg shadow w-full max-h-64 sm:max-h-80 md:max-h-none object-cover"
               />
             </div>
           </div>
@@ -170,18 +170,17 @@ const Home = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-4">
               Ihre Vorteile mit Quality1st
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Professionelle Softwaretests mit modernsten Methoden und jahrelanger Erfahrung
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
             {features.map((feature, index) => (
               <Card
                 key={index}
@@ -212,18 +211,17 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-4">
               Unsere Leistungen
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
               Umfassende Testdienstleistungen für alle Anforderungen
             </p>
           </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
             {services.map((service, index) => (
               <Link to="/services" key={index} className="block group">
                 <Card
@@ -254,7 +252,7 @@ const Home = () => {
           <div className="text-center">
             <Button
               size="lg"
-              className="bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all"
+              className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all"
             >
               <Link to="/services">Alle Leistungen ansehen</Link>
             </Button>
@@ -263,26 +261,26 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
+      <section className="py-12 sm:py-16 md:py-20 bg-primary text-primary-foreground">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8 text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-4">
             Bereit für professionelle Softwaretests?
           </h2>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-base sm:text-xl mb-4 sm:mb-8 opacity-90">
             Lassen Sie uns Ihre Software auf Herz und Nieren prüfen
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-background text-primary hover:bg-background/90"
+              className="w-full sm:w-auto bg-background text-primary hover:bg-background/90"
             >
               <Link to="/contact">Kostenloses Erstgespräch</Link>
             </Button>
             <Button 
               size="lg" 
               variant="secondary"
-              className="bg-background text-primary hover:bg-background/90"
+              className="w-full sm:w-auto bg-background text-primary hover:bg-background/90"
             >
               <Link to="/services">Leistungen entdecken</Link>
             </Button>
