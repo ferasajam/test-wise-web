@@ -138,8 +138,8 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="Quality1st | Webseiten, Apps, KI-Agenten und Softwaretests"
-        description="Quality1st entwickelt Webseiten, Apps und KI-Agenten und liefert professionelle Softwaretests, damit digitale Produkte sicher, stabil und performante Ergebnisse liefern."
+        title="Quality1st"
+        description="Quality1st erstellt Webseiten und Apps, entwickelt KI-Agenten und bietet professionelle Softwaretests, Testautomatisierung, Penetrationstests und Qualitätssicherung für Unternehmen."
         path="/"
         keywords={[
           "Webseiten erstellen lassen",

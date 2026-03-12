@@ -3,9 +3,9 @@ import { useEffect } from "react";
 export const SITE_NAME = "Quality1st";
 export const SITE_URL = "https://quality-1st.de";
 
-const DEFAULT_TITLE = "Quality1st | Webseiten, Apps, KI-Agenten und Softwaretests";
+const DEFAULT_TITLE = "Quality1st";
 const DEFAULT_DESCRIPTION =
-  "Quality1st entwickelt Webseiten, Apps und KI-Agenten und sorgt mit professionellen Softwaretests für stabile, sichere und performante digitale Produkte.";
+  "Quality1st erstellt Webseiten und Apps, entwickelt KI-Agenten und bietet professionelle Softwaretests, Testautomatisierung, Penetrationstests und Qualitätssicherung für Unternehmen.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
   "Webseiten erstellen",
