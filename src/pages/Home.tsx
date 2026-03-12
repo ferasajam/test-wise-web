@@ -1,5 +1,11 @@
 import React, { useState, useEffect } from "react";
 // CookieConsentBanner as section with multiple options
+import Seo, {
+  SITE_NAME,
+  SITE_URL,
+  getCanonicalUrl,
+  getOrganizationStructuredData,
+} from "@/components/Seo";
 const CookieConsentBanner = () => {
   const [open, setOpen] = useState(false);
 
@@ -130,7 +136,42 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Seo
+        title="Quality1st | Webseiten, Apps, KI-Agenten und Softwaretests"
+        description="Quality1st entwickelt Webseiten, Apps und KI-Agenten und liefert professionelle Softwaretests, damit digitale Produkte sicher, stabil und performante Ergebnisse liefern."
+        path="/"
+        keywords={[
+          "Webseiten erstellen lassen",
+          "App Entwicklung Deutschland",
+          "KI Agenten Unternehmen",
+          "Softwaretests",
+          "Testautomatisierung",
+          "Penetrationstests",
+          "Performance Tests",
+          "Qualitätssicherung",
+        ]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: SITE_NAME,
+            url: SITE_URL,
+            inLanguage: "de-DE",
+            publisher: {
+              "@type": "Organization",
+              name: SITE_NAME,
+            },
+            potentialAction: {
+              "@type": "CommunicateAction",
+              name: "Kostenloses Erstgespräch anfragen",
+              target: getCanonicalUrl("/contact"),
+            },
+          },
+        ]}
+      />
+      <div className="min-h-screen">
   <CookieConsentBanner />
       {/* Hero Section (Simplified) */}
       <section className="relative bg-white dark:bg-background py-12 sm:py-16 md:py-20 lg:py-32 border-b border-muted">
@@ -150,7 +191,7 @@ const Home = () => {
                 Webseiten, Apps, KI-Agenten & professionelle Softwaretests – individuell, sicher und effizient
               </p>
               <div className="space-y-2 sm:space-y-4">
-                <Button size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
+                <Button asChild size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
                   <Link to="/contact">Jetzt kostenloses Erstgespräch buchen</Link>
                 </Button>
                 <p className="text-sm sm:text-base text-muted-foreground animate-fadein-slow">
@@ -251,6 +292,7 @@ const Home = () => {
 
           <div className="text-center">
             <Button
+              asChild
               size="lg"
               className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all"
             >
@@ -271,6 +313,7 @@ const Home = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 justify-center">
             <Button 
+              asChild
               size="lg" 
               variant="secondary"
               className="w-full sm:w-auto bg-background text-primary hover:bg-background/90"
@@ -278,6 +321,7 @@ const Home = () => {
               <Link to="/contact">Kostenloses Erstgespräch</Link>
             </Button>
             <Button 
+              asChild
               size="lg" 
               variant="secondary"
               className="w-full sm:w-auto bg-background text-primary hover:bg-background/90"
@@ -288,6 +332,7 @@ const Home = () => {
         </div>
       </section>
     </div>
+    </>
   );
 };
 

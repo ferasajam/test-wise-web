@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/components/Seo";
 import ReCAPTCHA from "react-google-recaptcha";
 import emailjs from "emailjs-com";
 import { Button } from "@/components/ui/button";
@@ -15,6 +16,7 @@ import {
   MessageCircle,
   CheckCircle
 } from "lucide-react";
+import { Link } from "react-router-dom";
 // Hinweis für Cypress: Das Nachrichtenfeld ist ein <textarea>, kein <input>.
 // In Tests daher: cy.get('textarea[name="message"]')
 export const contactTestSelectors = {
@@ -130,7 +132,36 @@ const Contact = () => {
 
 
   return (
-    <div className="min-h-screen py-20">
+    <>
+      <Seo
+        title="Kontakt | Quality1st"
+        description="Kontaktieren Sie Quality1st für Webseiten, Apps, KI-Agenten oder professionelle Softwaretests. Kostenlose Erstberatung und schnelle Rückmeldung innerhalb von 24 Stunden."
+        path="/contact"
+        keywords={[
+          "Quality1st Kontakt",
+          "Kostenloses Erstgespräch",
+          "Webentwicklung Kontakt",
+          "App Entwicklung Kontakt",
+          "Softwaretests Anfrage",
+        ]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "ContactPage",
+            name: "Kontakt | Quality1st",
+            url: getCanonicalUrl("/contact"),
+            inLanguage: "de-DE",
+            mainEntity: {
+              "@type": "Organization",
+              name: "Quality1st",
+              email: "info@quality-1st.de",
+              telephone: "+49 170 5975430",
+            },
+          },
+        ]}
+      />
+      <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -251,9 +282,7 @@ const Contact = () => {
 
                   <p className="text-sm text-muted-foreground text-center">
                     Mit dem Absenden stimmen Sie unserer{" "}
-                    <a href="/datenschutz" className="text-primary hover:underline">
-                      Datenschutzerklärung
-                    </a>{" "}
+                    <Link to="/datenschutz" className="text-primary hover:underline">Datenschutzerklärung</Link>{" "}
                     zu.
                   </p>
                 </form>
@@ -311,11 +340,14 @@ const Contact = () => {
                   Rufen Sie uns direkt an für eine erste Beratung
                 </p>
                 <Button 
+                  asChild
                   variant="secondary"
                   className="bg-background text-primary hover:bg-background/90"
                 >
-                  <Phone className="h-4 w-4 mr-2" />
-                  +49 (0) 170 5975430
+                  <a href="tel:+491705975430">
+                    <Phone className="h-4 w-4 mr-2" />
+                    +49 (0) 170 5975430
+                  </a>
                 </Button>
               </CardContent>
             </Card>
@@ -323,6 +355,7 @@ const Contact = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/components/Seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { 
@@ -59,7 +60,32 @@ const About = () => {
   // ];
 
   return (
-    <div className="min-h-screen py-20">
+    <>
+      <Seo
+        title="Über uns | Quality1st"
+        description="Lernen Sie Quality1st kennen: ein erfahrenes Team für Webentwicklung, App-Entwicklung, KI-Lösungen und professionelle Qualitätssicherung."
+        path="/about"
+        keywords={[
+          "Über Quality1st",
+          "Webentwicklung Team",
+          "App Entwicklung Agentur",
+          "KI Lösungen Unternehmen",
+          "Qualitätssicherung Experten",
+        ]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "AboutPage",
+            name: "Über uns | Quality1st",
+            url: getCanonicalUrl("/about"),
+            description:
+              "Erfahrenes Team für Webentwicklung, App-Entwicklung, KI-Lösungen und Qualitätssicherung.",
+            inLanguage: "de-DE",
+          },
+        ]}
+      />
+      <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -205,13 +231,12 @@ const About = () => {
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <Button 
+                  asChild
                   size="lg" 
                   variant="secondary"
                   className="bg-background text-primary hover:bg-background/90 w-full sm:w-auto"
                 >
-                  <Link to="/contact" className="block px-4">
-                    Kostenloses Gespräch vereinbaren
-                  </Link>
+                  <Link to="/contact" className="block px-4">Kostenloses Gespräch vereinbaren</Link>
                 </Button>
               </div>
             </CardContent>
@@ -219,6 +244,7 @@ const About = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 

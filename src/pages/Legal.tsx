@@ -1,8 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
+import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/components/Seo";
 import { useLocation } from "react-router-dom";
 
 const Legal = () => {
   const location = useLocation();
+  const isImpressum = location.pathname === "/impressum";
 
   const renderImpressum = () => (
     <div>
@@ -149,11 +151,33 @@ const Legal = () => {
   );
 
   return (
-    <div className="min-h-screen py-20">
+    <>
+      <Seo
+        title={isImpressum ? "Impressum | Quality1st" : "Datenschutz | Quality1st"}
+        description={
+          isImpressum
+            ? "Impressum von Quality1st mit allen Pflichtangaben, Kontaktinformationen und rechtlichen Hinweisen."
+            : "Datenschutzerklärung von Quality1st mit Informationen zur Verarbeitung personenbezogener Daten auf dieser Website."
+        }
+        path={isImpressum ? "/impressum" : "/datenschutz"}
+        keywords={isImpressum ? ["Impressum Quality1st"] : ["Datenschutz Quality1st"]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: isImpressum ? "Impressum | Quality1st" : "Datenschutz | Quality1st",
+            url: getCanonicalUrl(isImpressum ? "/impressum" : "/datenschutz"),
+            inLanguage: "de-DE",
+          },
+        ]}
+      />
+      <div className="min-h-screen py-20">
       <div className="container mx-auto px-4 max-w-4xl">
-        {location.pathname === "/impressum" ? renderImpressum() : renderDatenschutz()}
+        {isImpressum ? renderImpressum() : renderDatenschutz()}
       </div>
     </div>
+    </>
   );
 };
 

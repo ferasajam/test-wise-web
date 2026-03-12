@@ -22,17 +22,18 @@ const Header = () => {
     <header className="bg-background border-b border-border sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Quality1st Logo" className="h-15 w-20" />
+          <Link to="/" className="flex items-center space-x-3" aria-label="Quality1st Startseite">
+            <img src={logo} alt="Quality1st Firmenlogo" className="h-15 w-20" />
             <span className="text-2xl font-bold text-primary">Quality1st</span>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex space-x-8" aria-label="Hauptnavigation">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
+                aria-current={isActive(item.path) ? "page" : undefined}
                 className={`transition-colors hover:text-primary ${
                   isActive(item.path)
                     ? "text-primary font-medium"
@@ -44,14 +45,18 @@ const Header = () => {
             ))}
           </nav>
 
-          <Button className="hidden md:block">
+          <Button asChild className="hidden md:inline-flex">
             <Link to="/contact">Kostenloses Erstgespräch</Link>
           </Button>
 
           {/* Mobile Menu Button */}
           <button
+            type="button"
             className="md:hidden"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-navigation"
           >
             {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -59,11 +64,12 @@ const Header = () => {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <nav className="md:hidden mt-4 pb-4 border-t border-border pt-4">
+          <nav id="mobile-navigation" className="md:hidden mt-4 pb-4 border-t border-border pt-4" aria-label="Mobile Hauptnavigation">
             {navItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
+                aria-current={isActive(item.path) ? "page" : undefined}
                 className={`block py-2 transition-colors hover:text-primary ${
                   isActive(item.path)
                     ? "text-primary font-medium"
@@ -74,7 +80,7 @@ const Header = () => {
                 {item.name}
               </Link>
             ))}
-            <Button className="mt-4 w-full">
+            <Button asChild className="mt-4 w-full">
              <Link to="/contact">Kostenloses Erstgespräch</Link>
             </Button>
           </nav>

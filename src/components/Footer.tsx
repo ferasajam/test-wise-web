@@ -10,8 +10,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-xl font-bold mb-4">Quality1st</h3>
             <p className="text-primary-foreground/80 mb-4">
-              Ihr Partner für professionelle Softwaretests. Zuverlässig, 
-              individuell und effizient.
+              Webseiten, Apps, KI-Agenten und professionelle Softwaretests aus einer Hand.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -65,11 +64,15 @@ const Footer = () => {
             <div className="space-y-2">
               <div className="flex items-center space-x-2 text-primary-foreground/80">
                 <Mail size={16} />
-                <span>info@quality-1st.de</span>
+                <a href="mailto:info@quality-1st.de" className="hover:text-primary-foreground transition-colors">
+                  info@quality-1st.de
+                </a>
               </div>
               <div className="flex items-center space-x-2 text-primary-foreground/80">
                 <Phone size={16} />
-                <span>+491705975430</span>
+                <a href="tel:+491705975430" className="hover:text-primary-foreground transition-colors">
+                  +49 170 5975430
+                </a>
               </div>
             </div>
           </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/components/Seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -71,7 +72,36 @@ const Projects = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <>
+      <Seo
+        title="Projekte | Quality1st"
+        description="Ausgewählte Projekte von Quality1st: Web-Apps, Marken-Websites und digitale Produkte mit Fokus auf Performance, Nutzererlebnis und Qualität."
+        path="/projects"
+        keywords={[
+          "Webdesign Referenzen",
+          "App Projekte",
+          "KI Projekte",
+          "Web App Referenzen",
+          "Quality1st Projekte",
+        ]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Projekte | Quality1st",
+            url: getCanonicalUrl("/projects"),
+            inLanguage: "de-DE",
+            hasPart: projects.map((project) => ({
+              "@type": "CreativeWork",
+              name: project.name,
+              url: project.url,
+              description: project.description,
+            })),
+          },
+        ]}
+      />
+      <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -160,6 +190,7 @@ const Projects = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 

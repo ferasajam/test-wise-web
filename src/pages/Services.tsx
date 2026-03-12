@@ -1,4 +1,5 @@
 import React from "react";
+import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/components/Seo";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -158,7 +159,39 @@ const Services = () => {
   ];
 
   return (
-    <div className="min-h-screen py-20">
+    <>
+      <Seo
+        title="Leistungen | Quality1st"
+        description="Unsere Leistungen umfassen Webseiten, mobile Apps, KI-Agenten, manuelle und automatisierte Tests, Penetrationstests sowie Performance- und Lasttests."
+        path="/services"
+        keywords={[
+          "Webentwicklung Leistungen",
+          "App Entwicklung Leistungen",
+          "KI Agenten",
+          "manuelle Tests",
+          "Testautomatisierung",
+          "Penetrationstests",
+          "Performance Tests",
+        ]}
+        structuredData={[
+          getOrganizationStructuredData(),
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: "Digitale Services und Softwaretests von Quality1st",
+            provider: {
+              "@type": "Organization",
+              name: "Quality1st",
+              url: getCanonicalUrl("/"),
+            },
+            areaServed: "DE",
+            serviceType: services.map((service) => service.title),
+            url: getCanonicalUrl("/services"),
+            inLanguage: "de-DE",
+          },
+        ]}
+      />
+      <div className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center mb-16">
@@ -321,6 +354,7 @@ const Services = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button 
+                  asChild
                   size="lg" 
                   variant="secondary"
                   className="bg-background text-primary hover:bg-background/90"
@@ -328,6 +362,7 @@ const Services = () => {
                   <Link to="/contact">Beratungstermin vereinbaren</Link>
                 </Button>
                 <Button 
+                  asChild
                   size="lg" 
                   variant="outline"
                   className="bg-background text-primary hover:bg-background/90"
@@ -340,6 +375,7 @@ const Services = () => {
         </section>
       </div>
     </div>
+    </>
   );
 };
 
