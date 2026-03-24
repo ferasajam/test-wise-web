@@ -83,6 +83,20 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   ],
 });
 
+export const getWebsiteStructuredData = (): StructuredData => ({
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: SITE_NAME,
+  alternateName: "quality-1st.de",
+  url: SITE_URL,
+  inLanguage: "de-DE",
+  publisher: {
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+  },
+});
+
 const Seo = ({
   title = DEFAULT_TITLE,
   description = DEFAULT_DESCRIPTION,

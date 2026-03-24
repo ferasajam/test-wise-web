@@ -5,6 +5,7 @@ import Seo, {
   SITE_URL,
   getCanonicalUrl,
   getOrganizationStructuredData,
+  getWebsiteStructuredData,
 } from "@/components/Seo";
 const CookieConsentBanner = () => {
   const [open, setOpen] = useState(false);
@@ -154,15 +155,7 @@ const Home = () => {
         structuredData={[
           getOrganizationStructuredData(),
           {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: SITE_NAME,
-            url: SITE_URL,
-            inLanguage: "de-DE",
-            publisher: {
-              "@type": "Organization",
-              name: SITE_NAME,
-            },
+            ...getWebsiteStructuredData(),
             potentialAction: {
               "@type": "CommunicateAction",
               name: "Kostenloses Erstgespräch anfragen",
