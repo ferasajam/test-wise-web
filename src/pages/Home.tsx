@@ -136,21 +136,61 @@ const Home = () => {
     }
   ];
 
+  const seoHighlights = [
+    {
+      title: "Webentwicklung mit SEO-Fokus",
+      description:
+        "Wir erstellen schnelle, responsive Webseiten mit klarer Struktur, starker Nutzerführung und technischer Basis für bessere Rankings und mehr Anfragen.",
+      points: ["Responsive Webdesign", "Klare Landingpages", "Performance und Core Web Vitals"],
+    },
+    {
+      title: "Apps und digitale Produkte",
+      description:
+        "Wir entwickeln Web-Apps und mobile Apps, die Prozesse vereinfachen, Teams entlasten und auf allen relevanten Geräten zuverlässig funktionieren.",
+      points: ["Android und iOS", "Web-Apps für Unternehmen", "Saubere APIs und Tests"],
+    },
+    {
+      title: "KI-Agenten und Automatisierung",
+      description:
+        "Wir bauen KI-Agenten, Chatbots und automatisierte Workflows, die Serviceprozesse beschleunigen und wiederkehrende Aufgaben effizient übernehmen.",
+      points: ["Individuelle Automationen", "Chatbots und Assistenten", "Praxisnahe Integration"],
+    },
+  ];
+
+  const faqs = [
+    {
+      question: "Für welche Unternehmen ist Quality1st geeignet?",
+      answer:
+        "Wir arbeiten für Start-ups, KMU und etablierte Unternehmen, die eine neue Website, eine App, KI-Automatisierung oder messbar bessere Softwarequalität benötigen.",
+    },
+    {
+      question: "Unterstützt Quality1st auch Suchmaschinenoptimierung?",
+      answer:
+        "Ja. Wir verbinden Webentwicklung mit technischer und inhaltlicher SEO, damit Inhalte sauber strukturiert, mobil gut lesbar und für relevante Suchanfragen sichtbar sind.",
+    },
+    {
+      question: "Welche Tests bietet Quality1st an?",
+      answer:
+        "Wir unterstützen mit manuellen Tests, Testautomatisierung, Penetrationstests sowie Last- und Performancetests für sichere, stabile und skalierbare digitale Produkte.",
+    },
+  ];
+
   return (
     <>
       <Seo
-        title="Quality1st"
-        description="Quality1st erstellt Webseiten und Apps, entwickelt KI-Agenten und bietet professionelle Softwaretests, Testautomatisierung, Penetrationstests und Qualitätssicherung für Unternehmen."
+        title="Webentwicklung, Apps, KI-Agenten und Softwaretests | Quality1st"
+        description="Quality1st entwickelt SEO-starke Webseiten, mobile Apps, KI-Agenten und professionelle Softwaretests für Unternehmen in Deutschland. Schnell, sicher und auf nachhaltige Sichtbarkeit ausgerichtet."
         path="/"
         keywords={[
-          "Webseiten erstellen lassen",
+          "Webentwicklung Deutschland",
+          "SEO Webseiten erstellen lassen",
           "App Entwicklung Deutschland",
-          "KI Agenten Unternehmen",
-          "Softwaretests",
-          "Testautomatisierung",
-          "Penetrationstests",
+          "KI Agenten für Unternehmen",
+          "Softwaretests Unternehmen",
+          "Testautomatisierung Deutschland",
+          "Penetrationstests Deutschland",
           "Performance Tests",
-          "Qualitätssicherung",
+          "Qualitätssicherung Software",
         ]}
         structuredData={[
           getOrganizationStructuredData(),
@@ -161,6 +201,18 @@ const Home = () => {
               name: "Kostenloses Erstgespräch anfragen",
               target: getCanonicalUrl("/contact"),
             },
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: faqs.map((faq) => ({
+              "@type": "Question",
+              name: faq.question,
+              acceptedAnswer: {
+                "@type": "Answer",
+                text: faq.answer,
+              },
+            })),
           },
         ]}
       />
@@ -175,30 +227,70 @@ const Home = () => {
                 className="text-2xl sm:text-3xl md:text-4xl lg:text-7xl font-extrabold leading-tight mb-4 text-primary animate-fadein"
                 style={{ letterSpacing: '0.01em', lineHeight: '1.15' }}
               >
-                Digitale Lösungen & Qualitätssicherung
+                Webentwicklung, Apps, KI-Agenten und Softwaretests aus Deutschland
               </h1>
               <p
                 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-semibold mb-4 sm:mb-6 text-muted-foreground animate-fadein-slow"
                 style={{ letterSpacing: '0.01em', lineHeight: '1.3' }}
               >
-                Webseiten, Apps, KI-Agenten & professionelle Softwaretests – individuell, sicher und effizient
+                Wir entwickeln digitale Produkte mit klarem Mehrwert: schnelle Webseiten, nutzerfreundliche Apps, smarte KI-Automatisierung und professionelle Qualitätssicherung.
+              </p>
+              <p className="text-base sm:text-lg text-muted-foreground max-w-2xl animate-fadein-slow">
+                Quality1st unterstützt Unternehmen bei Webentwicklung, App-Entwicklung, Testautomatisierung,
+                Penetrationstests und Performance-Optimierung. So entstehen digitale Lösungen, die besser gefunden,
+                leichter genutzt und langfristig stabil betrieben werden können.
               </p>
               <div className="space-y-2 sm:space-y-4">
                 <Button asChild size="lg" className="w-full sm:w-auto bg-primary text-primary-foreground font-bold tracking-wide shadow hover:shadow-lg transition-all animate-fadein">
                   <Link to="/contact">Jetzt kostenloses Erstgespräch buchen</Link>
                 </Button>
                 <p className="text-sm sm:text-base text-muted-foreground animate-fadein-slow">
-                  Unverbindliche Beratung · Schnelle Antwort · Individuelle Lösungen
+                  Unverbindliche Beratung · Schnelle Antwort · Individuelle Lösungen für Web, App, KI und Testing
                 </p>
               </div>
             </div>
             <div className="relative animate-fadein-slow">
               <img 
                 src={testingHero} 
-                alt="Software Testing Hero" 
+                alt="Quality1st entwickelt Webseiten, Apps, KI-Agenten und professionelle Softwaretests für Unternehmen" 
                 className="rounded-lg shadow w-full max-h-64 sm:max-h-80 md:max-h-none object-cover"
+                loading="eager"
+                fetchPriority="high"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+              Digitale Lösungen, die Reichweite, Effizienz und Qualität verbinden
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              Ob Unternehmenswebsite, mobile App, KI-Agent oder Teststrategie: Wir richten jedes Projekt an klaren
+              Zielen aus, damit Ihre Inhalte sichtbar, Ihre Prozesse effizient und Ihre Systeme verlässlich werden.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {seoHighlights.map((highlight) => (
+              <Card key={highlight.title} className="border-0 shadow-md bg-white dark:bg-background">
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-xl font-bold mb-3 text-primary">{highlight.title}</h3>
+                  <p className="text-muted-foreground mb-4">{highlight.description}</p>
+                  <ul className="space-y-2">
+                    {highlight.points.map((point) => (
+                      <li key={point} className="flex items-start gap-2 text-sm text-muted-foreground">
+                        <CheckCircle className="h-4 w-4 mt-0.5 text-primary flex-shrink-0" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
@@ -211,7 +303,7 @@ const Home = () => {
               Ihre Vorteile mit Quality1st
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Professionelle Softwaretests mit modernsten Methoden und jahrelanger Erfahrung
+              Professionelle Dienstleistungen mit modernsten Methoden und jahrelanger Erfahrung
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
@@ -252,7 +344,7 @@ const Home = () => {
               Unsere Leistungen
             </h2>
             <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto">
-              Umfassende Testdienstleistungen für alle Anforderungen
+              Webentwicklung, App-Entwicklung, KI-Automatisierung und Softwaretests aus einer Hand
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
@@ -295,11 +387,36 @@ const Home = () => {
         </div>
       </section>
 
+      <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+              Häufige Fragen zu Webentwicklung, KI und Softwaretests
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              Diese Fragen stellen uns Unternehmen besonders oft, wenn sie eine neue Website, eine App,
+              KI-Automatisierung oder professionelle Tests planen.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 sm:gap-8">
+            {faqs.map((faq) => (
+              <Card key={faq.question} className="border-0 shadow-md bg-white dark:bg-background">
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-xl font-bold mb-3 text-primary">{faq.question}</h3>
+                  <p className="text-muted-foreground">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-12 sm:py-16 md:py-20 bg-primary text-primary-foreground">
         <div className="container mx-auto px-4 sm:px-6 md:px-8 text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-2 sm:mb-4">
-            Bereit für professionelle Softwaretests?
+            Bereit für professionelle Beratung?
           </h2>
           <p className="text-base sm:text-xl mb-4 sm:mb-8 opacity-90">
             Lassen Sie uns Ihre Software auf Herz und Nieren prüfen
