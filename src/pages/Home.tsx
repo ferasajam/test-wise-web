@@ -235,6 +235,9 @@ const Home = () => {
               >
                 Wir entwickeln digitale Produkte mit klarem Mehrwert: schnelle Webseiten, nutzerfreundliche Apps, smarte KI-Automatisierung und professionelle Qualitätssicherung.
               </p>
+                <p className="text-base sm:text-lg text-primary font-semibold animate-fadein-slow">
+                  Quality1st unterstützt Unternehmen, StartUps, Kleingeschäfte – passe überall.
+                </p>
               <p className="text-base sm:text-lg text-muted-foreground max-w-2xl animate-fadein-slow">
                 Quality1st unterstützt Unternehmen bei Webentwicklung, App-Entwicklung, Testautomatisierung,
                 Penetrationstests und Performance-Optimierung. So entstehen digitale Lösungen, die besser gefunden,
@@ -262,7 +265,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="py-12 sm:py-16 md:py-20">
+      <section className="py-12 sm:py-16 md:py-20 bg-muted/30">
         <div className="container mx-auto px-4 sm:px-6 md:px-8">
           <div className="text-center mb-10 sm:mb-14">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
