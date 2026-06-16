@@ -4,20 +4,21 @@ export const SITE_NAME = "Quality1st";
 export const SITE_URL = "https://quality-1st.de";
 export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.png`;
 
-const DEFAULT_TITLE = "Quality1st";
+const DEFAULT_TITLE = "Softwaretests/KI-Agenten/Webentwicklung/Penetrationstests";
 const DEFAULT_DESCRIPTION =
-  "Quality1st erstellt Webseiten und Apps, entwickelt KI-Agenten und bietet professionelle Softwaretests, Testautomatisierung, Penetrationstests und Qualitätssicherung für Unternehmen.";
+  "Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Ihr Unternehmen. Jetzt unverbindlich beraten lassen.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
-  "Webseiten erstellen",
-  "App Entwicklung",
+  "Webentwicklung",
   "KI Agenten",
   "Softwaretests",
   "Testautomatisierung",
   "Penetrationstests",
-  "Performance Tests",
   "Qualitätssicherung",
 ];
+
+const CONTACT_EMAIL = "[E-Mail eintragen]";
+const CONTACT_PHONE = "[Telefon eintragen]";
 
 type StructuredData = Record<string, unknown>;
 
@@ -63,28 +64,30 @@ export const getAbsoluteAssetUrl = (path = "/") => new URL(path, SITE_URL).toStr
 
 export const getOrganizationStructuredData = (): StructuredData => ({
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
+  "@type": ["ProfessionalService", "LocalBusiness"],
   name: SITE_NAME,
   url: SITE_URL,
-  email: "info@quality-1st.de",
-  telephone: "+49 170 5975430",
+  description:
+    "Quality1st bietet Softwaretests, Testautomatisierung, KI-Agenten, Webentwicklung und Penetrationstests fuer Unternehmen.",
+  email: CONTACT_EMAIL,
+  telephone: CONTACT_PHONE,
   areaServed: "DE",
-  address: {
-    "@type": "PostalAddress",
-    streetAddress: "Corrensstr. 88",
-    postalCode: "48149",
-    addressLocality: "Münster",
-    addressCountry: "DE",
+  contactPoint: {
+    "@type": "ContactPoint",
+    contactType: "customer support",
+    email: CONTACT_EMAIL,
+    telephone: CONTACT_PHONE,
+    availableLanguage: ["de", "en"],
   },
   sameAs: ["https://www.linkedin.com/company/quality1stde"],
   serviceType: [
     "Webentwicklung",
-    "App-Entwicklung",
     "KI-Agenten",
     "Softwaretests",
     "Testautomatisierung",
     "Penetrationstests",
     "Performance Tests",
+    "Qualitaetssicherung",
   ],
 });
 

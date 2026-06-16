@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 // CookieConsentBanner as section with multiple options
 import Seo, {
-  SITE_NAME,
-  SITE_URL,
   getCanonicalUrl,
   getOrganizationStructuredData,
   getWebsiteStructuredData,
@@ -58,9 +56,8 @@ import {
   Shield, 
   Zap, 
   Target, 
-  Users, 
+  Star,
   CheckCircle, 
-  Clock,
   Bug,
   Settings,
   Gauge,
@@ -79,7 +76,7 @@ const Home = () => {
     {
       icon: <Zap className="h-6 w-6" />,
       title: "Automatisierung", 
-      description: "Zeiteinsparung und Effizienzsteigerung durch automatisierte Testabläufe"
+      description: "Zeiteinsparung und Effizienzsteigerung durch automatisierte Abläufe"
     },
     {
       icon: <Target className="h-6 w-6" />,
@@ -136,6 +133,48 @@ const Home = () => {
     }
   ];
 
+  const uspCards = [
+    {
+      title: "Entwicklung und Testing aus einer Hand",
+      description:
+        "Wir konzipieren, entwickeln und testen digitale Produkte in einem durchgaengigen Prozess. Das reduziert Uebergaben, beschleunigt Releases und sorgt fuer nachvollziehbare Qualitaet.",
+    },
+    {
+      title: "KI-gestuetzte Qualitaetssicherung",
+      description:
+        "Wir verbinden klassische QA mit KI-gestuetzten Analysen, intelligenter Priorisierung und effizienter Testfallerstellung. So werden Risiken frueher sichtbar und Teams gewinnen messbar Zeit.",
+    },
+    {
+      title: "Schnell, verlaesslich, erfahren",
+      description:
+        "Klare Kommunikation, kurze Reaktionszeiten und belastbare Ergebnisse sind Teil unseres Standards. Sie arbeiten mit erfahrenen Spezialisten, die pragmatisch liefern statt unnoetige Komplexitaet aufzubauen.",
+    },
+  ];
+
+  const testimonials = [
+    {
+      name: "Max Mustermann",
+      company: "Unternehmen / Branche",
+      quote:
+        "Platzhalter fuer eine Kundenstimme: Beschreiben Sie hier spaeter den Projektnutzen, die Zusammenarbeit und das Ergebnis aus Kundensicht.",
+      rating: 5,
+    },
+    {
+      name: "Erika Beispiel",
+      company: "Unternehmen / Produktteam",
+      quote:
+        "Platzhalter fuer eine Referenz: Heben Sie hier spaeter Schnelligkeit, Qualitaet oder die technische Expertise von Quality1st hervor.",
+      rating: 5,
+    },
+    {
+      name: "Sven Referenz",
+      company: "Unternehmen / IT-Leitung",
+      quote:
+        "Platzhalter fuer Social Proof: Ergaenzen Sie hier spaeter ein konkretes Resultat wie weniger Bugs, schnellere Releases oder mehr Sicherheit.",
+      rating: 5,
+    },
+  ];
+
   const seoHighlights = [
     {
       title: "Webentwicklung mit SEO-Fokus",
@@ -178,18 +217,15 @@ const Home = () => {
   return (
     <>
       <Seo
-        title="Webentwicklung, Apps, KI-Agenten und Softwaretests | Quality1st"
-        description="Quality1st entwickelt SEO-starke Webseiten, mobile Apps, KI-Agenten und professionelle Softwaretests für Unternehmen in Deutschland. Schnell, sicher und auf nachhaltige Sichtbarkeit ausgerichtet."
+        title="Softwaretests/KI-Agenten/Webentwicklung/Penetrationstests"
+        description="Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Ihr Unternehmen. Jetzt unverbindlich beraten lassen."
         path="/"
         keywords={[
-          "Webentwicklung Deutschland",
-          "SEO Webseiten erstellen lassen",
-          "App Entwicklung Deutschland",
-          "KI Agenten für Unternehmen",
-          "Softwaretests Unternehmen",
+          "Webentwicklung",
+          "KI Agenten fuer Unternehmen",
+          "Softwaretests",
           "Testautomatisierung Deutschland",
-          "Penetrationstests Deutschland",
-          "Performance Tests",
+          "Penetrationstests",
           "Qualitätssicherung Software",
         ]}
         structuredData={[
@@ -291,6 +327,30 @@ const Home = () => {
                       </li>
                     ))}
                   </ul>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-12 sm:py-16 md:py-20">
+        <div className="container mx-auto px-4 sm:px-6 md:px-8">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4">
+              Warum Kunden Quality1st waehlen
+            </h2>
+            <p className="text-base sm:text-lg text-muted-foreground max-w-3xl mx-auto">
+              Drei klare Gruende, warum Unternehmen Entwicklung, Testing und KI-gestuetzte Qualitaetssicherung mit uns umsetzen.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 sm:gap-8">
+            {uspCards.map((card) => (
+              <Card key={card.title} className="border-0 shadow-md bg-white dark:bg-background h-full">
+                <CardContent className="p-6 sm:p-8">
+                  <h3 className="text-xl font-bold mb-3 text-primary">{card.title}</h3>
+                  <p className="text-muted-foreground">{card.description}</p>
                 </CardContent>
               </Card>
             ))}
