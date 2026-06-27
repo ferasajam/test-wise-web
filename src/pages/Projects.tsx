@@ -36,7 +36,7 @@ const Projects = () => {
       typeLabel: "Web-App",
       tagline: "Warum mehrere KI-Abos bezahlen, wenn eines reicht?",
       description:
-        "Quality1stGPT vereint GPT-5.2, Gemini Pro 3, Grok 4.1 und DeepSeek-V3.2 in einer Plattform – ab nur 4,99 € pro Monat.",
+        "Quality1stGPT vereint GPT-5.5, Gemini Pro 3.1, Grok 4.3 und DeepSeek-V4 pro in einer Plattform – ab nur 4,99 € pro Monat.",
       highlights: [
         "Mehrere Top-Modelle in einer Oberfläche",
         "Schneller Wechsel je nach Use-Case",
