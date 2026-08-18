@@ -2,20 +2,8 @@
   "name": "Quality1st",
   "short_name": "Quality1st",
   "description": "Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Unternehmen.",
-  "start_url": "/",
+  "start_url": "/test-wise-web/",
   "display": "standalone",
   "background_color": "#0f172a",
-  "theme_color": "#0f172a",
-  "icons": [
-    {
-      "src": "/android-chrome-192x192.png",
-      "sizes": "192x192",
-      "type": "image/png"
-    },
-    {
-      "src": "/android-chrome-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png"
-    }
-  ]
+  "theme_color": "#0f172a"
 }
