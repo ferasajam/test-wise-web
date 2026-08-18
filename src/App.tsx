@@ -1,3 +1,4 @@
+import { lazy, Suspense } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -6,13 +7,14 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import Home from "./pages/Home";
-import About from "./pages/About";
-import Services from "./pages/Services";
-import Projects from "./pages/Projects";
-import Contact from "./pages/Contact";
-import Legal from "./pages/Legal";
-import NotFound from "./pages/NotFound";
+
+const Home = lazy(() => import("./pages/HomeRedesign"));
+const About = lazy(() => import("./pages/AboutRedesign"));
+const Services = lazy(() => import("./pages/ServicesRedesign"));
+const Projects = lazy(() => import("./pages/ProjectsRedesign"));
+const Contact = lazy(() => import("./pages/ContactRedesign"));
+const Legal = lazy(() => import("./pages/LegalRedesign"));
+const NotFound = lazy(() => import("./pages/NotFoundRedesign"));
 
 const queryClient = new QueryClient();
 
@@ -26,16 +28,18 @@ const App = () => (
         <div className="flex flex-col min-h-screen">
           <Header />
           <main className="flex-1">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/services" element={<Services />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/impressum" element={<Legal />} />
-              <Route path="/datenschutz" element={<Legal />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
+            <Suspense fallback={<div className="flex min-h-[50vh] items-center justify-center" role="status"><span className="font-display text-sm font-semibold text-muted-foreground">Quality1st lädt...</span></div>}>
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/impressum" element={<Legal />} />
+                <Route path="/datenschutz" element={<Legal />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
           </main>
           <Footer />
         </div>

@@ -1,9 +1,9 @@
 {
   "name": "Quality1st",
   "short_name": "Quality1st",
-  "description": "Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Unternehmen.",
+  "description": "Softwareentwicklung, Software Testing und KI-Automatisierung von Quality1st.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#0f172a"
+  "background_color": "#0d1822",
+  "theme_color": "#0d1822"
 }

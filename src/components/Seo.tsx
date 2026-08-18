@@ -2,11 +2,11 @@ import { useEffect } from "react";
 
 export const SITE_NAME = "Quality1st";
 export const SITE_URL = "https://quality-1st.de";
-export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.png`;
+export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.jpg`;
 
-const DEFAULT_TITLE = "Softwaretests/KI-Agenten/Webentwicklung/Penetrationstests";
+const DEFAULT_TITLE = "Quality1st | Softwareentwicklung, Testing & KI-Automatisierung";
 const DEFAULT_DESCRIPTION =
-  "Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Ihr Unternehmen. Jetzt unverbindlich beraten lassen.";
+  "Quality1st entwickelt digitale Produkte, testet Software professionell und automatisiert Prozesse für stabile Releases und technische Lösungen mit Substanz.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
   "Webentwicklung",
@@ -17,8 +17,8 @@ const DEFAULT_KEYWORDS = [
   "Qualitätssicherung",
 ];
 
-const CONTACT_EMAIL = "[E-Mail eintragen]";
-const CONTACT_PHONE = "[Telefon eintragen]";
+const CONTACT_EMAIL = "info@quality-1st.de";
+const CONTACT_PHONE = "+49 170 5975430";
 
 type StructuredData = Record<string, unknown>;
 
@@ -68,7 +68,7 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st bietet Softwaretests, Testautomatisierung, KI-Agenten, Webentwicklung und Penetrationstests fuer Unternehmen.",
+    "Quality1st bietet Softwareentwicklung, Softwaretests, Testautomatisierung, KI-Agenten, Webentwicklung und Penetrationstests für Unternehmen.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
   areaServed: "DE",
