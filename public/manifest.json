@@ -2,7 +2,7 @@
   "name": "Quality1st",
   "short_name": "Quality1st",
   "description": "Softwaretests, KI-Agenten, Webentwicklung und Penetrationstests fuer Unternehmen.",
-  "start_url": "/test-wise-web/",
+  "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
   "theme_color": "#0f172a"
