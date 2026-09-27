@@ -66,7 +66,15 @@ const PrivacyPolicy = () => (
     <LegalSection title="4. Datenerfassung auf unserer Website">
       <div>
         <h3 className="font-display font-semibold text-foreground">Kontaktformular</h3>
-        <p className="mt-2">Wenn Sie uns per Kontaktformular Anfragen senden, werden Ihre Angaben zur Bearbeitung der Anfrage gespeichert.</p>
+        <p className="mt-2">Wenn Sie uns per Kontaktformular eine Anfrage senden, verarbeiten wir die von Ihnen eingegebenen Angaben zur Bearbeitung und Beantwortung Ihrer Nachricht. Die Übermittlung der Nachricht erfolgt über EmailJS.</p>
+      </div>
+      <div>
+        <h3 className="font-display font-semibold text-foreground">Spam-Schutz durch Google reCAPTCHA</h3>
+        <p className="mt-2">Auf der Kontaktseite wird Google reCAPTCHA eingesetzt, um automatisierte Formularanfragen zu erkennen. Dabei können Nutzungs- und Geräteinformationen an Google übermittelt werden. Weitere Informationen finden Sie in den Datenschutz- und Nutzungsbedingungen von Google.</p>
+      </div>
+      <div>
+        <h3 className="font-display font-semibold text-foreground">Externe Schriftarten und Tracking</h3>
+        <p className="mt-2">Die Website lädt Schriftarten lokal über die Geräteschriftarten. Es werden keine Analyse- oder Werbe-Trackingdienste eingebunden.</p>
       </div>
       <div>
         <h3 className="font-display font-semibold text-foreground">Server-Log-Dateien</h3>
@@ -103,7 +111,7 @@ const LegalRedesign = () => {
       <section className="border-b border-border bg-[linear-gradient(145deg,hsl(211_34%_8%),hsl(214_30%_12%))] py-[clamp(4.5rem,8vw,7rem)]">
         <div className="site-container max-w-4xl">
           <p className="eyebrow"><FileText aria-hidden="true" className="h-3.5 w-3.5" /> Rechtliches</p>
-          <h1 className="display-heading mt-6 text-foreground">{title}</h1>
+          <h1 className="display-heading mt-6 text-[clamp(1.75rem,8vw,4.75rem)] text-foreground">{title}</h1>
           <p className="mt-5 max-w-2xl text-base leading-7 text-muted-foreground sm:text-lg">Hier finden Sie die rechtlichen Informationen von Quality1st in gut lesbarer Form.</p>
         </div>
       </section>

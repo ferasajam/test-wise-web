@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
 import { ArrowRight, Menu, ShieldCheck, X } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
-import { Button } from "@/components/ui/button";
 
 const navItems = [
   { name: "Start", path: "/" },
   { name: "Leistungen", path: "/services" },
   { name: "Über uns", path: "/about" },
   { name: "Projekte", path: "/projects" },
+  { name: "Insights", path: "/insights" },
   { name: "Kontakt", path: "/contact" },
 ];
 
@@ -30,18 +30,18 @@ const Header = () => {
     return () => document.removeEventListener("keydown", closeOnEscape);
   }, [isMenuOpen]);
 
-  const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => path === "/" ? location.pathname === path : location.pathname === path || location.pathname.startsWith(`${path}/`);
 
   return (
-    <header className="sticky top-0 z-50 px-3 pt-3">
+    <header className="sticky top-0 z-50 border-b border-[#d9ded9] bg-white/95">
       <div className="site-container">
-        <div className="glass-panel flex min-h-[4.25rem] items-center justify-between px-3 sm:px-4">
+        <div className="flex min-h-[4.25rem] items-center justify-between gap-3">
           <Link to="/" className="group inline-flex min-h-11 items-center gap-2.5" aria-label="Quality1st Startseite">
-            <span className="flex h-9 w-9 items-center justify-center border border-primary/35 bg-primary/10 text-primary transition-transform duration-200 group-hover:-rotate-3 group-hover:scale-105">
+            <span className="flex h-9 w-9 items-center justify-center border border-[#cad7d0] bg-[#edf3ef] text-[#24574b]">
               <ShieldCheck aria-hidden="true" className="h-5 w-5" strokeWidth={1.8} />
             </span>
-            <span className="font-display text-lg font-semibold tracking-normal text-foreground sm:text-xl">
-              Quality<span className="text-primary">1st</span>
+            <span className="font-display text-lg font-semibold tracking-normal text-[#172522] sm:text-xl">
+              Quality<span className="text-[#376457]">1st</span>
             </span>
           </Link>
 
@@ -51,27 +51,21 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 aria-current={isActive(item.path) ? "page" : undefined}
-                className={`relative min-h-11 px-3 py-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
-                  isActive(item.path) ? "text-primary" : "text-muted-foreground hover:text-foreground"
+                className={`relative min-h-11 px-2 py-3 text-sm font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] xl:px-3 ${
+                  isActive(item.path) ? "text-[#24574b]" : "text-[#586760] hover:text-[#172522]"
                 }`}
               >
                 {item.name}
-                {isActive(item.path) && <span aria-hidden="true" className="absolute inset-x-3 bottom-2 h-px bg-primary" />}
+                {isActive(item.path) && <span aria-hidden="true" className="absolute inset-x-2 bottom-2 h-px bg-[#b25336] xl:inset-x-3" />}
               </Link>
             ))}
           </nav>
 
           <div className="flex items-center gap-2">
-            <Button
-              asChild
-              size="sm"
-              className="hidden h-10 rounded-md bg-primary px-3.5 text-xs font-bold text-primary-foreground shadow-[0_4px_0_hsl(202_90%_32%)] transition-all hover:translate-y-px hover:bg-primary hover:shadow-[0_3px_0_hsl(202_90%_32%)] lg:inline-flex"
-            >
-              <Link to="/contact">Erstgespräch</Link>
-            </Button>
+            <Link to="/contact" className="hidden min-h-10 items-center bg-[#173f36] px-4 text-xs font-semibold text-white transition-colors hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] lg:inline-flex">Projekt besprechen</Link>
             <button
               type="button"
-              className="flex h-11 w-11 items-center justify-center border border-border text-foreground transition-colors hover:border-primary/60 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring lg:hidden"
+              className="flex h-11 w-11 items-center justify-center border border-[#cad7d0] text-[#172522] transition-colors hover:border-[#376457] hover:bg-[#edf3ef] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] lg:hidden"
               onClick={() => setIsMenuOpen((isOpen) => !isOpen)}
               aria-label={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
               title={isMenuOpen ? "Menü schließen" : "Menü öffnen"}
@@ -85,19 +79,19 @@ const Header = () => {
       </div>
 
       {isMenuOpen && (
-        <div className="fixed inset-0 z-[70] bg-[hsl(211_34%_5%/0.7)] p-3 backdrop-blur-sm lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
+        <div className="fixed inset-0 z-[70] bg-[#172522]/55 p-3 lg:hidden" role="dialog" aria-modal="true" aria-label="Mobile Navigation">
           <button
             type="button"
             className="absolute inset-0 cursor-default"
             aria-label="Menü schließen"
             onClick={() => setIsMenuOpen(false)}
           />
-          <div id="mobile-navigation" className="glass-panel relative mx-auto flex min-h-[calc(100dvh-1.5rem)] max-w-xl flex-col p-5">
-            <div className="flex items-center justify-between border-b border-border pb-5">
-              <span className="font-display text-lg font-semibold text-foreground">Navigation</span>
+          <div id="mobile-navigation" className="relative mx-auto flex min-h-[calc(100dvh-1.5rem)] max-w-xl flex-col border border-[#d9ded9] bg-white p-5">
+            <div className="flex items-center justify-between border-b border-[#d9ded9] pb-5">
+              <span className="font-display text-lg font-semibold text-[#172522]">Navigation</span>
               <button
                 type="button"
-                className="flex h-11 w-11 items-center justify-center border border-border text-foreground hover:border-primary/60 hover:bg-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+                className="flex h-11 w-11 items-center justify-center border border-[#cad7d0] text-[#172522] hover:border-[#376457] hover:bg-[#edf3ef] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]"
                 onClick={() => setIsMenuOpen(false)}
                 aria-label="Menü schließen"
                 title="Menü schließen"
@@ -112,12 +106,12 @@ const Header = () => {
                   to={item.path}
                   aria-current={isActive(item.path) ? "page" : undefined}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`flex min-h-14 items-center justify-between border-b border-border px-1 font-display text-xl font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring ${
-                    isActive(item.path) ? "text-primary" : "text-foreground hover:text-primary"
+                  className={`flex min-h-14 items-center justify-between border-b border-[#d9ded9] px-1 font-display text-xl font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] ${
+                    isActive(item.path) ? "text-[#24574b]" : "text-[#172522] hover:text-[#376457]"
                   }`}
                 >
                   <span className="flex items-center gap-3">
-                    <span className="text-xs font-bold tracking-[0.08em] text-muted-foreground">0{index + 1}</span>
+                    <span className="text-xs font-bold text-[#89958f]">0{index + 1}</span>
                     {item.name}
                   </span>
                   <ArrowRight aria-hidden="true" className="h-4 w-4" />
@@ -125,13 +119,10 @@ const Header = () => {
               ))}
             </nav>
             <div className="mt-auto pt-8">
-              <Button asChild className="h-12 w-full rounded-md bg-primary text-sm font-bold text-primary-foreground">
-                <Link to="/contact" onClick={() => setIsMenuOpen(false)}>
-                  Projekt besprechen
-                  <ArrowRight aria-hidden="true" />
-                </Link>
-              </Button>
-              <p className="mt-4 text-center text-xs text-muted-foreground">Quality1st - Software & Quality Engineering</p>
+              <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="flex h-12 w-full items-center justify-center gap-2 bg-[#173f36] text-sm font-semibold text-white hover:bg-[#24574b]">
+                Projekt besprechen <ArrowRight aria-hidden="true" />
+              </Link>
+              <p className="mt-4 text-center text-xs text-[#697772]">IT-Dienstleistungen, Entwicklung & Quality Engineering</p>
             </div>
           </div>
         </div>

@@ -35,8 +35,8 @@
     --shadow-blue: 0 24px 60px -28px hsl(202 100% 56% / 0.45);
     --shadow-panel: 0 24px 70px -36px hsl(211 45% 3% / 0.8);
     --transition-smooth: 220ms cubic-bezier(0.22, 1, 0.36, 1);
-    --font-display: "Space Grotesk", "Avenir Next", sans-serif;
-    --font-body: "Manrope", "Avenir Next", sans-serif;
+    --font-display: "Avenir Next", "Segoe UI", sans-serif;
+    --font-body: "Segoe UI", "Avenir Next", sans-serif;
     --radius: 0.5rem;
 
     --sidebar-background: 213 28% 12%;
@@ -74,7 +74,6 @@
 
 @layer base {
   html {
-    min-width: 320px;
     scroll-behavior: smooth;
     scroll-padding-top: 6rem;
   }
@@ -85,7 +84,6 @@
 
   body {
     @apply bg-background text-foreground;
-    min-width: 320px;
     overflow-x: hidden;
     font-family: var(--font-body);
     background-image:

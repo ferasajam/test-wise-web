@@ -2,44 +2,41 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://quality-1st.de/</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://quality-1st.de/about</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://quality-1st.de/contact</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://quality-1st.de/services</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
+  <url><loc>https://quality-1st.de/services/softwareentwicklung</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/mobile-app-entwicklung</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/quality-engineering</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/testautomatisierung</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/ki-automation</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/it-devops</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/services/security-performance</loc><lastmod>2026-09-27</lastmod></url>
   <url>
     <loc>https://quality-1st.de/projects</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
+  <url><loc>https://quality-1st.de/insights</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/insights/playwright-oder-cypress</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/insights/wann-testautomatisierung-sinnvoll-ist</loc><lastmod>2026-09-27</lastmod></url>
+  <url><loc>https://quality-1st.de/insights/api-tests-in-ci-cd</loc><lastmod>2026-09-27</lastmod></url>
   <url>
     <loc>https://quality-1st.de/impressum</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
   <url>
     <loc>https://quality-1st.de/datenschutz</loc>
-    <lastmod>2026-08-18</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.4</priority>
+    <lastmod>2026-09-27</lastmod>
   </url>
 </urlset>

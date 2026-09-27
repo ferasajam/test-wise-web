@@ -64,14 +64,14 @@ export const getAbsoluteAssetUrl = (path = "/") => new URL(path, SITE_URL).toStr
 
 export const getOrganizationStructuredData = (): StructuredData => ({
   "@context": "https://schema.org",
-  "@type": ["ProfessionalService", "LocalBusiness"],
+  "@type": "Organization",
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st bietet Softwareentwicklung, Softwaretests, Testautomatisierung, KI-Agenten, Webentwicklung und Penetrationstests für Unternehmen.",
+    "Quality1st unterstützt Unternehmen in Deutschland bei Softwareentwicklung, Quality Engineering, Testautomatisierung, digitalen Lösungen und IT-Automatisierung.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
-  areaServed: "DE",
+  areaServed: { "@type": "Country", name: "Deutschland" },
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer support",
@@ -80,14 +80,16 @@ export const getOrganizationStructuredData = (): StructuredData => ({
     availableLanguage: ["de", "en"],
   },
   sameAs: ["https://www.linkedin.com/company/quality1stde"],
-  serviceType: [
-    "Webentwicklung",
-    "KI-Agenten",
-    "Softwaretests",
+  knowsAbout: [
+    "Softwareentwicklung",
+    "Software Testing",
+    "Quality Engineering",
     "Testautomatisierung",
-    "Penetrationstests",
-    "Performance Tests",
-    "Qualitaetssicherung",
+    "IT-Automatisierung",
+    "Webentwicklung",
+    "API-Entwicklung",
+    "DevOps",
+    "IT-Security",
   ],
 });
 

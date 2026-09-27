@@ -77,7 +77,7 @@ const ContactForm = () => {
       {success && (
         <div className="flex gap-3 border border-accent/35 bg-accent/10 p-4 text-sm leading-6 text-foreground" role="status" aria-live="polite">
           <CheckCircle2 aria-hidden="true" className="mt-0.5 h-5 w-5 shrink-0 text-accent" />
-          <p><strong className="font-display font-semibold">Nachricht erfolgreich gesendet.</strong><br />Vielen Dank für Ihre Anfrage. Wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+          <p><strong className="font-display font-semibold">Nachricht erfolgreich gesendet.</strong><br />Vielen Dank für Ihre Anfrage. Wir melden uns persönlich bei Ihnen.</p>
         </div>
       )}
 
