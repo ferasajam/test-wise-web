@@ -12,7 +12,7 @@ const AboutEditorial = () => (
   <>
     <Seo
       title="Über Quality1st | IT-Dienstleister aus Münster"
-      description="Quality1st ist ein von Feras Ajam geführter IT-Dienstleister aus Münster. Schwerpunkte: Softwareentwicklung, Quality Engineering, Testautomatisierung und Automatisierung."
+      description="Quality1st aus Münster unterstützt Unternehmen, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Quality Engineering, Testautomatisierung und Automatisierung."
       path="/about"
       keywords={["IT Dienstleister Münster", "Softwareentwicklung Münster", "Software Testing Münster", "Quality1st", "IT Beratung Münster"]}
       structuredData={[
@@ -28,7 +28,7 @@ const AboutEditorial = () => (
             <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Über Quality1st / Münster</p>
             <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Persönliche Zusammenarbeit. Technische Arbeit mit Anspruch.</h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Quality1st ist ein IT-Dienstleister aus Münster, geführt von Feras Ajam. Das Angebot reicht von Softwareentwicklung und digitalen Lösungen bis zu Quality Engineering und Automatisierung. Softwarequalität ist eine Kernkompetenz, aber nicht die einzige.
+              Quality1st ist ein IT-Dienstleister aus Münster, geführt von Feras Ajam. Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden. Das Angebot reicht von Softwareentwicklung und digitalen Lösungen bis zu Quality Engineering und Automatisierung. Softwarequalität ist eine Kernkompetenz, aber nicht die einzige.
             </p>
           </div>
           <aside className="border-l-2 border-[#b25336] py-1 pl-5 sm:pl-7">

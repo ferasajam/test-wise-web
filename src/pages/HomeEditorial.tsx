@@ -92,7 +92,11 @@ const projects = [
 const faqs = [
   {
     question: "Was macht Quality1st?",
-    answer: "Quality1st ist ein IT-Dienstleister aus Deutschland. Das Angebot umfasst Softwareentwicklung, Quality Engineering, Testautomatisierung, IT-Automatisierung und technische Beratung.",
+    answer: "Quality1st ist ein IT-Dienstleister aus Deutschland für Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden. Das Angebot umfasst Softwareentwicklung, Quality Engineering, Testautomatisierung, IT-Automatisierung und technische Beratung.",
+  },
+  {
+    question: "Für wen arbeitet Quality1st?",
+    answer: "Quality1st unterstützt kleine und große Unternehmen, Selbstständige, Start-ups und Privatkunden bei digitalen Vorhaben – von individuellen Websites und Apps bis zu Softwareentwicklung, Testing und Automatisierung.",
   },
   {
     question: "Ist Quality1st auf Software Testing spezialisiert?",
@@ -108,7 +112,7 @@ const HomeEditorial = () => (
   <>
     <Seo
       title="Quality1st | IT-Dienstleistungen, Softwareentwicklung & Testing"
-      description="Quality1st unterstützt Unternehmen in Deutschland bei Softwareentwicklung, Web- und API-Projekten, Testautomatisierung, KI- und Workflow-Automatisierung sowie Quality Engineering."
+      description="Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Apps, Testautomatisierung und digitalen Lösungen."
       path="/"
       keywords={[
         "IT Dienstleistungen",
@@ -155,7 +159,7 @@ const HomeEditorial = () => (
               IT-Lösungen, die funktionieren. Software, die Qualität zeigt.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Quality1st unterstützt Unternehmen bei Softwareentwicklung, Testautomatisierung, IT-Automatisierung und digitalen Lösungen – von der Idee bis zum stabilen Betrieb.
+              Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Testautomatisierung, IT-Automatisierung und digitalen Lösungen – von der Idee bis zum stabilen Betrieb.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link

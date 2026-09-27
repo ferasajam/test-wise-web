@@ -7,7 +7,7 @@ const ContactEditorial = () => (
   <>
     <Seo
       title="Kontakt | Quality1st IT-Dienstleistungen Münster"
-      description="Besprechen Sie Ihr Vorhaben mit Quality1st in Münster: Softwareentwicklung, Testautomatisierung, digitale Lösungen und IT-Automatisierung für Unternehmen."
+      description="Besprechen Sie Ihr digitales Vorhaben mit Quality1st in Münster. Unterstützung für Unternehmen, Selbstständige, Start-ups und Privatkunden bei Entwicklung, Testing und Automatisierung."
       path="/contact"
       keywords={["IT Beratung Münster", "Softwareentwicklung Münster Kontakt", "Quality1st Kontakt", "Testautomatisierung Anfrage"]}
       structuredData={[
@@ -30,7 +30,7 @@ const ContactEditorial = () => (
           <div className="border border-[#31433c] bg-[#1d2d28] p-5 text-white sm:p-8">
             <p className="text-xs font-bold uppercase text-[#c1d6cb]">Projektanfrage</p>
             <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">Erzählen Sie uns, was Sie vorhaben.</h2>
-            <p className="mt-3 text-sm leading-6 text-[#d6e1dc]">Name, E-Mail-Adresse und eine kurze Projektbeschreibung genügen für den Anfang. Unternehmen, Anliegen und Telefon sind optional.</p>
+            <p className="mt-3 text-sm leading-6 text-[#d6e1dc]">Name, E-Mail-Adresse und eine kurze Projektbeschreibung genügen für den Anfang. Organisation, Anliegen und Telefon sind optional.</p>
             <div className="mt-7"><ContactForm /></div>
           </div>
 

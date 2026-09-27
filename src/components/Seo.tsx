@@ -68,7 +68,7 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st unterstützt Unternehmen in Deutschland bei Softwareentwicklung, Quality Engineering, Testautomatisierung, digitalen Lösungen und IT-Automatisierung.",
+    "Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden in Deutschland bei Softwareentwicklung, Quality Engineering, Testautomatisierung, digitalen Lösungen und IT-Automatisierung.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
   areaServed: { "@type": "Country", name: "Deutschland" },

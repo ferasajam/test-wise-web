@@ -94,8 +94,8 @@ const ContactForm = () => {
 
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
-          <Label htmlFor="company" className="text-sm font-semibold text-foreground">Unternehmen</Label>
-          <Input id="company" name="company" autoComplete="organization" value={formData.company} onChange={handleInputChange} placeholder="Ihr Unternehmen" className={fieldClassName} />
+          <Label htmlFor="company" className="text-sm font-semibold text-foreground">Unternehmen / Organisation (optional)</Label>
+          <Input id="company" name="company" autoComplete="organization" value={formData.company} onChange={handleInputChange} placeholder="Falls zutreffend" className={fieldClassName} />
         </div>
         <div>
           <Label htmlFor="phone" className="text-sm font-semibold text-foreground">Telefon</Label>

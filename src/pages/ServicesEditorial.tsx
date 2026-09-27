@@ -7,7 +7,7 @@ const ServicesEditorial = () => (
   <>
     <Seo
       title="IT-Leistungen | Softwareentwicklung, Testing & Automation | Quality1st"
-      description="Entdecken Sie IT-Dienstleistungen von Quality1st: Softwareentwicklung, Quality Engineering, Testautomatisierung, KI- und Workflow-Automatisierung, DevOps, Security und Performance."
+      description="IT-Dienstleistungen für Unternehmen, Selbstständige, Start-ups und Privatkunden: Softwareentwicklung, Quality Engineering, Testautomatisierung, Automation und Security."
       path="/services"
       keywords={["IT Dienstleistungen", "Softwareentwicklung", "Software Testing", "Testautomatisierung", "n8n", "DevOps", "IT Security"]}
       structuredData={[
@@ -44,7 +44,7 @@ const ServicesEditorial = () => (
           <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Leistungen</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Technische Unterstützung, die zum Vorhaben passt.</h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-            Quality1st entwickelt und verbessert digitale Lösungen für Unternehmen in Deutschland. Softwarequalität und Testing sind dabei eine Kernkompetenz, neben Entwicklung, Automatisierung und technischem Betrieb.
+            Quality1st entwickelt und verbessert digitale Lösungen für Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden in Deutschland. Softwarequalität und Testing sind Kernkompetenzen neben Entwicklung, Automatisierung und technischem Betrieb.
           </p>
           <Link to="/contact" className="mt-7 inline-flex min-h-12 items-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">
             Projekt besprechen <ArrowRight aria-hidden="true" className="h-4 w-4" />
