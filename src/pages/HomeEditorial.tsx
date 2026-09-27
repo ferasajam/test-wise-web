@@ -84,7 +84,7 @@ const projects = [
 const faqs = [
   {
     question: "Was macht Quality1st?",
-    answer: "Quality1st ist ein IT-Dienstleister aus Deutschland für Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden. Das Angebot umfasst Softwareentwicklung, Quality Engineering, Testautomatisierung, IT-Automatisierung und technische Beratung.",
+    answer: "Quality1st ist ein IT-Dienstleister aus Deutschland für Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden. Das Angebot umfasst Softwareentwicklung, Quality Engineering & Testautomatisierung, IT-Automatisierung und technische Beratung.",
   },
   {
     question: "Für wen arbeitet Quality1st?",
@@ -92,7 +92,7 @@ const faqs = [
   },
   {
     question: "Ist Quality1st auf Software Testing spezialisiert?",
-    answer: "Software Testing und Quality Engineering sind wichtige Schwerpunkte. Quality1st unterstützt Unternehmen ebenso bei Entwicklung, Web- und API-Projekten, Automatisierung sowie technischen Betriebsfragen.",
+    answer: "Quality Engineering & Testautomatisierung sind wichtige Schwerpunkte. Quality1st unterstützt ebenso bei Entwicklung, Web- und API-Projekten, Automatisierung sowie technischen Betriebsfragen.",
   },
   {
     question: "Mit welchen Technologien arbeitet Quality1st?",
@@ -104,15 +104,14 @@ const HomeEditorial = () => (
   <>
     <Seo
       title="Quality1st | IT-Dienstleistungen, Softwareentwicklung & Testing"
-      description="Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Apps, Testautomatisierung und digitalen Lösungen."
+      description="Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Apps, Quality Engineering & Testautomatisierung und digitalen Lösungen."
       path="/"
       keywords={[
         "IT Dienstleistungen",
         "IT Dienstleister Deutschland",
         "Softwareentwicklung",
         "Software Testing",
-        "Testautomatisierung",
-        "Quality Engineering",
+        "Quality Engineering & Testautomatisierung",
         "Webentwicklung",
         "API Entwicklung",
         "n8n Automatisierung",
@@ -151,7 +150,7 @@ const HomeEditorial = () => (
               IT-Lösungen, die funktionieren. Software, die Qualität zeigt.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Testautomatisierung, IT-Automatisierung und digitalen Lösungen – von der Idee bis zum stabilen Betrieb.
+              Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Quality Engineering & Testautomatisierung, IT-Automatisierung und digitalen Lösungen – von der Idee bis zum stabilen Betrieb.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -238,7 +237,7 @@ const HomeEditorial = () => (
               Je nach Produkt gehören API-, UI-, Mobile-, Performance- oder Security-Tests dazu. Werkzeuge wie Playwright, Cypress, Selenium, Appium und Postman setzen wir im jeweiligen Kontext ein.
             </p>
             <Link to="/services/quality-engineering" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
-              Quality Engineering im Detail <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              Quality Engineering & Testautomatisierung im Detail <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
         </div>

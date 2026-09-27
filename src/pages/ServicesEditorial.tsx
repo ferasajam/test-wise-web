@@ -7,9 +7,9 @@ const ServicesEditorial = () => (
   <>
     <Seo
       title="IT-Leistungen | Softwareentwicklung, Testing & Automation | Quality1st"
-      description="IT-Dienstleistungen für Unternehmen, Selbstständige, Start-ups und Privatkunden: Softwareentwicklung, Quality Engineering, Testautomatisierung, Automation und Security."
+      description="IT-Dienstleistungen für Unternehmen, Selbstständige, Start-ups und Privatkunden: Softwareentwicklung, Quality Engineering & Testautomatisierung, Automation und Security."
       path="/services"
-      keywords={["IT Dienstleistungen", "Softwareentwicklung", "Software Testing", "Testautomatisierung", "n8n", "DevOps", "IT Security"]}
+      keywords={["IT Dienstleistungen", "Softwareentwicklung", "Software Testing", "Quality Engineering Testautomatisierung", "n8n", "DevOps", "IT Security"]}
       structuredData={[
         getOrganizationStructuredData(),
         {

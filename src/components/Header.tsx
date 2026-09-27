@@ -122,7 +122,7 @@ const Header = () => {
               <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="flex h-12 w-full items-center justify-center gap-2 bg-[#173f36] text-sm font-semibold text-white hover:bg-[#24574b]">
                 Projekt besprechen <ArrowRight aria-hidden="true" />
               </Link>
-              <p className="mt-4 text-center text-xs text-[#697772]">IT-Dienstleistungen, Entwicklung & Quality Engineering</p>
+              <p className="mt-4 text-center text-xs text-[#697772]">IT-Dienstleistungen, Entwicklung & Quality Engineering & Testautomatisierung</p>
             </div>
           </div>
         </div>

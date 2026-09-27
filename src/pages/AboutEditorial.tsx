@@ -12,7 +12,7 @@ const AboutEditorial = () => (
   <>
     <Seo
       title="Über Quality1st | IT-Dienstleister aus Münster"
-      description="Quality1st aus Münster unterstützt Unternehmen, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Quality Engineering, Testautomatisierung und Automatisierung."
+      description="Quality1st aus Münster unterstützt Unternehmen, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Quality Engineering & Testautomatisierung sowie Automatisierung."
       path="/about"
       keywords={["IT Dienstleister Münster", "Softwareentwicklung Münster", "Software Testing Münster", "Quality1st", "IT Beratung Münster"]}
       structuredData={[

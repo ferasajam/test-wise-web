@@ -69,8 +69,7 @@ const InsightDetail = () => {
             <aside className="h-fit border-t-2 border-[#b25336] pt-4 lg:sticky lg:top-28">
               <p className="text-xs font-bold uppercase text-[#697772]">Themen</p>
               <ul className="mt-4 grid gap-3 text-sm text-[#465750]">
-                <li><Link to="/services/quality-engineering" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Quality Engineering</Link></li>
-                <li><Link to="/services/testautomatisierung" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Testautomatisierung</Link></li>
+                <li><Link to="/services/quality-engineering" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Quality Engineering & Testautomatisierung</Link></li>
                 <li><Link to="/services/it-devops" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">IT & DevOps</Link></li>
               </ul>
             </aside>
