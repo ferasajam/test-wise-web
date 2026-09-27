@@ -27,11 +27,11 @@ const ContactEditorial = () => (
 
       <section aria-label="Projektanfrage und Kontaktinformationen">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)] lg:gap-16">
-          <div className="border border-[#31433c] bg-[#1d2d28] p-5 text-white sm:p-8">
-            <p className="text-xs font-bold uppercase text-[#c1d6cb]">Projektanfrage</p>
-            <h2 className="mt-3 font-display text-2xl font-semibold sm:text-3xl">Erzählen Sie uns, was Sie vorhaben.</h2>
-            <p className="mt-3 text-sm leading-6 text-[#d6e1dc]">Name, E-Mail-Adresse und eine kurze Projektbeschreibung genügen für den Anfang. Organisation, Anliegen und Telefon sind optional.</p>
-            <div className="mt-7"><ContactForm /></div>
+          <div className="border border-[#d9ded9] bg-white p-5 sm:p-8">
+            <p className="text-xs font-bold uppercase text-[#3c645a]">Projektanfrage</p>
+            <h2 className="mt-3 font-display text-2xl font-semibold text-[#172522] sm:text-3xl">Erzählen Sie uns, was Sie vorhaben.</h2>
+            <p className="mt-3 text-sm leading-6 text-[#5b6964]">Name, E-Mail-Adresse und eine kurze Projektbeschreibung genügen für den Anfang. Organisation, Anliegen und Telefon sind optional.</p>
+            <div className="mt-7"><ContactForm variant="editorial" /></div>
           </div>
 
           <aside className="self-start">

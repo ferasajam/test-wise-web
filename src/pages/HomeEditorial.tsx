@@ -7,7 +7,6 @@ import {
   ShieldCheck,
   Smartphone,
   TestTube2,
-  Workflow,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Seo, {
@@ -34,33 +33,26 @@ const services = [
   {
     number: "03",
     icon: TestTube2,
-    title: "Quality Engineering",
-    description: "Manuelle, explorative und automatisierte Tests für nachvollziehbare Qualität über den ganzen Entwicklungszyklus.",
+    title: "Quality Engineering & Testautomatisierung",
+    description: "Manuelle und explorative Prüfungen sowie automatisierte UI-, API- und Regressionstests, eingebunden in passende CI/CD-Abläufe.",
     href: "/services/quality-engineering",
   },
   {
     number: "04",
-    icon: Workflow,
-    title: "Testautomatisierung",
-    description: "UI-, API- und Regressionstests, sinnvoll in bestehende CI/CD-Abläufe integriert.",
-    href: "/services/testautomatisierung",
-  },
-  {
-    number: "05",
     icon: Bot,
     title: "KI & Workflow-Automatisierung",
     description: "KI-Anwendungen und n8n-Workflows für wiederkehrende Aufgaben, bei denen Automatisierung praktisch hilft.",
     href: "/services/ki-automation",
   },
   {
-    number: "06",
+    number: "05",
     icon: GitBranch,
     title: "IT & DevOps",
     description: "Build- und Release-Pipelines, technische Automatisierung und Verbesserungen für einen verlässlichen Betrieb.",
     href: "/services/it-devops",
   },
   {
-    number: "07",
+    number: "06",
     icon: ShieldCheck,
     title: "Security & Performance",
     description: "OWASP-orientierte Prüfungen und gezielte Analysen von Sicherheit, Last und Antwortzeiten.",

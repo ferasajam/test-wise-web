@@ -6,10 +6,10 @@ import { insights } from "@/lib/insightCatalog";
 const InsightsEditorial = () => (
   <>
     <Seo
-      title="Insights | Technik, Testing & Automatisierung | Quality1st"
-      description="Praxisnahe Einblicke von Quality1st zu Softwareentwicklung, Testautomatisierung, APIs, CI/CD und digitalen Workflows."
+      title="Insights | Webentwicklung, Apps, Testing & Automation | Quality1st"
+      description="Praxisnahe Einblicke von Quality1st zu Angular und Webentwicklung, nativen und Cross-Platform-Apps, Softwaretesting, APIs, CI/CD und Automatisierung."
       path="/insights"
-      keywords={["Testautomatisierung Ratgeber", "Playwright Cypress Vergleich", "API Testing", "CI/CD Testing", "Softwareentwicklung Insights"]}
+      keywords={["Angular Webentwicklung", "Mobile App Entwicklung Ratgeber", "Native oder Cross-Platform App", "Testautomatisierung Ratgeber", "Playwright Cypress Vergleich", "API Testing", "CI/CD Testing"]}
       structuredData={[
         getOrganizationStructuredData(),
         { "@context": "https://schema.org", "@type": "Blog", name: "Quality1st Insights", url: "https://quality-1st.de/insights", inLanguage: "de-DE" },
@@ -21,7 +21,7 @@ const InsightsEditorial = () => (
           <nav aria-label="Brotkrumennavigation" className="text-xs text-[#697772]"><Link to="/" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Startseite</Link><span aria-hidden="true" className="px-2">/</span> Insights</nav>
           <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Insights / Engineering-Praxis</p>
           <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Technische Fragen, konkret beantwortet.</h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Einblicke zu Softwarequalität, Entwicklung und Automatisierung. Keine Trendmeldungen, sondern Hinweise, die sich an echten Projektentscheidungen orientieren.</p>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Einblicke zu Webentwicklung mit Angular, nativen und Cross-Platform-Apps, Softwarequalität und Automatisierung. Keine Trendmeldungen, sondern Hinweise, die technische Entscheidungen verständlicher machen.</p>
         </div>
       </section>
       <section aria-labelledby="articles-heading">

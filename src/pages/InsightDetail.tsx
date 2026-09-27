@@ -46,13 +46,13 @@ const InsightDetail = () => {
               <Link to="/insights" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Insights</Link>
             </nav>
             <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Engineering-Praxis <span className="px-2 text-[#9aa69f]">/</span>{insight.readingTime}</p>
-            <h1 className="mt-3 max-w-4xl font-display text-[clamp(1.5rem,7vw,3.75rem)] font-semibold leading-tight text-[#172522] sm:text-6xl">{insight.title}</h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">{insight.summary}</p>
+            <h1 className="mt-3 max-w-full break-words font-display text-[clamp(1.5rem,7vw,3.75rem)] font-semibold leading-tight text-[#172522] sm:max-w-4xl sm:text-6xl">{insight.title}</h1>
+            <p className="mt-6 max-w-full break-words text-base leading-7 text-[#4b5b56] sm:max-w-2xl sm:text-lg sm:leading-8">{insight.summary}</p>
           </div>
         </header>
         <div className="mx-auto max-w-6xl px-5 py-12 sm:px-8 sm:py-16">
           <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_14rem] lg:gap-16">
-            <div className="max-w-3xl min-w-0">
+            <div className="max-w-full min-w-0 break-words sm:max-w-3xl">
               {insight.sections.map((section) => (
                 <section key={section.heading} className="mb-10 last:mb-0">
                   <h2 className="font-display text-2xl font-semibold text-[#1b2b26]">{section.heading}</h2>
