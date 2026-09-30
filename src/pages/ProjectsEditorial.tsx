@@ -21,12 +21,6 @@ const projects = [
     url: "https://diva-haarstudio.de/",
     description: "Website mit Informationen zu Marke, Leistungen und Kontakt für ein Haarstudio.",
   },
-  {
-    name: "Profischnitt",
-    type: "Unternehmenswebsite",
-    url: "https://profischnitt.de/",
-    description: "Webauftritt zur Darstellung von Services und Kontaktmöglichkeiten eines Friseur- und Barber-Angebots.",
-  },
 ] as const;
 
 const ProjectsEditorial = () => (

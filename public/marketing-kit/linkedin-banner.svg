@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1584" height="396" viewBox="0 0 1584 396" role="img" aria-labelledby="title description">
+  <title id="title">Quality1st LinkedIn Banner</title>
+  <desc id="description">IT-L&#246;sungen, die funktionieren. Software, die Qualit&#228;t zeigt.</desc>
+  <rect width="1584" height="396" fill="#173f36"/>
+  <path d="M0 333H1584" stroke="#ffffff" stroke-opacity=".16"/>
+  <path d="M0 34H1040" stroke="#b25336" stroke-width="4"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".12">
+    <path d="M1040 0v333M1120 0v333M1200 0v333M1280 0v333M1360 0v333M1440 0v333M1520 0v333"/>
+    <path d="M1040 73h544M1040 153h544M1040 233h544M1040 313h544"/>
+  </g>
+  <path d="M1090 257h76l40-76 48 49 49-105 49 43h70" fill="none" stroke="#8dc6a6" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#173f36" stroke="#8dc6a6" stroke-width="4">
+    <circle cx="1090" cy="257" r="7"/><circle cx="1166" cy="257" r="7"/><circle cx="1206" cy="181" r="7"/><circle cx="1254" cy="230" r="7"/><circle cx="1303" cy="125" r="7"/><circle cx="1352" cy="168" r="7"/><circle cx="1422" cy="168" r="7"/>
+  </g>
+  <g transform="translate(1264 57)">
+    <rect width="54" height="54" fill="#edf3ef"/>
+    <path d="M27 8 43 14v13c0 11-7 17-15 22-1 0-1 0-2 0-9-5-15-11-15-22V14z" fill="none" stroke="#24574b" stroke-width="2.8" stroke-linejoin="round"/>
+    <path d="m19 27 6 6 11-13" fill="none" stroke="#b25336" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="1332" y="81" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="30" font-weight="650">Quality<tspan fill="#a8d2b9">1st</tspan></text>
+  <text x="1334" y="101" fill="#c7d8d0" font-family="Avenir Next, Segoe UI, sans-serif" font-size="9" font-weight="700" letter-spacing="1">M&#220;NSTER  ·  DEUTSCHLAND</text>
+  <text x="112" y="145" fill="#b8d3c5" font-family="Avenir Next, Segoe UI, sans-serif" font-size="15" font-weight="700" letter-spacing="2">IT-DIENSTLEISTUNGEN AUS M&#220;NSTER</text>
+  <text x="108" y="218" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="49" font-weight="650">IT-L&#246;sungen, die funktionieren.</text>
+  <text x="110" y="273" fill="#d7e5de" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="450">Software, die Qualit&#228;t zeigt.</text>
+  <text x="112" y="371" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14" font-weight="600">SOFTWAREENTWICKLUNG</text>
+  <circle cx="310" cy="366" r="2.5" fill="#b25336"/>
+  <text x="330" y="371" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14" font-weight="600">QUALITY ENGINEERING</text>
+  <circle cx="545" cy="366" r="2.5" fill="#b25336"/>
+  <text x="565" y="371" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14" font-weight="600">AUTOMATISIERUNG</text>
+</svg>

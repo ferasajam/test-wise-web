@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="120" viewBox="0 0 660 120" role="img" aria-labelledby="title description">
+  <title id="title">Quality1st</title>
+  <desc id="description">Quality1st Wortmarke mit Schild-und-Haekchen-Signet</desc>
+  <g transform="translate(8 8)">
+    <rect x="0" y="0" width="104" height="104" fill="#edf3ef" stroke="#cad7d0" stroke-width="2"/>
+    <path d="M52 15 82 26v23c0 20-12 31-29 40-1 .5-2 .5-3 0-17-9-29-20-29-40V26z" fill="none" stroke="#24574b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="m36 51 11 11 22-24" fill="none" stroke="#b25336" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="134" y="70" fill="#172522" font-family="Avenir Next, Segoe UI, sans-serif" font-size="48" font-weight="650">Quality<tspan fill="#376457">1st</tspan></text>
+  <text x="137" y="96" fill="#697772" font-family="Avenir Next, Segoe UI, sans-serif" font-size="11" font-weight="700" letter-spacing="1.3">IT-DIENSTLEISTUNGEN  ·  SOFTWARE  ·  QUALIT&#196;T</text>
+</svg>

@@ -63,6 +63,25 @@ const ContactRedesign = () => (
           </div>
 
           <aside className="grid content-start gap-4" aria-label="Kontaktinformationen">
+            <div className="border border-border bg-[hsl(var(--surface)/0.65)] p-5">
+              <p className="text-xs font-bold uppercase tracking-[0.08em] text-muted-foreground">Business Card</p>
+              <div className="mt-4 flex items-center gap-4">
+                <div className="rounded-xl border border-border bg-white p-2 shadow-sm">
+                  <img
+                    src="/quality1st-qr.png"
+                    alt="QR-Code zur Quality1st Website"
+                    className="h-[110px] w-[110px] rounded-md"
+                  />
+                </div>
+                <div>
+                  <p className="font-display text-lg font-semibold text-foreground">Quality1st</p>
+                  <p className="mt-1 text-sm text-muted-foreground">Softwareentwicklung · Testing · KI</p>
+                  <a href="https://quality-1st.de/" target="_blank" rel="noreferrer" className="mt-3 inline-flex text-sm font-bold text-accent hover:text-primary focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring">
+                    quality-1st.de
+                  </a>
+                </div>
+              </div>
+            </div>
             {contactDetails.map((detail) => {
               const Icon = detail.icon;
               const content = <><p className="text-xs font-bold uppercase tracking-[0.08em] text-muted-foreground">{detail.label}</p><p className="mt-2 font-display text-base font-semibold text-foreground">{detail.value}</p><p className="mt-1 text-xs leading-5 text-muted-foreground">{detail.note}</p></>;

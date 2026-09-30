@@ -6,6 +6,7 @@ import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/component
 import { Button } from "@/components/ui/button";
 
 const projects = [
+  
   {
     name: "SpendWise",
     type: "KI-gestützte Web-App",
@@ -25,27 +26,8 @@ const projects = [
     highlights: ["Mehrere Modelle in einer Oberfläche", "Schneller Wechsel je nach Use-Case", "Ein zentraler Zugang für Teams"],
     tags: ["AI", "Platform", "UX"],
     accent: "border-accent/45",
-  },
-  {
-    name: "Diva Haarstudio",
-    type: "Marken-Website",
-    url: "https://diva-haarstudio.de/",
-    tagline: "Salon-Auftritt mit Leistungen und eigener Marke.",
-    description: "Ein moderner Markenauftritt für ein Haarstudio mit klarer Darstellung der Leistungen, starker visueller Identität und optimierter mobiler Erfahrung.",
-    highlights: ["Klares Design und Markenwirkung", "Leistungsübersicht mit Service-Fokus", "Optimiert für mobile Endgeräte"],
-    tags: ["Website", "Brand", "Mobile"],
-    accent: "border-primary/45",
-  },
-  {
-    name: "Profischnitt",
-    type: "Service-Website",
-    url: "https://profischnitt.de/",
-    tagline: "Ein klarer Auftritt für Friseur und Barber.",
-    description: "Ein professioneller Webauftritt mit Fokus auf Services, Vertrauen sowie schnellen Kontakt- und Terminwegen für Kundinnen und Kunden.",
-    highlights: ["Service- und Leistungsdarstellung", "Vertrauensaufbau durch klare Information", "Schnelle Kontakt- und Terminwege"],
-    tags: ["Website", "Services", "Conversion"],
-    accent: "border-accent/45",
-  },
+},
+  
 ] as const;
 
 const ProjectsRedesign = () => (

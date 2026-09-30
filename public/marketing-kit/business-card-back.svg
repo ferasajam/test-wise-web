@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91mm" height="61mm" viewBox="0 0 910 610" role="img" aria-labelledby="title description">
+  <title id="title">Quality1st Visitenkarte, Rueckseite</title>
+  <desc id="description">Kontaktinformationen von Quality1st, mit 3 Millimeter Beschnittzugabe, Endformat 85 mal 55 Millimeter</desc>
+  <rect width="910" height="610" fill="#f5f6f3"/>
+  <path d="M0 0h22v610H0z" fill="#b25336"/>
+  <path d="M22 0h208v610H22z" fill="#173f36"/>
+  <g transform="translate(70 95)">
+    <rect width="112" height="112" fill="#edf3ef"/>
+    <path d="M56 16 90 28v25c0 23-14 35-33 45-1 .5-2 .5-3 0-19-10-33-22-33-45V28z" fill="none" stroke="#24574b" stroke-width="5" stroke-linejoin="round"/>
+    <path d="m37 53 13 13 25-30" fill="none" stroke="#b25336" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="70" y="263" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="28" font-weight="650">Quality<tspan fill="#a8d2b9">1st</tspan></text>
+  <text x="72" y="292" fill="#d7e5de" font-family="Avenir Next, Segoe UI, sans-serif" font-size="12" font-weight="600">IT-DIENSTLEISTUNGEN</text>
+  <text x="72" y="314" fill="#d7e5de" font-family="Avenir Next, Segoe UI, sans-serif" font-size="12" font-weight="600">AUS M&#220;NSTER</text>
+  <text x="286" y="116" fill="#376457" font-family="Avenir Next, Segoe UI, sans-serif" font-size="12" font-weight="700" letter-spacing="1.8">DIREKT ERREICHBAR</text>
+  <text x="286" y="166" fill="#172522" font-family="Avenir Next, Segoe UI, sans-serif" font-size="21" font-weight="650">Feras Ajam</text>
+  <path d="M286 193h544" stroke="#d9ded9"/>
+  <circle cx="297" cy="244" r="13" fill="#edf3ef"/>
+  <path d="M292 239h10v10h-10zM292 240l5 4 5-4" fill="none" stroke="#24574b" stroke-width="1.5" stroke-linejoin="round"/>
+  <text x="324" y="250" fill="#24574b" font-family="Avenir Next, Segoe UI, sans-serif" font-size="17" font-weight="600">info@quality-1st.de</text>
+  <circle cx="297" cy="295" r="13" fill="#edf3ef"/>
+  <path d="M292 288c1-2 3-2 4-1l2 3-2 2c1 3 3 5 6 6l2-2 3 2c1 1 1 3-1 4-2 1-4 1-6 0-5-2-9-6-10-10-1-2 0-3 2-4z" fill="none" stroke="#24574b" stroke-width="1.4" stroke-linejoin="round"/>
+  <text x="324" y="301" fill="#24574b" font-family="Avenir Next, Segoe UI, sans-serif" font-size="17" font-weight="600">+49 (0) 170 5975430</text>
+  <circle cx="297" cy="346" r="13" fill="#edf3ef"/>
+  <circle cx="297" cy="346" r="5" fill="none" stroke="#24574b" stroke-width="1.5"/>
+  <path d="M282 346h30M297 331c5 5 5 25 0 30M297 331c-5 5-5 25 0 30" fill="none" stroke="#24574b" stroke-width="1.2"/>
+  <text x="324" y="352" fill="#24574b" font-family="Avenir Next, Segoe UI, sans-serif" font-size="17" font-weight="600">quality-1st.de</text>
+  <path d="M286 390h544" stroke="#d9ded9"/>
+  <text x="286" y="431" fill="#172522" font-family="Avenir Next, Segoe UI, sans-serif" font-size="15" font-weight="650">Quality1st</text>
+  <text x="286" y="458" fill="#5b6964" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14">Corrensstr. 88  ·  48149 M&#252;nster</text>
+  <text x="286" y="483" fill="#5b6964" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14">Softwareentwicklung  ·  Quality Engineering</text>
+  <text x="286" y="508" fill="#5b6964" font-family="Avenir Next, Segoe UI, sans-serif" font-size="14">IT &amp; Automatisierung</text>
+  <path d="M286 544h70" stroke="#b25336" stroke-width="4"/>
+</svg>

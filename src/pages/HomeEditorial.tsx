@@ -62,6 +62,12 @@ const services = [
 
 const projects = [
   {
+    name: "Diva Haarstudio",
+    type: "Website",
+    url: "https://diva-haarstudio.de/",
+    description: "Ein Webauftritt mit klarer Leistungsübersicht und mobilen Kontaktwegen.",
+  },
+  {
     name: "SpendWise",
     type: "KI-gestützte Web-App",
     url: "https://spendwise.quality-1st.de/",
@@ -73,12 +79,7 @@ const projects = [
     url: "https://chat.quality-1st.de/",
     description: "Ein zentraler Zugang zu mehreren KI-Modellen in einer gemeinsamen Oberfläche.",
   },
-  {
-    name: "Diva Haarstudio",
-    type: "Website",
-    url: "https://diva-haarstudio.de/",
-    description: "Ein Webauftritt mit klarer Leistungsübersicht und mobilen Kontaktwegen.",
-  },
+  
 ] as const;
 
 const faqs = [

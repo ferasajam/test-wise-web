@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title description">
+  <title id="title">Quality1st LinkedIn Profilbild</title>
+  <desc id="description">Grosses Schild-und-Haekchen-Signet in hellem Kontrast auf Quality1st-Waldgruen.</desc>
+  <rect width="1200" height="1200" fill="#173f36"/>
+  <circle cx="600" cy="600" r="505" fill="none" stroke="#ffffff" stroke-opacity=".1" stroke-width="2"/>
+  <g transform="translate(150 0) scale(.75)">
+    <path d="M600 198 897 307v230c0 210-126 357-285 440l-12 6-12-6c-159-83-285-230-285-440V307z" fill="none" stroke="#f5f6f3" stroke-width="48" stroke-linejoin="round"/>
+    <path d="m425 600 123 123 239-256" fill="none" stroke="#a8d2b9" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="600" y="888" fill="#f5f6f3" font-family="Avenir Next, Segoe UI, sans-serif" font-size="94" font-weight="650" text-anchor="middle">Quality<tspan fill="#a8d2b9">1st</tspan></text>
+  <path d="M545 947h110" stroke="#b25336" stroke-width="10" stroke-linecap="round"/>
+</svg>

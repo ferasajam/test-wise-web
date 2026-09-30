@@ -113,6 +113,13 @@ const process = [
 
 const projects = [
   {
+    name: "Diva Haarstudio",
+    type: "Marken-Website",
+    url: "https://diva-haarstudio.de/",
+    description: "Ein moderner Markenauftritt mit klaren Leistungen und mobilen Kontaktwegen.",
+    stack: ["Website", "Brand", "Mobile"],
+  },
+  {
     name: "SpendWise",
     type: "KI-gestützte Web-App",
     url: "https://spendwise.quality-1st.de/",
@@ -126,13 +133,7 @@ const projects = [
     description: "Mehrere führende KI-Modelle in einer klaren, zentralen Oberfläche.",
     stack: ["AI", "Web-App", "UX"],
   },
-  {
-    name: "Diva Haarstudio",
-    type: "Marken-Website",
-    url: "https://diva-haarstudio.de/",
-    description: "Ein moderner Markenauftritt mit klaren Leistungen und mobilen Kontaktwegen.",
-    stack: ["Website", "Brand", "Mobile"],
-  },
+  
 ] as const;
 
 const faqs = [

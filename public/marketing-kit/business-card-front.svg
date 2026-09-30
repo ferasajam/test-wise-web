@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="91mm" height="61mm" viewBox="0 0 910 610" role="img" aria-labelledby="title description">
+  <title id="title">Quality1st Visitenkarte, Vorderseite</title>
+  <desc id="description">Visitenkarte mit 3 Millimeter Beschnittzugabe, Endformat 85 mal 55 Millimeter</desc>
+  <rect width="910" height="610" fill="#173f36"/>
+  <path d="M0 0h910v9H0z" fill="#b25336"/>
+  <path d="M640 0h270v610H640z" fill="#24574b"/>
+  <g fill="none" stroke="#ffffff" stroke-opacity=".12">
+    <path d="M690 0v610M760 0v610M830 0v610M640 105h270M640 175h270M640 245h270M640 315h270M640 385h270M640 455h270M640 525h270"/>
+  </g>
+  <g transform="translate(74 72)">
+    <rect width="82" height="82" fill="#edf3ef"/>
+    <path d="M41 12 66 21v18c0 17-10 26-24 34-1 .4-1 .4-2 0-14-8-24-17-24-34V21z" fill="none" stroke="#24574b" stroke-width="4" stroke-linejoin="round"/>
+    <path d="m29 40 9 9 17-19" fill="none" stroke="#b25336" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="176" y="126" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="38" font-weight="650">Quality<tspan fill="#a8d2b9">1st</tspan></text>
+  <text x="178" y="151" fill="#c7d8d0" font-family="Avenir Next, Segoe UI, sans-serif" font-size="10" font-weight="700" letter-spacing="1.1">IT-DIENSTLEISTUNGEN  ·  SOFTWARE  ·  QUALIT&#196;T</text>
+  <path d="M74 207h480" stroke="#8cae9d" stroke-opacity=".55"/>
+  <text x="74" y="299" fill="#ffffff" font-family="Avenir Next, Segoe UI, sans-serif" font-size="43" font-weight="650">Feras Ajam</text>
+  <text x="77" y="340" fill="#c7d8d0" font-family="Avenir Next, Segoe UI, sans-serif" font-size="17" font-weight="500">Softwareentwicklung &amp; IT-Beratung</text>
+  <path d="M77 386h52" stroke="#b25336" stroke-width="4"/>
+  <text x="77" y="431" fill="#e8f0ec" font-family="Avenir Next, Segoe UI, sans-serif" font-size="15" font-weight="500">Digitale Produkte. Gepr&#252;fte Qualit&#228;t.</text>
+  <text x="77" y="548" fill="#d7e5de" font-family="Avenir Next, Segoe UI, sans-serif" font-size="12" font-weight="600" letter-spacing="1.4">QUALITY-1ST.DE</text>
+</svg>
