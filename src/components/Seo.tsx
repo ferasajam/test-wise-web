@@ -4,17 +4,20 @@ export const SITE_NAME = "Quality1st";
 export const SITE_URL = "https://quality-1st.de";
 export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.jpg`;
 
-const DEFAULT_TITLE = "Quality1st | Softwareentwicklung, Testing & KI-Automatisierung";
+const DEFAULT_TITLE = "IT-Dienstleistungen für kleine Unternehmen | Quality1st";
 const DEFAULT_DESCRIPTION =
-  "Quality1st entwickelt digitale Produkte, testet Software professionell und automatisiert Prozesse für stabile Releases und technische Lösungen mit Substanz.";
+  "IT-Dienstleister aus Münster für kleine Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
-  "Webentwicklung",
-  "KI Agenten",
-  "Softwaretests",
-  "Testautomatisierung",
-  "Penetrationstests",
-  "Qualitätssicherung",
+  "IT-Dienstleistungen",
+  "IT-Dienstleister für kleine Unternehmen",
+  "IT Dienstleistungen in der Nähe",
+  "Website erstellen lassen",
+  "Webdesign für kleine Unternehmen",
+  "SEO für lokale Unternehmen",
+  "Google-Unternehmensprofil",
+  "Social Media Marketing",
+  "App Entwicklung",
 ];
 
 const CONTACT_EMAIL = "info@quality-1st.de";
@@ -64,13 +67,20 @@ export const getAbsoluteAssetUrl = (path = "/") => new URL(path, SITE_URL).toStr
 
 export const getOrganizationStructuredData = (): StructuredData => ({
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": ["Organization", "ProfessionalService"],
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden in Deutschland bei Softwareentwicklung, Quality Engineering & Testautomatisierung, digitalen Lösungen und IT-Automatisierung.",
+    "Quality1st ist ein IT-Dienstleister aus Münster für kleine Unternehmen und Selbstständige. Das Angebot umfasst Websites, Apps, lokale Google-Sichtbarkeit, SEO und Social Media.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
+  address: {
+    "@type": "PostalAddress",
+    streetAddress: "Corrensstr. 88",
+    postalCode: "48149",
+    addressLocality: "Münster",
+    addressCountry: "DE",
+  },
   areaServed: { "@type": "Country", name: "Deutschland" },
   contactPoint: {
     "@type": "ContactPoint",
@@ -81,14 +91,17 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   },
   sameAs: ["https://www.linkedin.com/company/quality1stde"],
   knowsAbout: [
-    "Softwareentwicklung",
-    "Software Testing",
-    "Quality Engineering & Testautomatisierung",
-    "IT-Automatisierung",
-    "Webentwicklung",
-    "API-Entwicklung",
-    "DevOps",
-    "IT-Security",
+    "Webdesign für kleine Unternehmen",
+    "IT-Dienstleistungen für kleine Unternehmen",
+    "IT-Dienstleister in Münster",
+    "Websites und Webshops",
+    "Mobile Apps",
+    "Lokale Suchmaschinenoptimierung",
+    "Google-Unternehmensprofile",
+    "Social Media Marketing",
+    "Online-Marketing",
+    "Individuelle Softwareentwicklung",
+    "Softwarequalität",
   ],
 });
 

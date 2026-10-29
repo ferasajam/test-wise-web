@@ -1,12 +1,10 @@
 import {
   ArrowRight,
   ArrowUpRight,
-  Bot,
-  Code2,
-  GitBranch,
-  ShieldCheck,
+  Globe2,
+  Megaphone,
+  Search,
   Smartphone,
-  TestTube2,
 } from "lucide-react";
 import { Link } from "react-router-dom";
 import Seo, {
@@ -18,45 +16,31 @@ import Seo, {
 const services = [
   {
     number: "01",
-    icon: Code2,
-    title: "Softwareentwicklung",
-    description: "Webanwendungen, APIs und individuelle Software, abgestimmt auf Ihre Abläufe und vorhandene Systeme.",
-    href: "/services/softwareentwicklung",
+    icon: Globe2,
+    title: "Websites & Webshops",
+    description: "Ein klarer, mobilfreundlicher Auftritt, der Ihr Angebot zeigt und Anfragen erleichtert.",
+    href: "/services/websites-webshops",
   },
   {
     number: "02",
     icon: Smartphone,
-    title: "Mobile App Entwicklung",
-    description: "Apps für iOS und Android, mit passender Plattformwahl, Schnittstellen und Tests.",
+    title: "Apps für iOS & Android",
+    description: "Mobile Apps, die Kunden oder Mitarbeitenden konkrete Aufgaben erleichtern.",
     href: "/services/mobile-app-entwicklung",
   },
   {
     number: "03",
-    icon: TestTube2,
-    title: "Quality Engineering & Testautomatisierung",
-    description: "Manuelle und explorative Prüfungen sowie automatisierte UI-, API- und Regressionstests, eingebunden in passende CI/CD-Abläufe.",
-    href: "/services/quality-engineering",
+    icon: Search,
+    title: "SEO & Google-Sichtbarkeit",
+    description: "Damit Menschen in Ihrer Umgebung Ihren Betrieb bei Google leichter finden.",
+    href: "/services/seo-google-sichtbarkeit",
   },
   {
     number: "04",
-    icon: Bot,
-    title: "KI & Workflow-Automatisierung",
-    description: "KI-Anwendungen und n8n-Workflows für wiederkehrende Aufgaben, bei denen Automatisierung praktisch hilft.",
-    href: "/services/ki-automation",
-  },
-  {
-    number: "05",
-    icon: GitBranch,
-    title: "IT & DevOps",
-    description: "Build- und Release-Pipelines, technische Automatisierung und Verbesserungen für einen verlässlichen Betrieb.",
-    href: "/services/it-devops",
-  },
-  {
-    number: "06",
-    icon: ShieldCheck,
-    title: "Security & Performance",
-    description: "OWASP-orientierte Prüfungen und gezielte Analysen von Sicherheit, Last und Antwortzeiten.",
-    href: "/services/security-performance",
+    icon: Megaphone,
+    title: "Social Media & Online-Marketing",
+    description: "Mit passenden Inhalten und Kanälen bei Ihren Kunden präsent bleiben.",
+    href: "/services/social-media-online-marketing",
   },
 ];
 
@@ -68,55 +52,49 @@ const projects = [
     description: "Ein Webauftritt mit klarer Leistungsübersicht und mobilen Kontaktwegen.",
   },
   {
-    name: "SpendWise",
-    type: "KI-gestützte Web-App",
-    url: "https://spendwise.quality-1st.de/",
-    description: "Eine Web-Anwendung zur Erfassung und Auswertung von Belegen und Budgets.",
-  },
-  {
-    name: "Quality1st Chat",
-    type: "KI-Plattform",
-    url: "https://chat.quality-1st.de/",
-    description: "Ein zentraler Zugang zu mehreren KI-Modellen in einer gemeinsamen Oberfläche.",
+    name: "KAFI Transporte",
+    type: "Unternehmenswebsite",
+    url: "https://kafitransporte.de/",
+    description: "Website für deutschlandweite Umzüge und Möbeltransporte.",
   },
   
 ] as const;
 
 const faqs = [
   {
-    question: "Was macht Quality1st?",
-    answer: "Quality1st ist ein IT-Dienstleister aus Deutschland für Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden. Das Angebot umfasst Softwareentwicklung, Quality Engineering & Testautomatisierung, IT-Automatisierung und technische Beratung.",
+    question: "Wobei unterstützt Quality1st?",
+    answer: "Wir erstellen Websites und Apps für kleine Unternehmen und helfen dabei, online besser gefunden zu werden und passende Kunden über Social Media zu erreichen.",
   },
   {
     question: "Für wen arbeitet Quality1st?",
-    answer: "Quality1st unterstützt kleine und große Unternehmen, Selbstständige, Start-ups und Privatkunden bei digitalen Vorhaben – von individuellen Websites und Apps bis zu Softwareentwicklung, Testing und Automatisierung.",
+    answer: "Unser Angebot richtet sich besonders an kleine Unternehmen und Selbstständige, zum Beispiel Friseursalons, Umzugsfirmen und lokale Dienstleister.",
   },
   {
-    question: "Ist Quality1st auf Software Testing spezialisiert?",
-    answer: "Quality Engineering & Testautomatisierung sind wichtige Schwerpunkte. Quality1st unterstützt ebenso bei Entwicklung, Web- und API-Projekten, Automatisierung sowie technischen Betriebsfragen.",
+    question: "Können Sie auch eine bestehende Website verbessern?",
+    answer: "Ja. Wir schauen uns gemeinsam an, was bereits gut funktioniert und wie Inhalte, mobile Darstellung, Google-Auffindbarkeit oder Kontaktmöglichkeiten verbessert werden können.",
   },
   {
-    question: "Mit welchen Technologien arbeitet Quality1st?",
-    answer: "Die Technologie richtet sich nach dem Vorhaben und der vorhandenen Umgebung. Im Testing kommen beispielsweise Playwright, Cypress, Selenium, Appium und Postman zum Einsatz; für Automatisierung unter anderem n8n und CI/CD-Werkzeuge.",
+    question: "Versprechen Sie einen festen Platz bei Google?",
+    answer: "Nein. Google bestimmt die Suchergebnisse selbst. Wir verbessern die Grundlagen und erklären verständlich, welche Maßnahmen sinnvoll sind, ohne bestimmte Rankings zu versprechen.",
   },
 ];
 
 const HomeEditorial = () => (
   <>
     <Seo
-      title="Quality1st | IT-Dienstleistungen, Softwareentwicklung & Testing"
-      description="Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Apps, Quality Engineering & Testautomatisierung und digitalen Lösungen."
+      title="IT-Dienstleistungen für kleine Unternehmen | Quality1st"
+      description="IT-Dienstleister aus Münster für kleine Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe."
       path="/"
       keywords={[
-        "IT Dienstleistungen",
-        "IT Dienstleister Deutschland",
-        "Softwareentwicklung",
-        "Software Testing",
-        "Quality Engineering & Testautomatisierung",
-        "Webentwicklung",
-        "API Entwicklung",
-        "n8n Automatisierung",
-        "DevOps",
+        "Website erstellen lassen",
+        "IT-Dienstleistungen für kleine Unternehmen",
+        "IT-Dienstleister für kleine Unternehmen",
+        "IT Dienstleistungen in der Nähe",
+        "Webdesign für kleine Unternehmen",
+        "App Entwicklung",
+        "SEO für lokale Unternehmen",
+        "Social Media Betreuung",
+        "Online Marketing",
       ]}
       structuredData={[
         getOrganizationStructuredData(),
@@ -145,13 +123,13 @@ const HomeEditorial = () => (
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-16 pt-16 sm:px-8 sm:pb-24 sm:pt-24 lg:grid-cols-[1.3fr_0.7fr] lg:items-end lg:gap-16">
           <div>
             <p className="flex items-center gap-3 text-xs font-bold uppercase text-[#3c645a]">
-              <span className="h-px w-8 bg-[#b25336]" /> IT-Dienstleistungen aus Deutschland
+              <span className="h-px w-8 bg-[#b25336]" /> IT-Dienstleister aus Münster für kleine Unternehmen
             </p>
             <h1 className="mt-7 max-w-3xl font-display text-4xl font-semibold leading-[1.08] text-[#172522] sm:text-6xl">
-              IT-Lösungen, die funktionieren. Software, die Qualität zeigt.
+              IT-Dienstleistungen für kleine Unternehmen.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Quality1st unterstützt Unternehmen jeder Größe, Selbstständige, Start-ups und Privatkunden bei Softwareentwicklung, Quality Engineering & Testautomatisierung, IT-Automatisierung und digitalen Lösungen – von der Idee bis zum stabilen Betrieb.
+              Wir erstellen Websites und Apps und helfen Ihnen, bei Google und in sozialen Medien sichtbar zu werden. Verständlich geplant für Friseursalons, Umzugsfirmen und lokale Betriebe.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -170,15 +148,15 @@ const HomeEditorial = () => (
           </div>
 
           <aside className="border-l-2 border-[#b25336] py-1 pl-5 sm:pl-7" aria-label="Leistungsprofil">
-            <p className="text-xs font-bold uppercase text-[#697772]">Womit wir helfen</p>
+            <p className="text-xs font-bold uppercase text-[#697772]">Für Ihren Betrieb</p>
             <ul className="mt-4 space-y-3 text-sm font-medium text-[#263732]">
-              <li>Digitale Produkte entwickeln</li>
-              <li>Qualität verlässlich prüfen</li>
-              <li>Wiederkehrende Arbeit automatisieren</li>
-              <li>Technische Abläufe verbessern</li>
+              <li>Eine Website, die Ihr Angebot klar zeigt</li>
+              <li>Mehr Sichtbarkeit bei Google</li>
+              <li>Social Media sinnvoll nutzen</li>
+              <li>Apps für Kunden und Mitarbeitende</li>
             </ul>
             <p className="mt-6 max-w-xs text-xs leading-5 text-[#697772]">
-              Direkte Zusammenarbeit, klare Entscheidungen und Technik, die zu Ihrem Vorhaben passt.
+              Für Friseursalons, Umzugsfirmen und lokale Dienstleister.
             </p>
           </aside>
         </div>
@@ -190,11 +168,11 @@ const HomeEditorial = () => (
             <div>
               <p className="text-xs font-bold uppercase text-[#3c645a]">Leistungen</p>
               <h2 id="services-heading" className="mt-3 max-w-md font-display text-3xl font-semibold leading-tight text-[#172522] sm:text-4xl">
-                Engineering vom ersten Entwurf bis zum Betrieb.
+                Was Ihr Unternehmen online weiterbringt.
               </h2>
             </div>
             <p className="max-w-xl text-sm leading-7 text-[#4b5b56] sm:justify-self-end">
-              Einzelne Expertise oder Unterstützung über mehrere Projektphasen hinweg: Wir setzen dort an, wo Ihr Team gerade Bedarf hat.
+              Wählen Sie, was Sie gerade brauchen. Wir erklären die nächsten Schritte ohne Fachjargon.
             </p>
           </div>
           <div className="mt-10 grid border-t border-[#d9ded9] sm:grid-cols-2 sm:gap-x-10">
@@ -217,7 +195,7 @@ const HomeEditorial = () => (
             ))}
           </div>
           <Link to="/services" className="mt-7 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
-            Leistungsübersicht öffnen <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            Alle Angebote ansehen <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </Link>
         </div>
       </section>
@@ -225,20 +203,20 @@ const HomeEditorial = () => (
       <section className="border-b border-[#d9ded9]" aria-labelledby="approach-heading">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <p className="text-xs font-bold uppercase text-[#3c645a]">Qualität als Fundament</p>
+            <p className="text-xs font-bold uppercase text-[#3c645a]">Sorgfältig umgesetzt</p>
             <h2 id="approach-heading" className="mt-3 max-w-md font-display text-3xl font-semibold leading-tight text-[#172522] sm:text-4xl">
-              Qualität ist Teil der Arbeit. Kein letzter Prüfschritt.
+              Einfach zu nutzen. Zuverlässig im Alltag.
             </h2>
           </div>
           <div>
             <p className="max-w-2xl text-base leading-7 text-[#4b5b56]">
-              Wir verbinden Entwicklung und Qualitätssicherung, damit technische Entscheidungen früh überprüfbar sind. Manuelle Tests helfen, Verhalten und Nutzung zu verstehen. Automatisierte Tests sichern wiederkehrende Abläufe ab.
+              Ihre Website soll auf dem Handy gut funktionieren, schnell laden und es Kunden leicht machen, Sie zu erreichen. Darauf achten wir bei der Umsetzung.
             </p>
             <p className="mt-4 max-w-2xl text-base leading-7 text-[#4b5b56]">
-              Je nach Produkt gehören API-, UI-, Mobile-, Performance- oder Security-Tests dazu. Werkzeuge wie Playwright, Cypress, Selenium, Appium und Postman setzen wir im jeweiligen Kontext ein.
+              Technische Prüfungen gehören im Hintergrund dazu. Für Sie zählen ein verständlicher Auftritt und ein reibungsloser Weg von der Suche bis zur Anfrage.
             </p>
             <Link to="/services/quality-engineering" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
-              Quality Engineering & Testautomatisierung im Detail <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              So arbeiten wir <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
         </div>
@@ -255,7 +233,7 @@ const HomeEditorial = () => (
               Alle Projekte <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
-          <div className="mt-9 grid border-y border-[#d9ded9] md:grid-cols-3 md:divide-x md:divide-[#d9ded9]">
+          <div className="mt-9 grid border-y border-[#d9ded9] md:grid-cols-2 md:divide-x md:divide-[#d9ded9]">
             {projects.map((project, index) => (
               <article key={project.name} className="flex min-h-52 flex-col border-b border-[#d9ded9] py-6 md:border-b-0 md:px-6 md:first:pl-0 md:last:pr-0">
                 <p className="text-xs font-semibold uppercase text-[#78847e]">0{index + 1} / {project.type}</p>
@@ -295,11 +273,11 @@ const HomeEditorial = () => (
         <div className="mx-auto flex max-w-6xl flex-col gap-7 px-5 py-14 sm:px-8 sm:py-16 md:flex-row md:items-end md:justify-between">
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase text-[#c1d6cb]">Kontakt</p>
-            <h2 id="contact-heading" className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl">Was möchten Sie entwickeln oder verbessern?</h2>
-            <p className="mt-4 max-w-xl text-sm leading-7 text-[#d6e1dc]">Beschreiben Sie kurz Ihre Ausgangslage. Wir sprechen über Anforderungen, technische Optionen und einen sinnvollen nächsten Schritt.</p>
+            <h2 id="contact-heading" className="mt-3 font-display text-3xl font-semibold leading-tight sm:text-4xl">Was möchten Sie online erreichen?</h2>
+            <p className="mt-4 max-w-xl text-sm leading-7 text-[#d6e1dc]">Erzählen Sie uns kurz von Ihrem Betrieb. Gemeinsam finden wir heraus, welcher nächste Schritt für Sie sinnvoll ist.</p>
           </div>
           <Link to="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 bg-white px-5 text-sm font-semibold text-[#173f36] transition-colors hover:bg-[#e6eee9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#173f36]">
-            Projekt besprechen <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            Unverbindlich anfragen <ArrowRight aria-hidden="true" className="h-4 w-4" />
           </Link>
         </div>
       </section>

@@ -4,10 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "Start", path: "/" },
-  { name: "Leistungen", path: "/services" },
+  { name: "IT-Dienstleistungen", path: "/services" },
   { name: "Über uns", path: "/about" },
   { name: "Projekte", path: "/projects" },
-  { name: "Insights", path: "/insights" },
   { name: "Kontakt", path: "/contact" },
 ];
 
@@ -62,7 +61,7 @@ const Header = () => {
           </nav>
 
           <div className="flex items-center gap-2">
-            <Link to="/contact" className="hidden min-h-10 items-center bg-[#173f36] px-4 text-xs font-semibold text-white transition-colors hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] lg:inline-flex">Projekt besprechen</Link>
+            <Link to="/contact" className="hidden min-h-10 items-center bg-[#173f36] px-4 text-xs font-semibold text-white transition-colors hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] lg:inline-flex">Unverbindlich anfragen</Link>
             <button
               type="button"
               className="flex h-11 w-11 items-center justify-center border border-[#cad7d0] text-[#172522] transition-colors hover:border-[#376457] hover:bg-[#edf3ef] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] lg:hidden"
@@ -120,9 +119,9 @@ const Header = () => {
             </nav>
             <div className="mt-auto pt-8">
               <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="flex h-12 w-full items-center justify-center gap-2 bg-[#173f36] text-sm font-semibold text-white hover:bg-[#24574b]">
-                Projekt besprechen <ArrowRight aria-hidden="true" />
+                Unverbindlich anfragen <ArrowRight aria-hidden="true" />
               </Link>
-              <p className="mt-4 text-center text-xs text-[#697772]">IT-Dienstleistungen, Entwicklung & Quality Engineering & Testautomatisierung</p>
+              <p className="mt-4 text-center text-xs text-[#697772]">Websites, Apps, Google & Social Media</p>
             </div>
           </div>
         </div>

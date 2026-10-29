@@ -2,6 +2,7 @@ export type Service = {
   slug: string;
   title: string;
   navTitle: string;
+  featured?: boolean;
   description: string;
   metaDescription: string;
   intro: string;
@@ -13,9 +14,73 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "websites-webshops",
+    title: "Websites & Webshops",
+    navTitle: "Websites & Webshops",
+    featured: true,
+    description: "Professionelle Websites und Webshops, die Ihr Angebot verständlich zeigen und neue Anfragen erleichtern.",
+    metaDescription: "Quality1st erstellt verständliche, mobilfreundliche Websites und Webshops für kleine Unternehmen, lokale Betriebe und Selbstständige.",
+    intro: "Ob Friseursalon, Umzugsfirma oder lokaler Dienstleister: Ihre Website soll auf den ersten Blick zeigen, was Sie anbieten und wie Kunden Sie erreichen. Wir erstellen neue Webauftritte und verbessern bestehende Seiten.",
+    scope: ["Aufbau und Gestaltung Ihrer Website", "Klare Darstellung Ihrer Leistungen und Preise", "Kontaktmöglichkeiten und Anfrageformulare", "Webshops für Produkte und Online-Anfragen", "Mobilfreundliche Darstellung"],
+    approach: ["Wir besprechen Ihr Angebot und Ihre Kunden", "Wir planen die passenden Seiten und Inhalte", "Sie sehen den Entwurf und geben Rückmeldung", "Wir veröffentlichen die Website und erklären die Pflege"],
+    tools: [],
+    faq: [
+      { question: "Kann ich meine Website später selbst aktualisieren?", answer: "Ja. Wir stimmen die Pflege auf Ihre Bedürfnisse ab und zeigen Ihnen, wie Sie wichtige Inhalte selbst ändern können." },
+      { question: "Können Sie eine bestehende Website überarbeiten?", answer: "Ja. Wir prüfen gemeinsam, was bleiben kann und welche Inhalte, Gestaltung oder Funktionen verbessert werden sollten." },
+    ],
+  },
+  {
+    slug: "seo-google-sichtbarkeit",
+    title: "SEO & Google-Sichtbarkeit",
+    navTitle: "SEO & Google",
+    featured: true,
+    description: "Damit Menschen in Ihrer Umgebung Ihr Unternehmen bei Google leichter finden.",
+    metaDescription: "Quality1st unterstützt kleine Unternehmen mit lokaler Suchmaschinenoptimierung, einem gepflegten Google-Unternehmensprofil und verständlichen Website-Inhalten.",
+    intro: "Wenn Menschen nach einem Friseur, Umzugsunternehmen oder anderen Angeboten in ihrer Nähe suchen, sollte Ihr Betrieb gut auffindbar sein. Wir verbessern die Grundlagen Ihrer Website und helfen bei Ihrem Google-Unternehmensprofil.",
+    scope: ["Google-Unternehmensprofil einrichten oder verbessern", "Leistungen und Einsatzgebiete verständlich beschreiben", "Seiten für lokale Suchanfragen verbessern", "Technische und mobile Grundlagen prüfen", "Einfache Maßnahmen für neue Bewertungen besprechen"],
+    approach: ["Wir klären, welche Kunden und Orte Sie erreichen möchten", "Wir prüfen Ihren aktuellen Online-Auftritt", "Sie erhalten eine verständliche Prioritätenliste", "Wir setzen die vereinbarten Verbesserungen um"],
+    tools: [],
+    faq: [
+      { question: "Können Sie einen Platz auf Seite eins bei Google garantieren?", answer: "Nein. Google entscheidet selbst über die Reihenfolge. Wir verbessern die Auffindbarkeit mit nachvollziehbaren Maßnahmen, versprechen aber keine bestimmten Rankings." },
+      { question: "Ist SEO auch für kleine lokale Betriebe sinnvoll?", answer: "Ja. Gerade bei Angeboten mit lokalem Einzugsgebiet helfen klare Standort- und Leistungsinformationen, von passenden Kunden gefunden zu werden." },
+    ],
+  },
+  {
+    slug: "social-media-online-marketing",
+    title: "Social Media & Online-Marketing",
+    navTitle: "Social Media & Marketing",
+    featured: true,
+    description: "Mit einem passenden Online-Auftritt sichtbar bleiben und Interessenten auf Ihr Angebot aufmerksam machen.",
+    metaDescription: "Quality1st unterstützt kleine Unternehmen bei Social-Media-Auftritten, verständlichen Inhalten und passenden Online-Marketing-Maßnahmen.",
+    intro: "Social Media und Online-Marketing sollen zu Ihrem Betrieb passen und im Alltag umsetzbar sein. Gemeinsam klären wir, welche Kanäle sinnvoll sind und wie Sie dort Ihr Angebot regelmäßig und verständlich zeigen.",
+    scope: ["Passende Social-Media-Kanäle auswählen", "Profile für Ihr Unternehmen einrichten oder überarbeiten", "Themen und Inhalte für Beiträge planen", "Website und Social Media sinnvoll verbinden", "Mögliche Online-Werbung verständlich einordnen"],
+    approach: ["Wir klären Zielgruppe, Angebot und verfügbare Zeit", "Wir wählen passende Kanäle und Themen", "Wir erstellen einen einfachen, umsetzbaren Plan", "Wir prüfen gemeinsam, was Resonanz und Anfragen bringt"],
+    tools: [],
+    faq: [
+      { question: "Muss ich auf allen Social-Media-Plattformen aktiv sein?", answer: "Nein. Sinnvoll ist zunächst der Kanal, auf dem Ihre Kunden tatsächlich nach Angeboten suchen und den Sie regelmäßig pflegen können." },
+      { question: "Erstellen Sie auch Inhalte für Social Media?", answer: "Wir unterstützen bei Themen, Planung und der verständlichen Aufbereitung Ihrer Inhalte. Den konkreten Umfang stimmen wir passend zu Ihrem Betrieb ab." },
+    ],
+  },
+  {
+    slug: "mobile-app-entwicklung",
+    title: "Apps für iOS & Android",
+    navTitle: "Apps",
+    featured: true,
+    description: "Mobile Apps für Unternehmen, wenn Kunden oder Mitarbeitende unterwegs etwas erledigen sollen.",
+    metaDescription: "Quality1st plant und entwickelt Apps für iOS und Android, passend zu den Aufgaben Ihres Unternehmens und Ihrer Zielgruppe.",
+    intro: "Eine App kann Abläufe für Ihre Kunden oder Mitarbeitenden vereinfachen. Wir klären zuerst, ob eine App wirklich die passende Lösung ist, welche Funktionen gebraucht werden und wie sie später gepflegt wird.",
+    scope: ["Apps für iPhone und Android-Geräte", "Funktionen passend zu Ihren Kunden und Abläufen", "Verbindung mit Ihrer Website oder vorhandenen Diensten", "Veröffentlichung und spätere Verbesserungen"],
+    approach: ["Wir besprechen die Aufgabe und die künftigen Nutzer", "Wir legen die wichtigsten Funktionen fest", "Sie können die App während der Entwicklung prüfen", "Wir begleiten Veröffentlichung und Weiterentwicklung"],
+    tools: [],
+    faq: [
+      { question: "Braucht mein Unternehmen wirklich eine App?", answer: "Nicht immer. Wir prüfen gemeinsam, ob eine mobile Website ausreicht oder eine App Ihren Kunden beziehungsweise Mitarbeitenden einen konkreten Vorteil bietet." },
+      { question: "Funktioniert die App auf iPhone und Android?", answer: "Das hängt vom Vorhaben ab. Wir planen die passenden Versionen und erklären Aufwand und Unterschiede vor der Umsetzung." },
+    ],
+  },
+  {
     slug: "softwareentwicklung",
-    title: "Softwareentwicklung",
-    navTitle: "Softwareentwicklung",
+    title: "Individuelle Software",
+    navTitle: "Individuelle Software",
     description: "Individuelle Software, Webanwendungen und APIs für konkrete Geschäftsanforderungen.",
     metaDescription: "Quality1st unterstützt Unternehmen, Selbstständige, Start-ups und Privatkunden bei individueller Softwareentwicklung, Webanwendungen, Backend- und API-Entwicklung.",
     intro: "Wenn Standardsoftware nicht zu Ihren Abläufen passt, entwickeln wir digitale Lösungen, die sich in Ihre technische Umgebung einfügen. Anforderungen, Schnittstellen und Betrieb werden früh mitgedacht.",
@@ -25,21 +90,6 @@ export const services: Service[] = [
     faq: [
       { question: "Entwickelt Quality1st auch bestehende Anwendungen weiter?", answer: "Ja. Neben Neuentwicklungen unterstützen wir bei Erweiterungen, Schnittstellen und der technischen Verbesserung vorhandener Anwendungen." },
       { question: "Wie beginnt ein Softwareprojekt?", answer: "Mit einem Gespräch über Ziel, Nutzer, technische Ausgangslage und Rahmenbedingungen. Daraus lässt sich der nächste sinnvolle Schritt eingrenzen." },
-    ],
-  },
-  {
-    slug: "mobile-app-entwicklung",
-    title: "Mobile App Entwicklung",
-    navTitle: "Mobile App Entwicklung",
-    description: "Mobile Anwendungen für iOS und Android, abgestimmt auf Nutzung, Plattform und vorhandene Systeme.",
-    metaDescription: "Quality1st entwickelt mobile Apps für Unternehmen, Selbstständige, Start-ups und Privatkunden auf iOS und Android – von der Planung bis zu Tests und Veröffentlichung.",
-    intro: "Wir entwickeln mobile Anwendungen für konkrete Aufgaben und Nutzungssituationen. Plattformwahl, Schnittstellen, Bedienbarkeit und Wartbarkeit stimmen wir früh auf Ihr Produkt und Ihre technische Umgebung ab.",
-    scope: ["Apps für iOS und Android", "Native und Cross-Platform-Ansätze", "Anbindung an APIs und vorhandene Systeme", "App-Tests, Veröffentlichung und Weiterentwicklung"],
-    approach: ["Nutzer, Funktionen und Plattformanforderungen klären", "Native oder Cross-Platform-Architektur passend auswählen", "In überprüfbaren Schritten entwickeln und auf Geräten testen", "Veröffentlichung und anschließende Pflege berücksichtigen"],
-    tools: ["React Native", "Flutter", "Swift", "Kotlin", "Appium", "REST APIs"],
-    faq: [
-      { question: "Entwickelt Quality1st Apps für iOS und Android?", answer: "Ja. Welche Plattformen und Technologien sinnvoll sind, hängt von Zielgruppe, Funktionen, Geräteanforderungen und vorhandener Infrastruktur ab." },
-      { question: "Soll die App nativ oder Cross-Platform entwickelt werden?", answer: "Das wird anhand des Produktumfangs, benötigter Plattformfunktionen, Wartungsanforderungen und Projektbedingungen entschieden. Es gibt keine pauschal passende Variante für alle Apps." },
     ],
   },
   {

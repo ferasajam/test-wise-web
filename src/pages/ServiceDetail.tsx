@@ -103,7 +103,7 @@ const ServiceDetail = () => {
           </div>
         </section>
 
-        <section className="border-b border-[#d9ded9]" aria-labelledby="tools-heading">
+        {service.tools.length > 0 && <section className="border-b border-[#d9ded9]" aria-labelledby="tools-heading">
           <div className="mx-auto grid max-w-6xl gap-5 px-5 py-12 sm:px-8 sm:py-14 md:grid-cols-[0.7fr_1.3fr] md:items-center md:gap-16">
             <h2 id="tools-heading" className="font-display text-xl font-semibold text-[#172522]">Werkzeuge im Kontext</h2>
             <div>
@@ -113,7 +113,7 @@ const ServiceDetail = () => {
               </ul>
             </div>
           </div>
-        </section>
+        </section>}
 
         <section className="border-b border-[#d9ded9] bg-white" aria-labelledby="service-faq-heading">
           <div className="mx-auto grid max-w-6xl gap-8 px-5 py-14 sm:px-8 sm:py-16 md:grid-cols-[0.7fr_1.3fr] md:gap-16">

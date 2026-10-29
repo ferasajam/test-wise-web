@@ -4,10 +4,9 @@ import { services } from "@/lib/serviceCatalog";
 
 const navigation = [
   ["Start", "/"],
-  ["Leistungen", "/services"],
+  ["IT-Dienstleistungen", "/services"],
   ["Über uns", "/about"],
   ["Projekte", "/projects"],
-  ["Insights", "/insights"],
   ["Kontakt", "/contact"],
 ] as const;
 
@@ -23,7 +22,7 @@ const Footer = () => (
             <span className="font-display text-xl font-semibold text-[#172522]">Quality<span className="text-[#376457]">1st</span></span>
           </Link>
           <p className="mt-5 text-sm leading-7 text-[#5b6964]">
-            IT-Dienstleistungen, Softwareentwicklung sowie Quality Engineering & Testautomatisierung für digitale Lösungen, die im Alltag funktionieren.
+            Websites, Apps und Online-Marketing für kleine Unternehmen und lokale Betriebe.
           </p>
           <a
             href="https://www.linkedin.com/company/quality1stde"
@@ -51,9 +50,9 @@ const Footer = () => (
         </nav>
 
         <div>
-          <h2 className="font-display text-sm font-semibold text-[#172522]">Leistungen</h2>
+          <h2 className="font-display text-sm font-semibold text-[#172522]">IT-Dienstleistungen</h2>
           <ul className="mt-5 grid gap-3">
-            {services.map((service) => (
+            {services.filter((service) => service.featured).map((service) => (
               <li key={service.slug}>
                 <Link to={`/services/${service.slug}`} className="text-sm text-[#5b6964] transition-colors hover:text-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
                   {service.navTitle}
@@ -80,7 +79,7 @@ const Footer = () => (
             </li>
           </ul>
           <Link to="/contact" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] transition-colors hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
-            Projekt besprechen
+            Unverbindlich anfragen
             <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
           </Link>
         </div>

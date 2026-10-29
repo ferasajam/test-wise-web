@@ -2,6 +2,8 @@ Options -MultiViews
 RewriteEngine On
 RewriteBase /
 
+RewriteRule ^insights(?:/.*)?$ /services [R=301,L,NC]
+
 RewriteRule ^index\.html$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

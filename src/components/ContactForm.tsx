@@ -111,7 +111,7 @@ const ContactForm = ({ variant = "default" }: ContactFormProps) => {
 
       <div>
         <Label htmlFor="projectType" className={`text-sm font-semibold ${isEditorial ? "text-[#24352e]" : "text-foreground"}`}>Worum geht es?</Label>
-        <Input id="projectType" name="projectType" value={formData.projectType} onChange={handleInputChange} placeholder="z. B. Website, Web-App, Testing oder Automatisierung" className={fieldClassName} />
+        <Input id="projectType" name="projectType" value={formData.projectType} onChange={handleInputChange} placeholder="z. B. Website, App, Google oder Social Media" className={fieldClassName} />
       </div>
 
       <div>

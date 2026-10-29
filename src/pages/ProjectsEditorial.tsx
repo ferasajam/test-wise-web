@@ -20,10 +20,10 @@ const projects = [
 const ProjectsEditorial = () => (
   <>
     <Seo
-      title="Projekte | Digitale Produkte & Websites | Quality1st"
-      description="Ausgewählte Unternehmenswebsites und digitale Produkte von Quality1st, darunter KAFI Transporte und Diva Haarstudio."
+      title="Webdesign Referenzen für lokale Unternehmen | Quality1st"
+      description="Websites von Quality1st für kleine Unternehmen: KAFI Transporte und Diva Haarstudio. Beispiele für klare Leistungen, mobile Nutzung und einfache Kontaktaufnahme."
       path="/projects"
-      keywords={["Quality1st Projekte", "Webentwicklung Projekte", "Unternehmenswebsite", "KAFI Transporte"]}
+      keywords={["Webdesign Referenzen", "Websites für kleine Unternehmen", "KAFI Transporte Website", "Diva Haarstudio Website"]}
       structuredData={[
         getOrganizationStructuredData(),
         { "@context": "https://schema.org", "@type": "CollectionPage", name: "Projekte | Quality1st", url: getCanonicalUrl("/projects"), inLanguage: "de-DE", hasPart: projects.map((project) => ({ "@type": "CreativeWork", name: project.name, url: project.url, description: project.description })) },
@@ -34,8 +34,8 @@ const ProjectsEditorial = () => (
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-24">
           <nav aria-label="Brotkrumennavigation" className="text-xs text-[#697772]"><Link to="/" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Startseite</Link><span aria-hidden="true" className="px-2">/</span> Projekte</nav>
           <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Projekte / Auswahl</p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Digitale Arbeit für konkrete Aufgaben.</h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Eine Auswahl öffentlich erreichbarer Produkte und Webauftritte. Detaillierte Projektverläufe und belastbare Ergebniskennzahlen liegen nicht für alle Arbeiten vor; wir ergänzen sie erst, wenn sie nachvollziehbar veröffentlicht werden können.</p>
+          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Websites, die kleine Unternehmen sichtbar machen.</h1>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Ein Einblick in Websites für einen lokalen Salon und einen deutschlandweiten Umzugsbetrieb. Beide zeigen Leistungen, beantworten erste Fragen und machen den Kontakt einfach.</p>
         </div>
       </section>
 
@@ -62,8 +62,8 @@ const ProjectsEditorial = () => (
 
       <section className="border-y border-[#d9ded9] bg-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:px-8 sm:py-14 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl"><p className="text-xs font-bold uppercase text-[#3c645a]">Ihr Vorhaben</p><h2 className="mt-3 font-display text-3xl font-semibold text-[#172522]">Was soll Ihre Software leisten?</h2><p className="mt-3 text-sm leading-6 text-[#5b6964]">Wir sprechen über Ziel, technische Ausgangslage und passende Umsetzung.</p></div>
-          <Link to="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">Projekt besprechen <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
+          <div className="max-w-2xl"><p className="text-xs font-bold uppercase text-[#3c645a]">Ihr Unternehmen</p><h2 className="mt-3 font-display text-3xl font-semibold text-[#172522]">Möchten Sie online mehr Kunden erreichen?</h2><p className="mt-3 text-sm leading-6 text-[#5b6964]">Wir sprechen über Ihr Angebot und finden gemeinsam heraus, welcher digitale Auftritt zu Ihrem Betrieb passt.</p></div>
+          <Link to="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">Unverbindlich anfragen <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
         </div>
       </section>
     </div>
