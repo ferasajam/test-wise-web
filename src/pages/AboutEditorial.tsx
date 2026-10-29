@@ -11,10 +11,10 @@ const principles = [
 const AboutEditorial = () => (
   <>
     <Seo
-      title="Über Quality1st | Websites & Online-Marketing für kleine Unternehmen"
-      description="Lernen Sie Quality1st kennen: persönliche Unterstützung für kleine Unternehmen bei Websites, Apps, Google-Sichtbarkeit und Social Media."
+      title="Über Quality1st | Persönlicher IT-Dienstleister aus Münster"
+      description="Lernen Sie Feras Ajam kennen: Ihr direkter Ansprechpartner für Websites, Apps und digitale Sichtbarkeit – von Münster aus für Unternehmen in ganz Deutschland."
       path="/about"
-        keywords={["Webdesign Münster", "Website für kleine Unternehmen", "Online Marketing Münster", "Quality1st"]}
+      keywords={["IT-Dienstleister Münster", "Webdesign Münster", "App Entwicklung Münster", "Quality1st"]}
       structuredData={[
         getOrganizationStructuredData(),
         { "@context": "https://schema.org", "@type": "AboutPage", name: "Über Quality1st", url: getCanonicalUrl("/about"), inLanguage: "de-DE", about: { "@type": "Organization", name: "Quality1st" } },
@@ -26,9 +26,9 @@ const AboutEditorial = () => (
           <div>
             <nav aria-label="Brotkrumennavigation" className="text-xs text-[#697772]"><Link to="/" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Startseite</Link><span aria-hidden="true" className="px-2">/</span> Über Quality1st</nav>
             <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Über Quality1st / Münster</p>
-            <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Persönliche Hilfe für Ihren digitalen Auftritt.</h1>
+            <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Ein Ansprechpartner. Klare Entscheidungen. Gute digitale Arbeit.</h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Quality1st wird von Feras Ajam in Münster geführt und unterstützt kleine Unternehmen und Selbstständige. Dazu gehören Websites und Apps sowie Hilfe dabei, bei Google und in sozialen Medien sichtbar zu werden.
+              Hinter Quality1st steht Feras Ajam. Sie arbeiten direkt mit einer Ansprechperson, die mit Ihnen Ziele, Budget und Inhalte priorisiert. Von der Website bis zum Google-Auftritt entsteht eine Lösung, die zu Ihrem Unternehmen und Ihren Kunden passt.
             </p>
           </div>
           <aside className="border-l-2 border-[#b25336] py-1 pl-5 sm:pl-7">
@@ -49,10 +49,10 @@ const AboutEditorial = () => (
           </div>
           <div className="max-w-2xl">
             <p className="text-base leading-7 text-[#4b5b56]">
-              Im Mittelpunkt stehen Ihr Betrieb und Ihre Kunden: Was bieten Sie an? Wer soll Sie finden? Und wie kann Ihre Website dabei helfen, mehr passende Anfragen zu erhalten?
+              Sie kennen Ihr Geschäft am besten. Wir übersetzen Ihre Anforderungen in konkrete Seiten, Inhalte und digitale Werkzeuge. Vor dem Start klären wir Umfang, Reihenfolge und Kostenrahmen.
             </p>
             <p className="mt-4 text-base leading-7 text-[#4b5b56]">
-              Die Zusammenarbeit ist direkt und unkompliziert. Wir erklären, was sinnvoll ist, was es kostet und was zuerst getan werden sollte. Nicht jeder Betrieb braucht jede Plattform oder jeden neuen Trend.
+              Sie behalten den Überblick und entscheiden mit. Wir erklären Optionen in verständlicher Sprache und empfehlen nur Schritte, die zu Ihrem Vorhaben passen.
             </p>
             <a href="mailto:info@quality-1st.de" className="mt-5 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">Feras Ajam kontaktieren <ArrowRight aria-hidden="true" className="h-4 w-4" /></a>
           </div>
@@ -87,7 +87,7 @@ const AboutEditorial = () => (
 
       <section className="bg-[#173f36] text-white">
         <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:px-8 sm:py-14 md:flex-row md:items-end md:justify-between">
-          <div className="max-w-2xl"><p className="text-xs font-bold uppercase text-[#c1d6cb]">Gemeinsam starten</p><h2 className="mt-3 font-display text-3xl font-semibold">Möchten Sie online mehr Kunden erreichen?</h2><p className="mt-3 text-sm leading-6 text-[#d6e1dc]">Erzählen Sie uns kurz von Ihrem Betrieb und Ihrem Ziel. Wir besprechen einen passenden nächsten Schritt.</p></div>
+          <div className="max-w-2xl"><p className="text-xs font-bold uppercase text-[#c1d6cb]">Persönlich besprechen</p><h2 className="mt-3 font-display text-3xl font-semibold">Sie haben eine Idee, aber noch keinen fertigen Plan?</h2><p className="mt-3 text-sm leading-6 text-[#d6e1dc]">Im ersten Gespräch sortieren wir Ihre Fragen und legen fest, was als Nächstes wirklich wichtig ist.</p></div>
           <Link to="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 bg-white px-5 text-sm font-semibold text-[#173f36] hover:bg-[#e6eee9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#173f36]">Unverbindlich anfragen <ArrowRight aria-hidden="true" className="h-4 w-4" /></Link>
         </div>
       </section>

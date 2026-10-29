@@ -14,7 +14,7 @@ const ServicesEditorial = () => (
   <>
     <Seo
       title="IT-Dienstleistungen in Münster für kleine Unternehmen | Quality1st"
-      description="IT-Dienstleister für kleine Unternehmen: Websites, Apps, lokale SEO und Social Media. Persönliche Unterstützung aus Münster, deutschlandweit verfügbar."
+      description="IT-Dienstleistungen aus Deutschland: Websites, Apps, lokale Google-Sichtbarkeit und Social Media. Persönliche Planung und Umsetzung für Unternehmen in ganz Deutschland."
       path="/services"
       keywords={["IT-Dienstleistungen", "IT-Dienstleister für kleine Unternehmen", "IT Dienstleistungen in der Nähe", "Website erstellen lassen", "SEO lokal", "App Entwicklung"]}
       structuredData={[
@@ -48,10 +48,10 @@ const ServicesEditorial = () => (
             <Link to="/" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Startseite</Link>
             <span aria-hidden="true" className="px-2">/</span> IT-Dienstleistungen
           </nav>
-          <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">IT-Dienstleister in Münster und deutschlandweit</p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">IT-Dienstleistungen für kleine Unternehmen.</h1>
+          <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Persönliche IT-Dienstleistungen aus Deutschland</p>
+          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Von der Website bis zur digitalen Kundengewinnung.</h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-            Von der neuen Website bis zu Google und Social Media: Wir helfen Friseursalons, Umzugsfirmen und anderen lokalen Betrieben, online professionell aufzutreten und leichter gefunden zu werden.
+            Sie möchten Ihr Angebot online präsentieren, eine App entwickeln lassen oder bei Google sichtbarer sein? Wir planen die passenden Maßnahmen mit Ihnen und setzen sie Schritt für Schritt um.
           </p>
           <Link to="/contact" className="mt-7 inline-flex min-h-12 items-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">
             Unverbindlich beraten lassen <ArrowRight aria-hidden="true" className="h-4 w-4" />
@@ -70,8 +70,8 @@ const ServicesEditorial = () => (
           </div>
           <div className="border-b border-[#cfd7d1]">
             <div className="border-b border-[#cfd7d1] py-5">
-              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Websites, Apps und mehr Sichtbarkeit</h3>
-              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Die wichtigsten Angebote für Ihren Auftritt und neue Kunden.</p>
+              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Ihr Auftritt und Ihre Kunden</h3>
+              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Von der ersten Website bis zu regelmäßigen Beiträgen: Leistungen, die zusammenarbeiten können.</p>
             </div>
             {services.filter((service) => service.featured).sort((first, second) => primaryServiceOrder.indexOf(first.slug) - primaryServiceOrder.indexOf(second.slug)).map((service, index) => (
               <article key={service.slug} className="grid gap-3 border-b border-[#d9ded9] py-7 last:border-b-0 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:items-start sm:gap-6">
@@ -89,8 +89,8 @@ const ServicesEditorial = () => (
               </article>
             ))}
             <div className="border-b border-[#cfd7d1] py-5">
-              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Weitere technische Unterstützung</h3>
-              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Wenn Ihr Vorhaben individuelle Software, Automatisierung oder zusätzliche technische Prüfungen braucht.</p>
+              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Wenn Ihr Vorhaben mehr Technik braucht</h3>
+              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Zusätzliche Hilfe bei individueller Software, wiederkehrenden Abläufen oder technischen Fragen.</p>
             </div>
             {services.filter((service) => !service.featured).map((service, index) => (
               <article key={service.slug} className="grid gap-3 border-b border-[#d9ded9] py-7 last:border-b-0 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:items-start sm:gap-6">

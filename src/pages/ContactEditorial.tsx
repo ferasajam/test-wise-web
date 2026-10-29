@@ -6,8 +6,8 @@ import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/component
 const ContactEditorial = () => (
   <>
     <Seo
-      title="Kontakt | Websites & Online-Marketing für Ihr Unternehmen"
-      description="Sprechen Sie mit Quality1st über Ihre Website, App, Google-Sichtbarkeit oder Social Media. Persönliche und verständliche Beratung für kleine Unternehmen."
+      title="IT-Dienstleister kontaktieren | Quality1st"
+      description="Sie planen eine Website, App oder bessere Google-Präsenz? Besprechen Sie Ihr Vorhaben direkt mit Quality1st aus Münster."
       path="/contact"
       keywords={["Webdesign Beratung Münster", "Website Anfrage", "SEO Beratung", "Quality1st Kontakt"]}
       structuredData={[
@@ -20,8 +20,8 @@ const ContactEditorial = () => (
         <div className="mx-auto max-w-6xl px-5 py-14 sm:px-8 sm:py-20">
           <nav aria-label="Brotkrumennavigation" className="text-xs text-[#697772]"><Link to="/" className="underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522]">Startseite</Link><span aria-hidden="true" className="px-2">/</span> Kontakt</nav>
           <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Kontakt / Quality1st Münster</p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Was möchten Sie online für Ihren Betrieb erreichen?</h1>
-            <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Eine neue Website, mehr Anfragen über Google oder Unterstützung mit Social Media? Erzählen Sie uns kurz, was Sie brauchen. Fachwissen müssen Sie nicht mitbringen.</p>
+          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Lassen Sie uns über Ihr Vorhaben sprechen.</h1>
+          <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">Ob konkreter Auftrag oder erste Idee: Schreiben Sie uns, was Sie beschäftigt. Wir melden uns persönlich und besprechen gemeinsam, ob und wie wir helfen können.</p>
         </div>
       </section>
 
@@ -29,8 +29,8 @@ const ContactEditorial = () => (
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[minmax(0,1.2fr)_minmax(16rem,0.8fr)] lg:gap-16">
           <div className="border border-[#d9ded9] bg-white p-5 sm:p-8">
             <p className="text-xs font-bold uppercase text-[#3c645a]">Unverbindliche Anfrage</p>
-            <h2 className="mt-3 font-display text-2xl font-semibold text-[#172522] sm:text-3xl">Wobei können wir Ihrem Unternehmen helfen?</h2>
-            <p className="mt-3 text-sm leading-6 text-[#5b6964]">Name, E-Mail und ein paar Sätze zu Ihrem Betrieb reichen. Wir melden uns persönlich und besprechen verständlich die nächsten Schritte.</p>
+            <h2 className="mt-3 font-display text-2xl font-semibold text-[#172522] sm:text-3xl">Was soll sich für Ihre Kunden verbessern?</h2>
+            <p className="mt-3 text-sm leading-6 text-[#5b6964]">Beschreiben Sie kurz Ihr Ziel. Name, E-Mail und eine Nachricht genügen für den Anfang; technische Details können wir später gemeinsam klären.</p>
             <div className="mt-7"><ContactForm variant="editorial" /></div>
           </div>
 

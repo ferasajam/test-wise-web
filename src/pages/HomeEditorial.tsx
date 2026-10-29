@@ -18,28 +18,28 @@ const services = [
     number: "01",
     icon: Globe2,
     title: "Websites & Webshops",
-    description: "Ein klarer, mobilfreundlicher Auftritt, der Ihr Angebot zeigt und Anfragen erleichtert.",
+    description: "Zeigen Sie auf den ersten Blick, was Sie anbieten, wo Sie arbeiten und wie Kunden Sie erreichen.",
     href: "/services/websites-webshops",
   },
   {
     number: "02",
     icon: Smartphone,
     title: "Apps für iOS & Android",
-    description: "Mobile Apps, die Kunden oder Mitarbeitenden konkrete Aufgaben erleichtern.",
+    description: "Machen Sie wiederkehrende Aufgaben für Ihre Kunden oder Ihr Team einfacher.",
     href: "/services/mobile-app-entwicklung",
   },
   {
     number: "03",
     icon: Search,
     title: "SEO & Google-Sichtbarkeit",
-    description: "Damit Menschen in Ihrer Umgebung Ihren Betrieb bei Google leichter finden.",
+    description: "Bringen Sie Ihren Betrieb bei lokalen Suchen und auf Google Maps ins Blickfeld.",
     href: "/services/seo-google-sichtbarkeit",
   },
   {
     number: "04",
     icon: Megaphone,
     title: "Social Media & Online-Marketing",
-    description: "Mit passenden Inhalten und Kanälen bei Ihren Kunden präsent bleiben.",
+    description: "Planen Sie Beiträge, die Einblicke geben und Ihr Angebot im Gespräch halten.",
     href: "/services/social-media-online-marketing",
   },
 ];
@@ -49,13 +49,13 @@ const projects = [
     name: "Diva Haarstudio",
     type: "Website",
     url: "https://diva-haarstudio.de/",
-    description: "Ein Webauftritt mit klarer Leistungsübersicht und mobilen Kontaktwegen.",
+    description: "Salonleistungen und Kontaktmöglichkeiten, die Kundinnen schnell auf dem Handy finden.",
   },
   {
     name: "KAFI Transporte",
     type: "Unternehmenswebsite",
     url: "https://kafitransporte.de/",
-    description: "Website für deutschlandweite Umzüge und Möbeltransporte.",
+    description: "Umzugsleistungen und Einsatzgebiet auf einen Blick, mit direktem Weg zur Anfrage.",
   },
   
 ] as const;
@@ -63,11 +63,11 @@ const projects = [
 const faqs = [
   {
     question: "Wobei unterstützt Quality1st?",
-    answer: "Wir erstellen Websites und Apps für kleine Unternehmen und helfen dabei, online besser gefunden zu werden und passende Kunden über Social Media zu erreichen.",
+    answer: "Von der Unternehmenswebsite bis zur mobilen App: Wir helfen dabei, digitale Angebote verständlich zu präsentieren und im Alltag nutzbar zu machen.",
   },
   {
     question: "Für wen arbeitet Quality1st?",
-    answer: "Unser Angebot richtet sich besonders an kleine Unternehmen und Selbstständige, zum Beispiel Friseursalons, Umzugsfirmen und lokale Dienstleister.",
+    answer: "Wir arbeiten vor allem mit Inhaberinnen und Inhabern kleiner Betriebe, die online professioneller auftreten oder Abläufe für ihre Kunden vereinfachen möchten.",
   },
   {
     question: "Können Sie auch eine bestehende Website verbessern?",
@@ -129,7 +129,7 @@ const HomeEditorial = () => (
               IT-Dienstleistungen für kleine Unternehmen.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-              Wir erstellen Websites und Apps und helfen Ihnen, bei Google und in sozialen Medien sichtbar zu werden. Verständlich geplant für Friseursalons, Umzugsfirmen und lokale Betriebe.
+              Wir machen es Kunden leicht, Ihr Angebot online zu verstehen und Kontakt aufzunehmen. Von der Website bis zu Google und Social Media.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link
@@ -156,7 +156,7 @@ const HomeEditorial = () => (
               <li>Apps für Kunden und Mitarbeitende</li>
             </ul>
             <p className="mt-6 max-w-xs text-xs leading-5 text-[#697772]">
-              Für Friseursalons, Umzugsfirmen und lokale Dienstleister.
+              Direkt mit einer Ansprechperson aus Münster, bundesweit im Einsatz.
             </p>
           </aside>
         </div>
