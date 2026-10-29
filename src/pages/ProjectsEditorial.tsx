@@ -4,16 +4,10 @@ import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/component
 
 const projects = [
   {
-    name: "SpendWise",
-    type: "KI-gestützte Web-App",
-    url: "https://spendwise.quality-1st.de/",
-    description: "Digitale Anwendung zur Erfassung und Kategorisierung von Belegen sowie zur Übersicht von Budgets und Ausgaben.",
-  },
-  {
-    name: "Quality1st Chat",
-    type: "KI-Anwendung",
-    url: "https://chat.quality-1st.de/",
-    description: "Web-Anwendung, die den Zugang zu mehreren KI-Modellen in einer gemeinsamen Oberfläche bündelt.",
+    name: "KAFI Transporte",
+    type: "Unternehmenswebsite",
+    url: "https://kafitransporte.de/",
+    description: "Website für deutschlandweite Privat- und Firmenumzüge sowie Möbeltransporte.",
   },
   {
     name: "Diva Haarstudio",
@@ -27,9 +21,9 @@ const ProjectsEditorial = () => (
   <>
     <Seo
       title="Projekte | Digitale Produkte & Websites | Quality1st"
-      description="Ausgewählte digitale Produkte und Unternehmenswebsites von Quality1st – darunter Webanwendungen, KI-gestützte Produkte und Markenauftritte."
+      description="Ausgewählte Unternehmenswebsites und digitale Produkte von Quality1st, darunter KAFI Transporte und Diva Haarstudio."
       path="/projects"
-      keywords={["Quality1st Projekte", "Webentwicklung Projekte", "KI Web-App", "Unternehmenswebsite"]}
+      keywords={["Quality1st Projekte", "Webentwicklung Projekte", "Unternehmenswebsite", "KAFI Transporte"]}
       structuredData={[
         getOrganizationStructuredData(),
         { "@context": "https://schema.org", "@type": "CollectionPage", name: "Projekte | Quality1st", url: getCanonicalUrl("/projects"), inLanguage: "de-DE", hasPart: projects.map((project) => ({ "@type": "CreativeWork", name: project.name, url: project.url, description: project.description })) },

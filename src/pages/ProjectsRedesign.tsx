@@ -6,35 +6,23 @@ import Seo, { getCanonicalUrl, getOrganizationStructuredData } from "@/component
 import { Button } from "@/components/ui/button";
 
 const projects = [
-  
   {
-    name: "SpendWise",
-    type: "KI-gestützte Web-App",
-    url: "https://spendwise.quality-1st.de/",
-    tagline: "Belege einfach erfassen. Finanzen klar im Blick.",
-    description: "SpendWise verarbeitet Rechnungen und Belege mit KI, kategorisiert automatisch und erstellt aussagekräftige Analysen, Budgets und Berichte - auf Desktop und mobil.",
-    highlights: ["KI-gestützte Beleg- & Rechnungsverarbeitung", "Automatische Kategorisierung", "Budgets, Reports und Analysen"],
-    tags: ["AI", "Web-App", "Analytics"],
+    name: "KAFI Transporte",
+    type: "Unternehmenswebsite",
+    url: "https://kafitransporte.de/",
+    tagline: "Umzüge und Transporte von Berlin in ganz Deutschland.",
+    description: "Die Website präsentiert Privat- und Firmenumzüge, Fernumzüge sowie Möbeltransporte von KAFI Transporte.",
+    highlights: ["Privat- und Firmenumzüge", "Deutschlandweite Fernumzüge", "Möbeltransporte"],
+    tags: ["Transport", "Website", "Deutschlandweit"],
     accent: "border-primary/45",
   },
-  {
-    name: "Quality1st Chat",
-    type: "KI-Plattform",
-    url: "https://chat.quality-1st.de/",
-    tagline: "Mehrere führende KI-Modelle in einer Oberfläche.",
-    description: "Quality1st Chat vereint führende KI-Modelle in einer Plattform und ermöglicht einen schnellen, klaren Wechsel je nach Anwendungsfall.",
-    highlights: ["Mehrere Modelle in einer Oberfläche", "Schneller Wechsel je nach Use-Case", "Ein zentraler Zugang für Teams"],
-    tags: ["AI", "Platform", "UX"],
-    accent: "border-accent/45",
-},
-  
 ] as const;
 
 const ProjectsRedesign = () => (
   <>
     <Seo
       title="Projekte | Digitale Produkte von Quality1st"
-      description="Ausgewählte Projekte von Quality1st: KI-gestützte Web-Apps, Marken-Websites und digitale Produkte mit Fokus auf Performance, Nutzererlebnis und Qualität."
+      description="Ausgewählte Websites und digitale Produkte von Quality1st, darunter KAFI Transporte, mit Fokus auf Nutzererlebnis und Qualität."
       path="/projects"
       keywords={["Webdesign Referenzen", "Web App Projekte", "KI Projekte", "Quality1st Projekte", "Website Referenzen"]}
       structuredData={[
