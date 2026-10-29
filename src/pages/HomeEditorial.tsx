@@ -203,20 +203,20 @@ const HomeEditorial = () => (
       <section className="border-b border-[#d9ded9]" aria-labelledby="approach-heading">
         <div className="mx-auto grid max-w-6xl gap-10 px-5 py-16 sm:px-8 sm:py-20 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <p className="text-xs font-bold uppercase text-[#3c645a]">Sorgfältig umgesetzt</p>
+            <p className="text-xs font-bold uppercase text-[#3c645a]">Für echte Besucher gemacht</p>
             <h2 id="approach-heading" className="mt-3 max-w-md font-display text-3xl font-semibold leading-tight text-[#172522] sm:text-4xl">
-              Einfach zu nutzen. Zuverlässig im Alltag.
+              Eine Website, auf der Kunden sich zurechtfinden.
             </h2>
           </div>
           <div>
             <p className="max-w-2xl text-base leading-7 text-[#4b5b56]">
-              Ihre Website soll auf dem Handy gut funktionieren, schnell laden und es Kunden leicht machen, Sie zu erreichen. Darauf achten wir bei der Umsetzung.
+              Ob am Handy oder am Computer: Besucher sollen schnell verstehen, was Sie anbieten und wie sie den nächsten Schritt machen.
             </p>
             <p className="mt-4 max-w-2xl text-base leading-7 text-[#4b5b56]">
-              Technische Prüfungen gehören im Hintergrund dazu. Für Sie zählen ein verständlicher Auftritt und ein reibungsloser Weg von der Suche bis zur Anfrage.
+              Klare Seiten, passende Inhalte und gut sichtbare Kontaktwege machen aus einem Besuch leichter eine Anfrage.
             </p>
-            <Link to="/services/quality-engineering" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
-              So arbeiten wir <ArrowRight aria-hidden="true" className="h-4 w-4" />
+            <Link to="/services/websites-webshops" className="mt-6 inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] underline decoration-[#9ab1a7] underline-offset-4 hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
+              Websites & Webshops <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
         </div>
