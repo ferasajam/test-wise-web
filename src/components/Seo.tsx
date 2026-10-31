@@ -4,16 +4,16 @@ export const SITE_NAME = "Quality1st";
 export const SITE_URL = "https://quality-1st.de";
 export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.jpg`;
 
-const DEFAULT_TITLE = "IT-Dienstleistungen für kleine Unternehmen | Quality1st";
+const DEFAULT_TITLE = "IT-Dienstleistungen für Unternehmen | Quality1st";
 const DEFAULT_DESCRIPTION =
-  "IT-Dienstleister aus Münster für kleine Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe.";
+  "IT-Dienstleister aus Münster für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
   "IT-Dienstleistungen",
-  "IT-Dienstleister für kleine Unternehmen",
+  "IT-Dienstleister für Unternehmen",
   "IT Dienstleistungen in der Nähe",
   "Website erstellen lassen",
-  "Webdesign für kleine Unternehmen",
+  "Webdesign für Unternehmen",
   "SEO für lokale Unternehmen",
   "Google-Unternehmensprofil",
   "Social Media Marketing",
@@ -71,7 +71,7 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st ist ein IT-Dienstleister aus Münster für kleine Unternehmen und Selbstständige. Das Angebot umfasst Websites, Apps, lokale Google-Sichtbarkeit, SEO und Social Media.",
+    "Quality1st ist ein IT-Dienstleister aus Münster für Unternehmen und Selbstständige. Das Angebot umfasst Websites, Apps, lokale Google-Sichtbarkeit, SEO und Social Media.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
   address: {
@@ -91,8 +91,8 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   },
   sameAs: ["https://www.linkedin.com/company/quality1stde"],
   knowsAbout: [
-    "Webdesign für kleine Unternehmen",
-    "IT-Dienstleistungen für kleine Unternehmen",
+    "Webdesign für Unternehmen",
+    "IT-Dienstleistungen für Unternehmen",
     "IT-Dienstleister in Münster",
     "Websites und Webshops",
     "Mobile Apps",

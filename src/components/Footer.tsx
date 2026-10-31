@@ -22,7 +22,7 @@ const Footer = () => (
             <span className="font-display text-xl font-semibold text-[#172522]">Quality<span className="text-[#376457]">1st</span></span>
           </Link>
           <p className="mt-5 text-sm leading-7 text-[#5b6964]">
-            Websites, Apps und Online-Marketing für kleine Unternehmen und lokale Betriebe.
+            Websites, Apps und Online-Marketing für Unternehmen und lokale Betriebe.
           </p>
           <a
             href="https://www.linkedin.com/company/quality1stde"

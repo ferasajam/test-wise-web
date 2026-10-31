@@ -13,16 +13,16 @@ const primaryServiceOrder = [
 const ServicesEditorial = () => (
   <>
     <Seo
-      title="IT-Dienstleistungen in Münster für kleine Unternehmen | Quality1st"
+      title="IT-Dienstleistungen in Münster für Unternehmen | Quality1st"
       description="IT-Dienstleistungen aus Deutschland: Websites, Apps, lokale Google-Sichtbarkeit und Social Media. Persönliche Planung und Umsetzung für Unternehmen in ganz Deutschland."
       path="/services"
-      keywords={["IT-Dienstleistungen", "IT-Dienstleister für kleine Unternehmen", "IT Dienstleistungen in der Nähe", "Website erstellen lassen", "SEO lokal", "App Entwicklung"]}
+      keywords={["IT-Dienstleistungen", "IT-Dienstleister für Unternehmen", "IT Dienstleistungen in der Nähe", "Website erstellen lassen", "SEO lokal", "App Entwicklung"]}
       structuredData={[
         getOrganizationStructuredData(),
         {
           "@context": "https://schema.org",
           "@type": "Service",
-            name: "IT-Dienstleistungen für kleine Unternehmen von Quality1st",
+            name: "IT-Dienstleistungen für Unternehmen von Quality1st",
           provider: { "@type": "Organization", name: "Quality1st" },
           areaServed: { "@type": "Country", name: "Deutschland" },
           hasOfferCatalog: {

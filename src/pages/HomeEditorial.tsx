@@ -82,15 +82,15 @@ const faqs = [
 const HomeEditorial = () => (
   <>
     <Seo
-      title="IT-Dienstleistungen für kleine Unternehmen | Quality1st"
-      description="IT-Dienstleister aus Münster für kleine Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe."
+      title="IT-Dienstleistungen für Unternehmen | Quality1st"
+      description="IT-Dienstleister aus Münster für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe."
       path="/"
       keywords={[
         "Website erstellen lassen",
-        "IT-Dienstleistungen für kleine Unternehmen",
-        "IT-Dienstleister für kleine Unternehmen",
+        "IT-Dienstleistungen für Unternehmen",
+        "IT-Dienstleister für Unternehmen",
         "IT Dienstleistungen in der Nähe",
-        "Webdesign für kleine Unternehmen",
+        "Webdesign für Unternehmen",
         "App Entwicklung",
         "SEO für lokale Unternehmen",
         "Social Media Betreuung",
@@ -123,10 +123,10 @@ const HomeEditorial = () => (
         <div className="mx-auto grid max-w-6xl gap-12 px-5 pb-16 pt-16 sm:px-8 sm:pb-24 sm:pt-24 lg:grid-cols-[1.3fr_0.7fr] lg:items-end lg:gap-16">
           <div>
             <p className="flex items-center gap-3 text-xs font-bold uppercase text-[#3c645a]">
-              <span className="h-px w-8 bg-[#b25336]" /> IT-Dienstleister aus Münster für kleine Unternehmen
+              <span className="h-px w-8 bg-[#b25336]" /> IT-Dienstleister aus Deutschland für Unternehmen
             </p>
             <h1 className="mt-7 max-w-3xl font-display text-4xl font-semibold leading-[1.08] text-[#172522] sm:text-6xl">
-              IT-Dienstleistungen für kleine Unternehmen.
+              IT-Dienstleistungen für Unternehmen.
             </h1>
             <p className="mt-7 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
               Wir machen es Kunden leicht, Ihr Angebot online zu verstehen und Kontakt aufzunehmen. Von der Website bis zu Google und Social Media.
