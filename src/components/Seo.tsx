@@ -6,7 +6,7 @@ export const SITE_SOCIAL_IMAGE = `${SITE_URL}/quality1st-social.jpg`;
 
 const DEFAULT_TITLE = "IT-Dienstleistungen für Unternehmen | Quality1st";
 const DEFAULT_DESCRIPTION =
-  "IT-Dienstleister aus Münster für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe.";
+  "IT-Dienstleister aus Deutschland für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe.";
 const DEFAULT_KEYWORDS = [
   "Quality1st",
   "IT-Dienstleistungen",
@@ -71,7 +71,7 @@ export const getOrganizationStructuredData = (): StructuredData => ({
   name: SITE_NAME,
   url: SITE_URL,
   description:
-    "Quality1st ist ein IT-Dienstleister aus Münster für Unternehmen und Selbstständige. Das Angebot umfasst Websites, Apps, lokale Google-Sichtbarkeit, SEO und Social Media.",
+    "Quality1st ist ein IT-Dienstleister aus Deutschland für Unternehmen und Selbstständige. Das Angebot umfasst Websites, Apps, lokale Google-Sichtbarkeit, SEO und Social Media.",
   email: CONTACT_EMAIL,
   telephone: CONTACT_PHONE,
   address: {

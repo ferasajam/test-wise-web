@@ -11,10 +11,10 @@ const principles = [
 const AboutEditorial = () => (
   <>
     <Seo
-      title="Über Quality1st | Persönlicher IT-Dienstleister aus Münster"
+      title="Über Quality1st | Persönlicher IT-Dienstleister aus Deutschland"
       description="Lernen Sie Feras Ajam kennen: Ihr direkter Ansprechpartner für Websites, Apps und digitale Sichtbarkeit – von Münster aus für Unternehmen in ganz Deutschland."
       path="/about"
-      keywords={["IT-Dienstleister Münster", "Webdesign Münster", "App Entwicklung Münster", "Quality1st"]}
+      keywords={["IT-Dienstleister Deutschland", "Webdesign Deutschland", "App Entwicklung Deutschland", "Quality1st"]}
       structuredData={[
         getOrganizationStructuredData(),
         { "@context": "https://schema.org", "@type": "AboutPage", name: "Über Quality1st", url: getCanonicalUrl("/about"), inLanguage: "de-DE", about: { "@type": "Organization", name: "Quality1st" } },

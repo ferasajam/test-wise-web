@@ -83,7 +83,7 @@ const HomeEditorial = () => (
   <>
     <Seo
       title="IT-Dienstleistungen für Unternehmen | Quality1st"
-      description="IT-Dienstleister aus Münster für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe."
+      description="IT-Dienstleister aus Deutschland für Unternehmen: Websites, Apps, Google-Sichtbarkeit und Social Media für Salons, Umzugsfirmen und lokale Betriebe."
       path="/"
       keywords={[
         "Website erstellen lassen",
