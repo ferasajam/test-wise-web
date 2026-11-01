@@ -4,9 +4,12 @@ import { services } from "@/lib/serviceCatalog";
 
 const navigation = [
   ["Start", "/"],
-  ["IT-Dienstleistungen", "/services"],
-  ["Über uns", "/about"],
-  ["Projekte", "/projects"],
+  ["Leistungen", "/services"],
+  ["Website erstellen lassen", "/services/website-erstellen-lassen"],
+  ["Marketing & Social Media", "/services/marketing-social-media"],
+  ["App-Entwicklung", "/services/app-entwicklung"],
+  ["KI-Automation", "/services/ki-automation"],
+  ["Software-Testing", "/services/software-testing"],
   ["Kontakt", "/contact"],
 ] as const;
 
@@ -22,7 +25,7 @@ const Footer = () => (
             <span className="font-display text-xl font-semibold text-[#172522]">Quality<span className="text-[#376457]">1st</span></span>
           </Link>
           <p className="mt-5 text-sm leading-7 text-[#5b6964]">
-            Websites, Apps und Online-Marketing für Unternehmen und lokale Betriebe.
+            Websites, Marketing, Social Media, Apps, KI-Automation und Software-Testing für Unternehmen und lokale Betriebe.
           </p>
           <a
             href="https://www.linkedin.com/company/quality1stde"
@@ -50,7 +53,7 @@ const Footer = () => (
         </nav>
 
         <div>
-          <h2 className="font-display text-sm font-semibold text-[#172522]">IT-Dienstleistungen</h2>
+          <h2 className="font-display text-sm font-semibold text-[#172522]">Leistungen</h2>
           <ul className="mt-5 grid gap-3">
             {services.filter((service) => service.featured).map((service) => (
               <li key={service.slug}>
