@@ -4,11 +4,10 @@ import Seo, { getOrganizationStructuredData } from "@/components/Seo";
 import { services } from "@/lib/serviceCatalog";
 
 const primaryServiceOrder = [
-  "website-erstellen-lassen",
-  "marketing-social-media",
-  "app-entwicklung",
-  "ki-automation",
-  "software-testing",
+  "websites-webshops",
+  "mobile-app-entwicklung",
+  "seo-google-sichtbarkeit",
+  "social-media-online-marketing",
 ];
 
 const ServicesEditorial = () => (
@@ -50,9 +49,9 @@ const ServicesEditorial = () => (
             <span aria-hidden="true" className="px-2">/</span> IT-Dienstleistungen
           </nav>
           <p className="mt-8 text-xs font-bold uppercase text-[#3c645a]">Persönliche IT-Dienstleistungen aus Deutschland</p>
-          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Leistungen für mehr Anfragen und einfachere Abläufe.</h1>
+          <h1 className="mt-3 max-w-3xl font-display text-4xl font-semibold leading-tight text-[#172522] sm:text-6xl">Von der Website bis zur digitalen Kundengewinnung.</h1>
           <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">
-            Sie möchten eine Website erstellen lassen, bei Google sichtbarer werden, Social Media aktiv nutzen, eine App planen, Aufgaben automatisieren oder Ihre Software prüfen lassen? Wir erklären verständlich, was sinnvoll ist, und setzen es Schritt für Schritt um.
+            Sie möchten Ihr Angebot online präsentieren, eine App entwickeln lassen oder bei Google sichtbarer sein? Wir planen die passenden Maßnahmen mit Ihnen und setzen sie Schritt für Schritt um.
           </p>
           <Link to="/contact" className="mt-7 inline-flex min-h-12 items-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">
             Unverbindlich beraten lassen <ArrowRight aria-hidden="true" className="h-4 w-4" />
@@ -71,8 +70,8 @@ const ServicesEditorial = () => (
           </div>
           <div className="border-b border-[#cfd7d1]">
             <div className="border-b border-[#cfd7d1] py-5">
-              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Meine Leistungen</h3>
-              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Verständlich geplant, nutzenorientiert umgesetzt und mit klarem Ablauf.</p>
+              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Ihr Auftritt und Ihre Kunden</h3>
+              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Von der ersten Website bis zu regelmäßigen Beiträgen: Leistungen, die zusammenarbeiten können.</p>
             </div>
             {services.filter((service) => service.featured).sort((first, second) => primaryServiceOrder.indexOf(first.slug) - primaryServiceOrder.indexOf(second.slug)).map((service, index) => (
               <article key={service.slug} className="grid gap-3 border-b border-[#d9ded9] py-7 last:border-b-0 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:items-start sm:gap-6">
@@ -89,7 +88,25 @@ const ServicesEditorial = () => (
                 </Link>
               </article>
             ))}
-
+            <div className="border-b border-[#cfd7d1] py-5">
+              <h3 className="font-display text-xl font-semibold text-[#1b2b26]">Wenn Ihr Vorhaben mehr Technik braucht</h3>
+              <p className="mt-2 text-sm leading-6 text-[#5b6964]">Zusätzliche Hilfe bei individueller Software, wiederkehrenden Abläufen oder technischen Fragen.</p>
+            </div>
+            {services.filter((service) => !service.featured).map((service, index) => (
+              <article key={service.slug} className="grid gap-3 border-b border-[#d9ded9] py-7 last:border-b-0 sm:grid-cols-[4rem_minmax(0,1fr)_auto] sm:items-start sm:gap-6">
+                <span className="pt-1 text-xs font-semibold text-[#89958f]">0{index + 1}</span>
+                <div>
+                  <h2 className="font-display text-xl font-semibold text-[#1b2b26] sm:text-2xl">{service.title}</h2>
+                  <p className="mt-2 max-w-2xl text-sm leading-6 text-[#5b6964]">{service.description}</p>
+                  <ul className="mt-4 flex flex-wrap gap-x-5 gap-y-2 text-xs text-[#53645d]">
+                    {service.scope.slice(0, 3).map((item) => <li key={item}>{item}</li>)}
+                  </ul>
+                </div>
+                <Link to={`/services/${service.slug}`} className="inline-flex min-h-11 items-center gap-2 text-sm font-semibold text-[#24574b] hover:text-[#172522] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] sm:mt-0">
+                  Details <ArrowUpRight aria-hidden="true" className="h-4 w-4" />
+                </Link>
+              </article>
+            ))}
           </div>
         </div>
       </section>

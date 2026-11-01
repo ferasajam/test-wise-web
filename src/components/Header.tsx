@@ -4,12 +4,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { name: "Start", path: "/" },
-  { name: "Leistungen", path: "/services" },
-  { name: "Website", path: "/services/website-erstellen-lassen" },
-  { name: "Marketing", path: "/services/marketing-social-media" },
-  { name: "App", path: "/services/app-entwicklung" },
-  { name: "KI-Automation", path: "/services/ki-automation" },
-  { name: "Testing", path: "/services/software-testing" },
+  { name: "IT-Dienstleistungen", path: "/services" },
+  { name: "Über uns", path: "/about" },
+  { name: "Projekte", path: "/projects" },
   { name: "Kontakt", path: "/contact" },
 ];
 
@@ -124,7 +121,7 @@ const Header = () => {
               <Link to="/contact" onClick={() => setIsMenuOpen(false)} className="flex h-12 w-full items-center justify-center gap-2 bg-[#173f36] text-sm font-semibold text-white hover:bg-[#24574b]">
                 Unverbindlich anfragen <ArrowRight aria-hidden="true" />
               </Link>
-              <p className="mt-4 text-center text-xs text-[#697772]">Websites, Marketing, Apps, KI-Automation & Software-Testing</p>
+              <p className="mt-4 text-center text-xs text-[#697772]">Websites, Apps, Google & Social Media</p>
             </div>
           </div>
         </div>
