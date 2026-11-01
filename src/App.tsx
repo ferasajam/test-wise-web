@@ -34,7 +34,10 @@ const App = () => (
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/services" element={<Services />} />
-                <Route path="/services/testautomatisierung" element={<Navigate to="/services/quality-engineering" replace />} />
+                <Route path="/services/testautomatisierung" element={<Navigate to="/services/software-testing" replace />} />
+                <Route path="/services/quality-engineering" element={<Navigate to="/services/software-testing" replace />} />
+                <Route path="/services/websites-webshops" element={<Navigate to="/services/website-erstellen-lassen" replace />} />
+                <Route path="/services/mobile-app-entwicklung" element={<Navigate to="/services/app-entwicklung" replace />} />
                 <Route path="/services/:slug" element={<ServiceDetail />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/insights/*" element={<Navigate to="/services" replace />} />

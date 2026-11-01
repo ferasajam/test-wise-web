@@ -61,9 +61,9 @@ const ServiceDetail = () => {
             <h1 className="mt-3 max-w-4xl font-display text-[clamp(1.5rem,7vw,3.75rem)] font-semibold leading-tight text-[#172522] sm:text-6xl">{service.title}</h1>
             <p className="mt-6 max-w-2xl text-base leading-7 text-[#4b5b56] sm:text-lg sm:leading-8">{service.intro}</p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link to="/contact" className="inline-flex min-h-12 items-center justify-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">
-                Projekt besprechen <ArrowRight aria-hidden="true" className="h-4 w-4" />
-              </Link>
+              <a href="#termin" className="inline-flex min-h-12 items-center justify-center gap-3 bg-[#173f36] px-5 text-sm font-semibold text-white hover:bg-[#24574b] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336] focus-visible:ring-offset-2">
+                Termin anfragen <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              </a>
               <Link to="/services" className="inline-flex min-h-12 items-center justify-center gap-2 border border-[#aebbb4] px-5 text-sm font-semibold text-[#173f36] hover:border-[#173f36] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#b25336]">
                 <ArrowLeft aria-hidden="true" className="h-4 w-4" /> Alle Leistungen
               </Link>
@@ -103,6 +103,18 @@ const ServiceDetail = () => {
           </div>
         </section>
 
+        {service.price && (
+          <section className="border-b border-[#d9ded9]" aria-labelledby="price-heading">
+            <div className="mx-auto grid max-w-6xl gap-5 px-5 py-12 sm:px-8 sm:py-14 md:grid-cols-[0.7fr_1.3fr] md:items-center md:gap-16">
+              <div>
+                <p className="text-xs font-bold uppercase text-[#3c645a]">Preis</p>
+                <h2 id="price-heading" className="mt-3 font-display text-3xl font-semibold text-[#172522]">{service.price}</h2>
+              </div>
+              <p className="text-sm leading-7 text-[#5b6964]">Der genaue Aufwand hängt von Umfang, Inhalten und gewünschten Funktionen ab. Im Erstgespräch klären wir, was Sie wirklich brauchen und welcher nächste Schritt sinnvoll ist.</p>
+            </div>
+          </section>
+        )}
+
         {service.tools.length > 0 && <section className="border-b border-[#d9ded9]" aria-labelledby="tools-heading">
           <div className="mx-auto grid max-w-6xl gap-5 px-5 py-12 sm:px-8 sm:py-14 md:grid-cols-[0.7fr_1.3fr] md:items-center md:gap-16">
             <h2 id="tools-heading" className="font-display text-xl font-semibold text-[#172522]">Werkzeuge im Kontext</h2>
@@ -134,14 +146,15 @@ const ServiceDetail = () => {
           </div>
         </section>
 
-        <section className="bg-[#173f36] text-white">
+        <section id="termin" className="scroll-mt-24 bg-[#173f36] text-white">
           <div className="mx-auto flex max-w-6xl flex-col gap-6 px-5 py-12 sm:px-8 sm:py-14 md:flex-row md:items-end md:justify-between">
             <div className="max-w-2xl">
               <p className="text-xs font-bold uppercase text-[#c1d6cb]">Nächster Schritt</p>
               <h2 className="mt-3 font-display text-3xl font-semibold">Lassen Sie uns den Bedarf gemeinsam einordnen.</h2>
+              <p className="mt-3 text-sm leading-7 text-[#d7e5dd]">Schreiben Sie uns kurz, worum es geht. Wir melden uns mit einem passenden Terminvorschlag.</p>
             </div>
             <Link to="/contact" className="inline-flex min-h-12 shrink-0 items-center justify-center gap-3 bg-white px-5 text-sm font-semibold text-[#173f36] hover:bg-[#e6eee9] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#173f36]">
-              Projekt besprechen <ArrowRight aria-hidden="true" className="h-4 w-4" />
+              Termin anfragen <ArrowRight aria-hidden="true" className="h-4 w-4" />
             </Link>
           </div>
         </section>
